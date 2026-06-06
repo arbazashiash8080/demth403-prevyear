@@ -1,0 +1,444 @@
+Question Paper: data_struc1
+PART A
+
+Q1(a) Name various types of array in data structures.
+(b) What are the applications of stacks?
+(c) What is the role of queues in process scheduling algorithms?
+(d) What do you mean by balanced tree.
+(e) How are heaps utilized in implementing priority queues?
+(f) What are Fibonacci heaps, and what advantages do they offer?
+(g) How are spanning trees related to minimum spanning trees?
+(h) What is Warshall's algorithm used for in graphs?
+(i) Name components of hash table.
+(j) How does rehashing help maintain performance in a hash table?
+
+PART B
+
+Q2 Illustrate insertion and deletion operation in circular queue.
+
+Q3 Explain hashing in detail. Write steps to perform insertion operation in hash table.
+
+Q4 Differentiate between merging and concatenating of two arrays with the help of example.
+
+Q5 Describe the structure and properties of 2-3 trees, highlighting their ability to maintain balance and support efficient search and insertion operations.
+
+Q6 Differentiate between adjacency matrix and adjacency list in a graph. Write a program to create adjacency matrix of n nodes.
+
+Q7 Explain the concept of topological sort in directed acyclic graphs (DAGs)?
+
+Q8 Explain different applications of AVL tree. Demonstrate operations performed on AVL tree with the help of example.
+
+Q9 Explain postfix expression evaluation using stacks. Write algorithm to evaluate postfix expressions.
+
+Q10 Write a program/ algorithm of Heap sort in detail.
+
+Q11 Discuss the trade-offs involved in using double hashing and rehashing in hash table design. How do these techniques affect memory usage?
+
+-- End of Question Paper --
+
+
+Question Paper: ADataStrDECAP770 (2)
+PART A
+
+Q1(a) What is the difference between a singly linked list and a doubly linked list?
+
+(b) Give any two practical applications of stack.
+
+(c) What is a queue data structure, and what is its purpose?
+
+(d) How do you balance a binary search tree, and why is balancing important?
+
+(e) How are nodes in a red-black tree colored, and what is the significance of the colors?
+
+(f) What is a binomial heap, and how does it differ from a binary heap?
+
+(g) What is a path in a graph, and what are its different types?
+
+(h) What is the difference between breadth-first and depth-first traversal in a graph?
+
+(i) What is a hash function and how does it work?
+
+(j) What is rehashing in hashing, and when is it typically performed?
+
+PART B
+
+Q2 Reverse the order of elements on stack S
+
+a. using two additional stacks
+
+b. using one additional queue
+
+c. using one additional stack and some additional non-array variables
+
+Q3 Write a member function to check whether two singly linked lists have the same contents.
+
+Q4 Write a function that checks whether a binary tree is perfectly balanced.
+
+Q5 What is the maximum number of nodes in a multiway tree of height h?
+
+Q6 What is rehashing, and how is it used to improve the performance of a hash table? In what scenarios might you need to rehash a hash table?
+
+Q7 What is a graph in data structures, and how is it different from other data structures?
+
+Q8 How is the B-tree structure organized and what is its maximum and minimum degree?
+
+Q9 How do you implement a function to insert a node at the beginning of a singly linked list?
+
+Q10 How do you choose between breadth-first and depth-first traversal for a given problem?
+
+Q11 What are some common cryptographic hash functions and what are their strengths and weaknesses?
+
+-- End of Question Paper --
+
+
+Question Paper: DStcDECAP770 (Sept 2025)
+
+PART A
+
+Q1(a) Define asymptotic notation.
+
+(b) What role does a stack play in recursion?
+
+(c) Name some applications of queues in real-world scenarios.
+
+(d) What are the properties that define B-trees?
+
+(e) How are heaps utilized in implementing priority queues?
+
+(f) What are Binomial heaps?
+
+(g) What do mean by degree of node in a graph.
+
+(h) Explain traversing of a graph.
+
+(i) What is separate chaining, and how does it resolve collisions in hashing?
+
+(j) Advantages of double hashing.
+
+PART B
+
+Q2 How can you implement a queue using a linked list? What are the advantages and disadvantages of using a linked list-based queue?
+
+Q3 Explain the algorithm for checking balanced parentheses using a stack.
+
+Q4 What is the structure of a Fibonacci Heap node, and how is it different from other heap data structures?
+
+Q5 Explain any 4 types of graphs and their characteristics.
+
+Q6 Write a function that checks whether a binary tree is perfectly balanced.
+
+Q7 Write a program/algorithm to implement basic operations in hash table using double hashing.
+
+Q8 Explain and write algorithm of DFS in detail.
+
+Q9 What are hash functions, and why are they crucial in hashing? Discuss their role in generating unique hash codes for keys.
+
+Q10 Compare and contrast average-case analysis (predicting performance under average conditions) and worst-case analysis (estimating the worst possible performance) of algorithms. Explain their implications for algorithm design and optimization strategies.
+
+Q11 Explain Binary search tree and its traversing technique using recursive method.
+
+-- End of Question Paper --
+
+Question Paper: DECAP770_1
+
+PART-B
+
+Q1 Differentiate between min heaps and max heaps, and discuss their respective applications.
+
+Q2 Explain Binary search tree and its traversing techniques using recursive method.
+
+Q3 Write a program/algorithm to implement basic operations in hash table using double hashing.
+
+Q4 Discuss collision resolution in hashing. Explain advantages and working of separate chaining method in detail.
+
+Q5 Explain types of linked list Demonstrate the traversing of circular linked list with the help of example.
+
+Q6 Differentiate between a regular queue and a priority queue. Explain how priority queues are implemented and used in various applications.
+
+Q7 Explain applications of graph in detail and explain memory representation of a graph.
+
+Q8 Define recursion. Give some real example to use recursion concept using stacks.
+
+Q9 Explain properties and working of Floyd-Warshall algorithm in detail.
+
+Q10 How does heap sort work, and what is its time complexity for sorting a list of n elements?
+
+Q11 What do you mean by memory representation of queue. Explain when overflow and underflow condition will occur with program code.
+
+Q12 What do you mean by probing. Demonstrate different techniques of probing in collision resolution.
+
+Q13 Explain advantages of Red-Black tree over AVL tree. Demonstrate insertion operation in Red-Black tree.
+
+Q14 Describe double hashing as a collision resolution technique in hashing.
+
+Q15 Describe Warshall’s algorithm for finding the shortest path between all pairs of vertices in a graph.
+
+Q16 Explore the process of converting infix arithmetic expressions to postfix using a stack.
+
+Q17 Discuss the steps involved in searching for an element in a binary search tree, highlighting the algorithm’s time complexity and best-case scenarios.
+
+Q18 Explain insertion operation in doubly linked list with help of program code.
+
+Q19 What are Fibonacci heaps, and what advantages do they offer over other types of heaps like binomial heaps?
+
+Q20 Explain the linked adjacency chain representation of a graph, highlighting its differences from the adjacency matrix approach.
+
+Q.21 Differentiate between arrays and linked list.
+
+Q.22 Define rehashing and discuss its significance in hash table management. When and why is rehashing necessary in a hash table implementation?
+
+Q.23 Explain any 4 types of graphs and their characteristics.
+
+Q.24 Explain and write algorithm of DFS in detail.
+
+Q.25 How do binomial heaps maintain their structure and explain the operations of insertion.
+
+Q.26 Explain how B-trees are advantageous in scenarios involving large datasets and disk-based storage.
+
+Q.27 What are applications of heap in data structures. How to create max heap with the help of program.
+
+Q.28 Explain open addressing with linear probing as a collision resolution method in hashing.
+
+Q.29 Explain applications of queue and perform deletion operation using linked representation of queue.
+
+Q.30 What do you mean by Tower of Hanoi problem in detail.
+
+-- End of Question Paper --
+
+Question Paper: DECAP770_2
+
+PART-B
+
+Q1 What is balancing mechanism used in a red-black tree, and how does it ensure that the tree remains balanced?
+
+Q2 How can you use a stack to evaluate a postfix expression? Provide an example.
+
+Q3 What is the structure of a Fibonacci Heap node, and how is it different from other heap data structures?
+
+Q4 Look carefully at the definition of a graph. In one respect, graphs are more specific than trees. What is it?
+
+Q5 Put the elements on the stack S in ascending order using one additional stack and some additional no array variables.
+
+Q6 How can topological sort be used to detect cycles in a graph?
+
+Q7 What are the advantages and disadvantages of linear propping compared to other collision resolution techniques?
+
+Q8 What is a minimum spanning tree in a graph, and how is it useful?
+
+Q9 How does a linked list differ from an array in terms of memory allocation and traversal?
+
+Q10 How do you perform an inorder traversal of a binary search tree?
+
+Q11 How many keys can a B-tree of order m and of height h hold?
+
+Q12 Can linear probing be used with open addressing or closed addressing hashing techniques?
+
+Q13 How do you implement a stack using an array? What is the time complexity of each operation?
+
+Q14 How can you implement a queue using a linked list? What are the advantages and disadvantages of using a linked list-based queue?
+
+Q15 What is a graph traversal algorithm, and what are its different types?
+
+Q16 Such that a tree with n vertices has n-1 edges.
+
+Q17 How do you choose between breadth-first ad depth-first traversal for a given problem?
+
+Q18 How do you implement a function to insert a node at the beginning of a singly linked list?
+
+Q19 How do you perform an in order traversal of a binary search tree?
+
+Q20 What is the relationship between the sum of the degrees of all vertices and the number of edges of graph G= (V,E)?
+
+Q21 Delete an node from a linked list. Be sure that such a node exists.
+
+Q22 Write a function that checks whether a binary tree is perfectly balanced.
+
+Q23 Suggest an implementation of a stack to hold elements of two different types, such as structures and float numbers.
+
+Q24 How does the Fibonacci Heap’s decrease-key operation work, what is its time complexity?
+
+Q25 How do you insert a new node into a binary search tree?
+
+Q26 How do you implement breadth –first traversal in a graph?
+
+Q27 Can linear probing be used with open addressing or closed addressing hashing techniques?
+
+Q28 What is a graph traversal algorithm, and what are its different types?
+
+Q29 What is Time complexity and What is its need?
+
+-- End of Question Paper --
+
+Question Paper: DECAP770_3
+
+PART A
+
+Q1(a) Name various types of array in data structures.
+
+(b) What are the applications of stacks?
+
+(c) Define Deque with example.
+
+(d) What are the properties that define a binary search tree?
+
+(e) Explain the properties of splay trees.
+
+(f) How is heap sort different from other sorting algorithms?
+
+(g) Define connected components in a graph.
+
+(h) Time complexity of BFS in a graph.
+
+(i) What is the role of hash tables in efficient data storage?
+
+(j) Explain need of rehashing.
+
+PART B
+
+Q2 Differentiate between double hashing and rehashing with the help of example.
+
+Q3 Write a function that checks whether a AVL is perfectly balanced.
+
+Q4 How can you use a stack to evaluate a postfix expression? Provide an example
+
+Q5 What is the maximum number of nodes in a multiway tree of height h?
+
+Q6 Explain applications of queue and perform deletion operation using linked representation of queue.
+
+Q7 Explain different applications of AVL tree. Demonstrate operations performed on AVL tree with the help of example.
+
+Q8 Describe Warshall's algorithm for finding the shortest path between all pairs of vertices in a graph.
+
+Q9 Explain the linked adjacency chain representation of a graph, highlighting its differences from the adjacency matrix approach.
+
+Q10 Explain hashing in detail. Write steps to perform insertion operation in hash table.
+
+Q11 Differentiate between arrays and linked list.
+
+-- End of Question Paper --
+
+Question Paper: DECAP770_4
+
+PART-B
+
+Q1 Differentiate between min heaps and max heaps, and discuss their respective applications.
+
+Q2 Explain Binary search tree and its traversing techniques using recursive method.
+
+Q3 Write a program/algorithm to implement basic operations in hash table using double hashing.
+
+Q4 Discuss collision resolution in hashing. Explain advantages and working of separate chaining method in detail.
+
+Q5 Explain types of linked list Demonstrate the traversing of circular linked list with the help of example.
+
+Q6 Differentiate between a regular queue and a priority queue. Explain how priority queues are implemented and used in various applications.
+
+Q7 Explain applications of graph in detail and explain memory representation of a graph.
+
+Q8 Define recursion. Give some real example to use recursion concept using stacks.
+
+Q9 Explain properties and working of Floyd-Warshall algorithm in detail.
+
+Q10 How does heap sort work, and what is its time complexity for sorting a list of n elements?
+
+[Remaining questions not present in the uploaded page/file.]
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP770_5
+
+PART A
+
+Q1(a) Define asymptotic notation.
+
+(b) What role does a stack play in recursion?
+
+(c) Name some applications of queues in real-world scenarios.
+
+(d) What are the properties that define B-trees?
+
+(e) How are heaps utilized in implementing priority queues?
+
+(f) What are Binomial heaps?
+
+(g) What do mean by degree of node in a graph.
+
+(h) Explain traversing of a graph.
+
+(i) What is separate chaining, and how does it resolve collisions in hashing?
+
+(j) Advantages of double hashing.
+
+PART B
+
+Q11. How can you implement a queue using a linked list? What are the advantages and disadvantages of using a linked-list based queue?
+
+Q12. Explain the algorithm for checking balanced parentheses using a stack.
+
+Q13. What is the structure of a Fibonacci Heap node, and how is it different from other heap data structures?
+
+Q14. Explain any 4 types of graphs and their characteristics.
+
+Q15. Write a function that checks whether a binary tree is perfectly balanced.
+
+Q16. Write a program/algorithm to implement basic operations in hash table using double hashing.
+
+Q17. Explain and write algorithm of DFS in detail.
+
+Q18. What are hash functions, and why are they crucial in hashing? Discuss their role in generating unique hash codes for keys.
+
+Q19. Compare and contrast average-case analysis (predicting performance under average conditions) and worst-case analysis (estimating the worst possible performance) of algorithms. Explain their implications for algorithm design and optimization strategies.
+
+Q20. Explain Binary search tree and its traversing technique using recursive method.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP770_6
+
+PART-A
+
+Q.1(a) What is the purpose of data structures and algorithms in programming?
+
+(b) Write linked representation of stacks in data structures.
+
+(c) What is a priority queue, and how does it differ from a regular queue?
+
+(d) Properties of complete binary tree.
+
+(e) Properties of 2-3 trees.
+
+(f) Advantages of Heap sort.
+
+(g) How is an adjacency matrix used to represent a graph?
+
+(h) What is the significance of topological sort in directed acyclic graphs (DADs)?
+
+(i) How is linear list representation used in hashing?
+
+(j) Explain the concept of rehashing in hashing.
+
+PART-B
+
+Q.2 Discuss collision resolution in hashing. Explain advantages and working of separate chaining method in detail.
+
+Q.3 Describe the structure and properties of 2-3 trees, highlighting their ability to maintain balance and support efficient search and insertion operations.
+
+Q.4 How can you implement a priority queue using a heap data structure?
+
+Q.5 Write a program/algorithm of heap sort in detail.
+
+Q.6 Define rehashing and discuss its significance in hash table management. When and why is rehashing necessary in a hash table implementation?
+
+Q.7 Discuss the steps involved in searching for an element in a binary search tree, highlighting the algorithm’s time complexity and best-case scenarios.
+
+Q.8 Delete an with node from a linked list. Be sure that such a node exists.
+
+Q.9 Differentiate between merging and concatenating of two arrays with the help of example.
+
+Q.10 Differentiate between adjacency matrix and adjacency list in a graph. Write a program to create adjacency matrix of n nodes.
+
+Q.11 Explain the concept of topological sort in directed acyclic graphs (DAGs)?
+
+-- End of Question Paper --

@@ -661,6 +661,44 @@ body {
 }
 
 /* ============================
+   BACK LINK / BUTTON
+   ============================ */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  margin-bottom: 1.5rem;
+  transition: all var(--transition);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background: var(--surface2);
+  transform: translateX(-4px);
+}
+
+.back-link .back-arrow {
+  transition: transform var(--transition);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.back-link:hover .back-arrow {
+  transform: translateX(-2px);
+}
+
+/* ============================
    RESPONSIVE
    ============================ */
 @media (max-width: 900px) {

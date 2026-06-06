@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECAP770 – Data Structures | Question Bank</title>
+  <meta name="description"
+    content="Organized question bank for DECAP770 Data Structures. All questions sorted by unit from multiple past papers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Override watermark for Data Structures */
+    .site-header::after {
+      content: 'DECAP770';
+    }
+
+    /* Extra paper tag colors for p7, p8, p9 */
+    :root {
+      --tag-p7-bg: rgba(251, 146, 60, 0.12);
+      --tag-p7-c: #fb923c;
+      --tag-p8-bg: rgba(248, 113, 113, 0.12);
+      --tag-p8-c: #f87171;
+      --tag-p9-bg: rgba(34, 211, 238, 0.12);
+      --tag-p9-c: #22d3ee;
+    }
+
+    .tag-p7 {
+      background: var(--tag-p7-bg);
+      color: var(--tag-p7-c);
+    }
+
+    .tag-p8 {
+      background: var(--tag-p8-bg);
+      color: var(--tag-p8-c);
+    }
+
+    .tag-p9 {
+      background: var(--tag-p9-bg);
+      color: var(--tag-p9-c);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="back-link">
+        <span class="back-arrow">←</span> Back to Portal
+      </a>
+      <div class="header-badge">DECAP770</div>
+      <h1 class="site-title">Data Structures<br><span>Question Bank</span></h1>
+      <p class="site-subtitle">Question Bank — Organized by Unit</p>
+      <div class="paper-legend">
+        <span class="legend-label">Papers:</span>
+        <span class="tag tag-p1">DS-1</span>
+        <span class="tag tag-p2">DECAP770 (2)</span>
+        <span class="tag tag-p3">Sept 2025</span>
+        <span class="tag tag-p4">DECAP770_1</span>
+        <span class="tag tag-p5">DECAP770_2</span>
+        <span class="tag tag-p6">DECAP770_3</span>
+        <span class="tag tag-p7">DECAP770_4</span>
+        <span class="tag tag-p8">DECAP770_5</span>
+        <span class="tag tag-p9">DECAP770_6</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR + MAIN LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- Sidebar TOC -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-icon">📚</span>
+        <span>Units</span>
+      </div>
+      <nav class="unit-nav" id="unitNav">
+        <a href="#unit1" class="nav-item active" data-unit="1">
+          <span class="nav-num">01</span>
+          <span class="nav-text">Unit 1: Introduction</span>
+        </a>
+        <a href="#unit2" class="nav-item" data-unit="2">
+          <span class="nav-num">02</span>
+          <span class="nav-text">Unit 2: Arrays vs Linked Lists</span>
+        </a>
+        <a href="#unit3" class="nav-item" data-unit="3">
+          <span class="nav-num">03</span>
+          <span class="nav-text">Unit 3: Stacks</span>
+        </a>
+        <a href="#unit4" class="nav-item" data-unit="4">
+          <span class="nav-num">04</span>
+          <span class="nav-text">Unit 4: Queues</span>
+        </a>
+        <a href="#unit5" class="nav-item" data-unit="5">
+          <span class="nav-num">05</span>
+          <span class="nav-text">Unit 5: Search Trees</span>
+        </a>
+        <a href="#unit6" class="nav-item" data-unit="6">
+          <span class="nav-num">06</span>
+          <span class="nav-text">Unit 6: AVL Trees &amp; B-Trees</span>
+        </a>
+        <a href="#unit7" class="nav-item" data-unit="7">
+          <span class="nav-num">07</span>
+          <span class="nav-text">Unit 7: Red-Black, Splay &amp; 2-3 Trees</span>
+        </a>
+        <a href="#unit8" class="nav-item" data-unit="8">
+          <span class="nav-num">08</span>
+          <span class="nav-text">Unit 8: Heaps</span>
+        </a>
+        <a href="#unit9" class="nav-item" data-unit="9">
+          <span class="nav-num">09</span>
+          <span class="nav-text">Unit 9: More on Heaps</span>
+        </a>
+        <a href="#unit10" class="nav-item" data-unit="10">
+          <span class="nav-num">10</span>
+          <span class="nav-text">Unit 10: Graphs</span>
+        </a>
+        <a href="#unit11" class="nav-item" data-unit="11">
+          <span class="nav-num">11</span>
+          <span class="nav-text">Unit 11: More on Graphs</span>
+        </a>
+        <a href="#unit12" class="nav-item" data-unit="12">
+          <span class="nav-num">12</span>
+          <span class="nav-text">Unit 12: Hashing Techniques</span>
+        </a>
+        <a href="#unit13" class="nav-item" data-unit="13">
+          <span class="nav-num">13</span>
+          <span class="nav-text">Unit 13: Collision Resolution</span>
+        </a>
+        <a href="#unit14" class="nav-item" data-unit="14">
+          <span class="nav-num">14</span>
+          <span class="nav-text">Unit 14: More on Hashing</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-num" id="totalQCount">0</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">9</span>
+          <span class="stat-label">Papers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Units</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+      <!-- Search Bar -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search questions…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" title="Clear">✕</button>
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">All Papers</button>
+          <button class="chip" data-filter="p1">DS-1</button>
+          <button class="chip" data-filter="p2">DECAP770 (2)</button>
+          <button class="chip" data-filter="p3">Sept 2025</button>
+          <button class="chip" data-filter="p4">DECAP770_1</button>
+          <button class="chip" data-filter="p5">DECAP770_2</button>
+          <button class="chip" data-filter="p6">DECAP770_3</button>
+          <button class="chip" data-filter="p7">DECAP770_4</button>
+          <button class="chip" data-filter="p8">DECAP770_5</button>
+          <button class="chip" data-filter="p9">DECAP770_6</button>
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results hidden">
+        <span>🔎</span><br>No questions match your search.
+      </div>
+
+      <!-- ===================== UNIT 1 ===================== -->
+      <section class="unit-section" id="unit1">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 1</div>
+          <h2 class="unit-title">Introduction: Need of Data Structures, Time &amp; Space Complexity, Asymptotic
+            Notations, Average &amp; Worst Case Analysis</h2>
+          <span class="unit-count" id="count-unit1"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Define asymptotic notation.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(a) and DECAP770_5 Q1(a)</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q29 What is Time complexity and what is its need?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) What is the purpose of data structures and algorithms in programming?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 / Q19 Compare and contrast average-case analysis (predicting performance under average conditions)
+                and worst-case analysis (estimating the worst possible performance) of algorithms. Explain their
+                implications for algorithm design and optimization strategies.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q10 and DECAP770_5 Q19</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 2 ===================== -->
+      <section class="unit-section" id="unit2">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 2</div>
+          <h2 class="unit-title">Arrays vs Linked Lists: Operations on Arrays and Linked Lists</h2>
+          <span class="unit-count" id="count-unit2"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p6">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Name various types of array in data structures.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q1(a) and DECAP770_3 Q1(a)</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p6 p9">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q11 / Q9 Differentiate between merging and concatenating of two arrays with the help of example.
+              </p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q4, DECAP770_3 Q11, DECAP770_6 Q9</div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p5 p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q21 / Q9 / Q11 Differentiate between arrays and linked list.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q21, DECAP770_2 Q9, DECAP770_3 Q11</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) What is the difference between a singly linked list and a doubly linked list?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Explain types of linked list. Demonstrate the traversing of circular linked list with the help of
+                example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q5 and DECAP770_4 Q5</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q18 How do you implement a function to insert a node at the beginning of a singly linked list?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770(2) Q9 and DECAP770_2 Q18</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Write a member function to check whether two singly linked lists have the same contents.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18 Explain insertion operation in doubly linked list with help of program code.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5 p9">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q21 / Q8 Delete a node from a linked list. Be sure that such a node exists.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar in DECAP770_2 Q21 and DECAP770_6 Q8</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 3 ===================== -->
+      <section class="unit-section" id="unit3">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 3</div>
+          <h2 class="unit-title">Stacks: Implementation, Applications — Parenthesis Checker, Expression Conversion &amp;
+            Evaluation, Tower of Hanoi, Role in Recursion</h2>
+          <span class="unit-count" id="count-unit3"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p6">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) What are the applications of stacks?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q1(b) and DECAP770_3 Q1(b)</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Give any two practical applications of stack.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) What role does a stack play in recursion?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(b) and DECAP770_5 Q1(b)</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Write linked representation of stacks in data structures.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p5 p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q2 / Q4 Explain postfix expression evaluation using stacks. How can you use a stack to evaluate a
+                postfix expression? Write algorithm and provide an example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same concept in DS-1 Q9, DECAP770_2 Q2, DECAP770_3 Q4</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16 Explore the process of converting infix arithmetic expressions to postfix using a stack.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 / Q12 Explain the algorithm for checking balanced parentheses using a stack.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q3 and DECAP770_5 Q12</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Reverse the order of elements on stack S:</p>
+              <ul>
+                <li>(a) Using two additional stacks</li>
+                <li>(b) Using one additional queue</li>
+                <li>(c) Using one additional stack and some additional non-array variables</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Put the elements on the stack S in ascending order using one additional stack and some additional
+                non-array variables.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13 How do you implement a stack using an array? What is the time complexity of each operation?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q23 Suggest an implementation of a stack to hold elements of two different types, such as structures
+                and float numbers.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Define recursion. Give some real examples to use recursion concept using stacks.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q8 and DECAP770_4 Q8</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q30 What do you mean by Tower of Hanoi problem? Explain in detail.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 4 ===================== -->
+      <section class="unit-section" id="unit4">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 4</div>
+          <h2 class="unit-title">Queues: Implementation, Priority Queue, Applications of Queues</h2>
+          <span class="unit-count" id="count-unit4"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) What is the role of queues in process scheduling algorithms?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) What is a queue data structure, and what is its purpose?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Name some applications of queues in real-world scenarios.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(c) and DECAP770_5 Q1(c)</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) What is a priority queue, and how does it differ from a regular queue?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Define Deque with example.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Illustrate insertion and deletion operation in circular queue.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p5 p8">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 / Q14 / Q11 How can you implement a queue using a linked list? What are the advantages and
+                disadvantages of using a linked list-based queue?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q2, DECAP770_2 Q14, DECAP770_5 Q11</div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Differentiate between a regular queue and a priority queue. Explain how priority queues are
+                implemented and used in various applications.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q6 and DECAP770_4 Q6</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 What do you mean by memory representation of queue. Explain when overflow and underflow condition
+                will occur with program code.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q29 / Q6 Explain applications of queue and perform deletion operation using linked representation of
+                queue.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q29 and DECAP770_3 Q6</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 5 ===================== -->
+      <section class="unit-section" id="unit5">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 5</div>
+          <h2 class="unit-title">Search Trees: Binary Search Trees — Searching, Insertion and Deletion Operations</h2>
+          <span class="unit-count" id="count-unit5"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) What are the properties that define a binary search tree?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) How do you balance a binary search tree, and why is balancing important?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p4 p7 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 / Q2 / Q2 / Q20 Explain Binary Search Tree and its traversing techniques using recursive method.
+              </p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q11, DECAP770_1 Q2, DECAP770_4 Q2, DECAP770_5 Q20</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p3 p5 p8">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q6 / Q22 / Q15 Write a function that checks whether a binary tree is perfectly balanced.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770(2) Q4, Sept 2025 Q6, DECAP770_2 Q22, DECAP770_5 Q15</div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17 / Q7 Discuss the steps involved in searching for an element in a binary search tree, highlighting
+                the algorithm's time complexity and best-case scenarios.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q17 and DECAP770_6 Q7</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 How do you perform an inorder traversal of a binary search tree?</p>
+              <p class="note">Note: Q10 and Q19 in DECAP770_2 ask the same question (internal duplicate in paper).</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q25 How do you insert a new node into a binary search tree?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 6 ===================== -->
+      <section class="unit-section" id="unit6">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 6</div>
+          <h2 class="unit-title">Tree Data Structure 1: AVL Trees — Balancing Operations, B-Trees — Properties and
+            Operations</h2>
+          <span class="unit-count" id="count-unit6"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) What do you mean by balanced tree?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) What are the properties that define B-trees?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(d) and DECAP770_5 Q1(d)</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q7 Explain different applications of AVL tree. Demonstrate operations performed on AVL tree with
+                the help of example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q8 and DECAP770_3 Q7</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Write a function that checks whether an AVL tree is perfectly balanced.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 How is the B-tree structure organized and what is its maximum and minimum degree?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 What is the maximum number of nodes in a multiway tree of height h?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770(2) Q5 and DECAP770_3 Q5</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q26 Explain how B-trees are advantageous in scenarios involving large datasets and disk-based storage.
+              </p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 How many keys can a B-tree of order m and of height h hold?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 7 ===================== -->
+      <section class="unit-section" id="unit7">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 7</div>
+          <h2 class="unit-title">Tree Data Structure 2: Red-Black Trees, Splay Trees, 2-3 Trees — Properties and
+            Operations</h2>
+          <span class="unit-count" id="count-unit7"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) How are nodes in a red-black tree colored, and what is the significance of the colors?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 What is the balancing mechanism used in a red-black tree, and how does it ensure that the tree
+                remains balanced?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13 Explain advantages of Red-Black tree over AVL tree. Demonstrate insertion operation in Red-Black
+                tree.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Explain the properties of splay trees.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Properties of 2-3 trees.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 / Q3 Describe the structure and properties of 2-3 trees, highlighting their ability to maintain
+                balance and support efficient search and insertion operations.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q5 and DECAP770_6 Q3</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 8 ===================== -->
+      <section class="unit-section" id="unit8">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 8</div>
+          <h2 class="unit-title">Heaps: Introduction, Min Heap, Max Heap, Operations on Heap, Priority Queue
+            Implementation</h2>
+          <span class="unit-count" id="count-unit8"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) How are heaps utilized in implementing priority queues?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q1(e), Sept 2025 Q1(e), DECAP770_5 Q1(e)</div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Differentiate between min heaps and max heaps, and discuss their respective applications.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q1 and DECAP770_4 Q1</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q27 What are applications of heap in data structures. How to create max heap with the help of program.
+              </p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 How can you implement a priority queue using a heap data structure?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Properties of complete binary tree.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 9 ===================== -->
+      <section class="unit-section" id="unit9">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 9</div>
+          <h2 class="unit-title">More on Heaps: Heap Sort, Binomial Heaps, Fibonacci Heaps</h2>
+          <span class="unit-count" id="count-unit9"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) What are Fibonacci heaps, and what advantages do they offer?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) What is a binomial heap, and how does it differ from a binary heap?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) What are Binomial heaps?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(f) and DECAP770_5 Q1(f)</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) How is heap sort different from other sorting algorithms?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) Advantages of Heap sort.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p4 p7 p9">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 / Q10 / Q10 / Q5 Write a program/algorithm of Heap sort in detail. How does heap sort work, and
+                what is its time complexity for sorting a list of n elements?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q10, DECAP770_1 Q10, DECAP770_4 Q10, DECAP770_6 Q5</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p5 p8">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q3 / Q13 What is the structure of a Fibonacci Heap node, and how is it different from other heap
+                data structures?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q4, DECAP770_2 Q3, DECAP770_5 Q13</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q24 How does the Fibonacci Heap's decrease-key operation work, and what is its time complexity?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q19 What are Fibonacci heaps, and what advantages do they offer over other types of heaps like binomial
+                heaps?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q25 How do binomial heaps maintain their structure, and explain the operations of insertion.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 10 ===================== -->
+      <section class="unit-section" id="unit10">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 10</div>
+          <h2 class="unit-title">Graphs: Types of Graphs, Adjacency Matrix and Linked Adjacency Chains, Connected
+            Components and Spanning Trees</h2>
+          <span class="unit-count" id="count-unit10"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) How are spanning trees related to minimum spanning trees?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) What is a path in a graph, and what are its different types?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) What do you mean by degree of node in a graph?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(g) and DECAP770_5 Q1(g)</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) Define connected components in a graph.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) How is an adjacency matrix used to represent a graph?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p4 p8">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 / Q23 / Q14 Explain any 4 types of graphs and their characteristics.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q5, DECAP770_1 Q23, DECAP770_5 Q14</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 What is a graph in data structures, and how is it different from other data structures?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Explain applications of graph in detail and explain memory representation of a graph.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q7 and DECAP770_4 Q7</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p6 p9">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 / Q9 / Q10 Differentiate between adjacency matrix and adjacency list in a graph. Write a program to
+                create adjacency matrix of n nodes.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q6, DECAP770_3 Q9, DECAP770_6 Q10</div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 / Q9 Explain the linked adjacency chain representation of a graph, highlighting its differences
+                from the adjacency matrix approach.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q20 and DECAP770_3 Q9</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 What is a minimum spanning tree in a graph, and how is it useful?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Look carefully at the definition of a graph. In one respect, graphs are more specific than trees.
+                What is it?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 What is the relationship between the sum of the degrees of all vertices and the number of edges of
+                graph G = (V, E)?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16 Prove that a tree with n vertices has n−1 edges.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 11 ===================== -->
+      <section class="unit-section" id="unit11">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 11</div>
+          <h2 class="unit-title">More on Graphs: BFS, DFS, Network Flow Problems, Warshall's Algorithm, Topological Sort
+          </h2>
+          <span class="unit-count" id="count-unit11"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) What is Warshall's algorithm used for in graphs?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) What is the difference between breadth-first and depth-first traversal in a graph?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Explain traversing of a graph.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(h) and DECAP770_5 Q1(h)</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) What is the significance of topological sort in directed acyclic graphs (DAGs)?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Time complexity of BFS in a graph.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p4 p8">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q24 / Q17 Explain and write algorithm of DFS in detail.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q8, DECAP770_1 Q24, DECAP770_5 Q17</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q26 How do you implement breadth-first traversal in a graph?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 / Q17 How do you choose between breadth-first and depth-first traversal for a given problem?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770(2) Q10 and DECAP770_2 Q17</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 What is a graph traversal algorithm, and what are its different types?</p>
+              <p class="note">Note: Q15 and Q28 in DECAP770_2 ask the same question (internal duplicate in that paper).
+              </p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Explain properties and working of Floyd-Warshall algorithm in detail.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q9 and DECAP770_4 Q9</div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 / Q8 Describe Warshall's algorithm for finding the shortest path between all pairs of vertices in a
+                graph.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q15 and DECAP770_3 Q8</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p6 p9">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 / Q11 / Q11 Explain the concept of topological sort in directed acyclic graphs (DAGs).</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q7, DECAP770_3 Q11, DECAP770_6 Q11</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 How can topological sort be used to detect cycles in a graph?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 12 ===================== -->
+      <section class="unit-section" id="unit12">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 12</div>
+          <h2 class="unit-title">Hashing Techniques: Linear List Representation, Hash Table Representation, Hash
+            Functions</h2>
+          <span class="unit-count" id="count-unit12"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) Name components of hash table.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) What is a hash function and how does it work?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) What is the role of hash tables in efficient data storage?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) How is linear list representation used in hashing?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 / Q10 Explain hashing in detail. Write steps to perform insertion operation in hash table.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DS-1 Q3 and DECAP770_3 Q10</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q18 What are hash functions, and why are they crucial in hashing? Discuss their role in generating
+                unique hash codes for keys.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q9 and DECAP770_5 Q18</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 What are some common cryptographic hash functions and what are their strengths and weaknesses?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 13 ===================== -->
+      <section class="unit-section" id="unit13">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 13</div>
+          <h2 class="unit-title">Collision Resolution: Separate Chaining, Open Addressing — Linear Probing, Quadratic
+            Probing</h2>
+          <span class="unit-count" id="count-unit13"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) What is separate chaining, and how does it resolve collisions in hashing?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p7 p9">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Discuss collision resolution in hashing. Explain advantages and working of separate chaining method
+                in detail.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP770_1 Q4, DECAP770_4 Q4, DECAP770_6 Q2</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12 What do you mean by probing. Demonstrate different techniques of probing in collision resolution.
+              </p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q28 Explain open addressing with linear probing as a collision resolution method in hashing.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 What are the advantages and disadvantages of linear probing compared to other collision resolution
+                techniques?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP770_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12 Can linear probing be used with open addressing or closed addressing hashing techniques?</p>
+              <p class="note">Note: Q12 and Q27 in DECAP770_2 ask the same question (internal duplicate in that paper).
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 14 ===================== -->
+      <section class="unit-section" id="unit14">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 14</div>
+          <h2 class="unit-title">More on Hashing: Double Hashing, Rehashing</h2>
+          <span class="unit-count" id="count-unit14"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p2 p6 p9">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+                <span class="tag tag-p2">DECAP770 (2)</span>
+                <span class="tag tag-p6">DECAP770_3</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) How does rehashing help maintain performance in a hash table? Explain the concept of rehashing in
+                hashing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same short-form question in DS-1 Q1(j), DECAP770(2) Q1(j), DECAP770_3 Q1(j),
+              DECAP770_6 Q1(j)</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) Advantages of double hashing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(j) and DECAP770_5 Q1(j)</div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DS-1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Discuss the trade-offs involved in using double hashing and rehashing in hash table design. How do
+                these techniques affect memory usage?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP770_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Differentiate between double hashing and rehashing with the help of example.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p4 p7 p8">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">Sept 2025</span>
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p7">DECAP770_4</span>
+                <span class="tag tag-p8">DECAP770_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 / Q3 / Q3 / Q16 Write a program/algorithm to implement basic operations in hash table using double
+                hashing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q7, DECAP770_1 Q3, DECAP770_4 Q3, DECAP770_5 Q16</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p4 p9">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP770 (2)</span>
+                <span class="tag tag-p4">DECAP770_1</span>
+                <span class="tag tag-p9">DECAP770_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 / Q22 / Q6 What is rehashing, and how is it used to improve the performance of a hash table? Define
+                rehashing and discuss its significance in hash table management. When and why is rehashing necessary?
+              </p>
+            </div>
+            <div class="q-repeat-note">⚠ Same concept in DECAP770(2) Q6, DECAP770_1 Q22, DECAP770_6 Q6</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP770_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14 Describe double hashing as a collision resolution technique in hashing.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>DECAP770 — Data Structures | Question Bank</p>
+      <p class="footer-note">All questions organized by unit from past examination papers. Verify figures and blurred
+        content from original papers.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,671 @@
+Question Paper: DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE
+PART A
+
+Q1(a) Find the negation of the proposition "Michael's PC runs linux".
+
+Q1(b) Find the no. of permutation of the word "MATHEMATICS".
+
+Q1(c) Show that a.0 = 0, where a, 0, are elements of Boolean algebra.
+
+Q1(d) State fundamental principal of counting.
+
+Q1(e) Define a k-regular graph.Give one example.
+
+Q1(f) Find the chromatic no. of Cn, ∀ n ≥ 3 ?
+
+Q1(g) What are Kuratowski's graphs.
+
+Q1(h) Find the chromatic number of a complete bipartite graph K(7,8) is:
+
+Q1(i) A full 5-ary tree has 5 leaves. What is the number of vertices 'n' and internal vertices 'i' ?
+
+Q1(j) What do you mean by tree traversal.
+
+PART B
+
+Q2 Use a table to express the values of each of these Boolean functions.
+
+a) F(x,y,z) = [Boolean expression present in paper, verify from figure due to blur]
+
+b) F(x,y,z) = [Boolean expression present in paper, verify from figure due to blur]
+
+Q3 Prove that a graph "G" is Hamiltonian if and only if C(G) is Hamiltonian, where C(G) is closure of graph G.
+
+Q4 Write in English the converse, contrapositive and negation of each statement.
+
+(a) If I had $1,000,000, I'd buy you a fur coat.
+
+(b) If it is not raining and not windy, then I will go running or cycling.
+
+(c) A day that's sunny and not too hot is a good day for walking on the waterfront.
+
+(d) If 11 pigeons live in 10 birdhouses, then there are two pigeons that live in the same birdhouse.
+
+(e) If every domino covers a black square and a white square, then the number of black squares equals the number of white squares.
+
+Q5 If "G" is a connected planar graph with 'n' vertices, 'm' edges and 'f' regions, then prove that n-m+f=2
+
+Q6 Draw the ordered rooted tree corresponding to each of these arithmetic expressions written in prefix notation. Then write each expression using infix notation and find the value of the expression.
+
+a) / * + 5 3 2 1 4
+
+b) / 9 3 + 2 4 - 7 6
+
+[Prefix expressions are slightly blurred in the scan. Verify symbols from the original figure before solving.]
+
+Q7 Find the adjacency and incidence matrix of 6-regular graph.
+
+Q8 Use Kruskal's and Prim's algorithm to find minimum spanning tree for following weighted graph.
+
+[Figure present on Page 1 of DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE]
+
+Q9 How many permutations of the letters ABCDEFG contain
+
+a) the strings BA and GF?
+
+b) the strings ABC and CDE?
+
+Q10 Answer these questions for the partial order represented by this Hasse diagram.
+
+[Figure present on Page 2 of DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE]
+
+a) Find the maximal elements.
+
+b) Find the minimal elements.
+
+c) Is there a greatest element?
+
+d) Is there a least element?
+
+e) Find all upper bounds of {a,b,c}.
+
+f) Find the least upper bound of {a,b,c}, if it exists.
+
+g) Find all lower bounds of {f,g,h}.
+
+h) Find the greatest lower bound of {f,g,h}, if it exists.
+
+Q11 Define chromatic number of a simple graph. Write the chromatic number of the following graphs.
+
+[Two graph figures present on Page 2 of DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE]
+
+Also write the formulae for the chromatic number of the following graphs
+
+(i) Kn
+
+(ii) Wn
+
+-- End of Question Paper --
+
+
+Question Paper: DEMTH403 advanced statistical methods in economics
+PART A
+
+Q1(a) Which of the following statements is/are equivalent to the conditional statement q → p?
+
+(a) p is necessary for q
+
+(b) q is necessary for p
+
+(c) q is sufficient for p
+
+(d) p is sufficient for q.
+
+Q1(b) Let Q(x) be the statement x > 4. What is the truth value of the quantification ∀xQ(x), where the domain consists of all real numbers greater than 4.
+
+Q1(c) Consider the following relations on {1, 2, 3, 4}
+
+R₁ = {(1,1), (1,2), (2,1), (2,2)}
+
+R₂ = {(1,1), (1,2), (1,3), (1,4), (2,2), (2,3), (2,4), (3,3), (3,4), (4,4)}
+
+Which of the given relations is Anti-symmetric?
+
+Q1(d) Find the dual of the Boolean expression x+y.
+
+Q1(e) Define Pigeonhole Principle by giving an example.
+
+Q1(f) How many one-to-one functions are there from a set with 'm' elements to one with 'n' elements?
+
+Q1(g) How many edges are there in K₁₀,₁₂ and Q₅?
+
+Q1(h) Define "Path" by giving an example.
+
+Q1(i) Define "planar" graph by giving at least two examples of "planar" graph and one example of "non-planar" graph.
+
+Q1(j) What is the chromatic number of wheel graph Wₙ and n-dimensional hypercube graph Qₙ?
+
+PART B
+
+Q2 Give an example of a function from N to N that is
+
+a) one-to-one but not onto.
+
+b) onto but not one-to-one.
+
+c) both onto and one-to-one (but different from the identity function).
+
+d) neither one-to-one nor onto.
+
+Q3 Find the duals of the Boolean expressions:
+
+(i) xyz + x̄ȳz̄
+
+(ii) x̄y
+
+Note: The exact overline placement in the scanned expression is slightly unclear. Verify from the original paper before solving.
+
+Q4 Write the cut vertices and cut edges (if any) for Kₙ, Cₙ, Wₙ, Qₙ.
+
+Write at least three cut set having three edges only for the given graph.
+
+[Figure present on Page 2 of DEMTH403 ADVANCE STATISTICAL METHODS IN ECONOMICS]
+
+Q5 Define POSET. Give three different examples of POSET.
+
+Q6 Define Tautology, Contradiction and Contingency.
+
+Show that (p→q) ∧ (q→r) → (p→r) is a tautology.
+
+Q7 Seven women and nine men are on the faculty in the mathematics department at a school.
+
+a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?
+
+b) How many ways are there to select a committee of five members of the department if at least one woman and at least one man must be on the committee?
+
+Q8 For which values of 'n' or 'm, n', Kₙ, Cₙ, Qₙ, Kₘₙ have Euler circuit and Hamilton Circuit.
+
+Q9 Prove that these four statements about the integer 'n' are equivalent:
+
+(i) n² is odd,
+
+(ii) 1 − n is even,
+
+(iii) n³ is odd,
+
+(iv) n² + 1 is even.
+
+Q10 Determine whether the graphs displayed in Figure are isomorphic or not.
+
+[Figure present on Page 2 of DEMTH403 ADVANCE STATISTICAL METHODS IN ECONOMICS]
+
+Q11 Use Prim's and Kruskal's algorithm to find a minimum spanning tree for the given weighted graph.
+
+[Figure present on Page 3 of DEMTH403 ADVANCE STATISTICAL METHODS IN ECONOMICS]
+
+-- End of Question Paper --
+
+
+Question Paper: DEMTH403 (2)
+PART A
+
+Q1(a) Let Q(x, y, z) denote the statement "x - z = y - 3". What are the truth values of the propositions Q(1, 4, 0) and Q(0, 3, 0)?
+
+Q1(b) Let Q(x) be the statement x > 4. What is the truth value of the quantification ∀(xQ(x)), where the domain consists of all real numbers greater than 4.
+
+Q1(c) Consider the following relations on {1, 2, 3, 4}:
+
+R₁ = {(1, 1), (1, 2), (2, 1), (2, 2), (3, 4), (4, 1), (4, 4)}.
+
+R₂ = {(1, 1), (1, 2), (2, 1)}.
+
+Classify the given relations as Reflexive and Transitive.
+
+Q1(d) Show that (1.1) + (0̅.1̅ + 0) = 1.
+
+Q1(e) How many bit strings of length 10 contain
+
+(a) exactly four 1s?
+
+(b) at least four 1s?
+
+Q1(f) Define Pigeonhole Principle by giving an example.
+
+Q1(g) How many edges are there in K₁₀ and C₁₇?
+
+Q1(h) What is the minimum cycle length in complete bipartite graph K(3,3)?
+
+Q1(i) Define "Euler Circuit" and "Hamilton Circuit" by giving an example.
+
+Q1(j) What is the chromatic number of wheel graph Wₙ and n-dimensional hypercube graph Qₙ?
+
+PART B
+
+Q2 Show that (p → q) ∧ (q → r) → (p → r) is a tautology.
+
+Q3 How many permutations of the letters ABCDEFG contain
+
+a) the string BCD?
+
+b) the string CFGA?
+
+c) the strings BA and GF?
+
+Q4 Find the duals of the Boolean expressions:
+
+(i) xyz + x̅y̅z̅
+
+(ii) x̅y̅
+
+Q5 Define Vacuous Proof, Trivial Proof and Proof by contradiction by giving example for each.
+
+Q6 Determine whether the graphs displayed in Figure are isomorphic are not.
+
+[Figure present on Page 1 of DEMTH403 (2).pdf]
+
+Q7 Find the least distance from vertex 'a' to vertex 'z' using Dijkstra's algorithm.
+
+[Figure present on Page 2 of DEMTH403 (2).pdf]
+
+Q8 Write the cut vertices and cut edges (if any) for Kₙ, Cₙ, Wₙ, Qₙ.
+
+Write at least three cut set having three edges only for the given graph.
+
+[Figure present on Page 2 of DEMTH403 (2).pdf]
+
+Q9 Define POSET. Give three different examples of POSET.
+
+Q10 Find the value of the prefix expression
+
+− ↑ 3 2 ↑ 2 3 / 6 − 4 2
+
+and postfix expression
+
+3 2 * 2 ↑ 5 3 − 8 4 / * − .
+
+(Every integer is positive and single digit).
+
+Q11 Seven women and nine men are on the faculty in the mathematics department at a school.
+
+a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?
+
+b) How many ways are there to select a committee of five members of the department if at least one woman and at least one man must be on the committee?
+
+-- End of Question Paper --
+
+
+Question Paper: MathFounDEMTH403 (Sept 2025)
+PART A
+
+Q1(a) Write the truth table of p ∨ q.
+
+Q1(b) Write the converse and contrapositive of the conditional statement q → p ?
+
+Q1(c) State duality principal.
+
+Q1(d) State pigeon hole principal.
+
+Q1(e) Define a k-regular graph.Give one example.
+
+Q1(f) Consider the following relations on {1, 2, 3, 4}:
+
+R₁ = {(1, 1), (1, 2), (2, 1), (2, 2), (3, 4), (4, 1), (4, 4)}.
+
+R₂ = {(1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4)}.
+
+Which of the given relations is Anti-symmetric.
+
+Q1(g) State Handshaking theorem for planar graphs.
+
+Q1(h) Define chromatic number.
+
+Q1(i) Find the dual of the Boolean expression: x+y.
+
+Q1(j) How many edges are there in K₁₀ and C₁₇?
+
+PART B
+
+Q2 Find the dual of each of these compound propositions.
+
+(a) p ∨ ¬q
+
+(b) p ∧ (q ∨ (r ∧ T))
+
+Q3 Seven women and nine men are on the faculty in the mathematics department at a school.
+
+a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?
+
+b) How many ways are there to select a committee of five members of the department if at least one woman and at least one man must be on the committee? [5 Marks]
+
+Q4 One hundred tickets, numbered 1, 2, 3, ..., 100, are sold to 100 different people for a drawing. Four different prizes are awarded, including a grand prize (a trip to Tahiti). How many ways are there to award the prizes if
+
+a) the people holding tickets 19, 47, 73, and 97 all win prizes?
+
+b) none of the people holding tickets 19, 47, 73, and 97 wins a prize?
+
+Q5 Check whether G₁ and G₂ are isomorphic or not. If isomorphic, then establish one-one correspondence.
+
+[Figure present on Page 1 of MathFounDEMTH403 (Sept 2025).pdf]
+
+Q6 Write in English the converse, contrapositive and negation of each statement.
+
+(a) If I had $1,00,00,000, I'd buy you a fur coat.
+
+(b) If it is not raining and not windy, then I will go running or cycling.
+
+(c) A day that's sunny and not too windy is a good day for walking on the waterfront.
+
+(d) If 11 pigeons live in 10 birdhouses, then there are two pigeons that live in the same birdhouse.
+
+(e) If every domino covers a black square and a white square, then the number of black squares equals the number of white squares.
+
+Q6 Prove that a graph "G" is Hamiltonian if and only if C(G) is Hamiltonian, where C(G) is closure of graph G.
+
+Note: The question paper contains duplicate numbering "Q6". This has been preserved exactly as printed.
+
+Q7 Use Prim's and Kruskal' algorithm to find a minimum spanning tree for the given weighted graph.
+
+[Figure present on Page 2 of MathFounDEMTH403 (Sept 2025).pdf]
+
+Q8 Define Partially ordered set. Show that the set of subsets of a finite set S is a partially ordered set.
+
+Q9 Show that K₅ and K₃,₃ are non planar graphs.
+
+Q10 Draw and write the chromatic number of the following graphs.
+
+(i) K₆
+
+(ii) W₆
+
+(iii) K₃,₄
+
+(v) Q₃
+
+State the four color theorem for the planar graphs.
+
+Note: The paper appears to skip "(iv)" and directly shows "(v) Q₃". Preserved exactly as printed.
+
+Q11 Use a table to express the values of each of these Boolean functions.
+
+a) F(x, y, z) = y̅(xz + x̅z̅)
+
+b) F(x, y, z) = xy̅z + (xyz)̅
+
+-- End of Question Paper --
+
+Question Paper: DEMTH403 (NEW)
+PART-B
+
+Q1 Write the Euler circuit and Euler path in the following graphs (if exist). If doesn’t exist, then write the reason for the same.
+
+[Two graph figures present on Page 1 of DEMTH403 (NEW).pdf]
+
+Q2 A committee of 7 has to be formed from 9 boys and 4 girls. In how many ways can this be done when the committee consists of:
+
+(i) Exactly 3 girls?
+
+(ii) At least 3 girls?
+
+(iii) At most 3 girls?
+
+Q3 write the in-order, pre-order and post-order of the following tree.
+
+[Tree figure present on Page 1 of DEMTH403 (NEW).pdf]
+
+Q4 Define lattice. Check whether the following POSET’s
+
+({1,2,3,4,5}, /) and ({1,2,4,8,16}, /) are lattices.
+
+Q5 State and prove Koenig’s theorem.
+
+Q6 Prove or disprove these equalities.
+
+a) x ⊕ (y ⊕ z) = (x ⊕ y) ⊕ z
+
+b) x + (y ⊕ z) = (x + y) ⊕ (x + z)
+
+c) x ⊕ (y + z) = (x ⊕ y) + (x ⊕ z)
+
+Q7 For what values of ‘n’ (‘m,n’) the following graphs are planar?
+
+a) Kₙ
+
+b) Cₙ
+
+c) Wₙ
+
+d) Qₙ
+
+e) Kₘ,ₙ
+
+Q8 Use Krushkal’s algorithm, find the minimum spanning tree of
+
+[Weighted graph figure present on Page 2 of DEMTH403 (NEW).pdf]
+
+Q9 Write the contrapositive and inverse of the statement.
+
+“You cannot ride the roller coaster if you are under 4 feet tall unless you are older than 16 years old.”
+
+Q10 How can the final exams at university be scheduled so that no student has two exams at the same time.
+
+Q11 a) Construct the truth table for:
+
+[(p ∨ ¬q) ↔ (p ⊕ q)] [Expression interpreted from image; verify from original figure if required]
+
+Q11 b) Define trivial proof and vacuous by giving example.
+
+Q12 Find the least distance from vertex ‘a’ to vertex ‘z’ using Dijkstra’s algorithm.
+
+[Graph figure present on Page 2 of DEMTH403 (NEW).pdf]
+
+Q13 Show that a simple graph that has a circuit with an odd number of vertices in it cannot be colored with 2 colors.
+
+Q14 In how many ways can the letters of the world PREMUTATIONS be arranged if the
+
+i) Words start with p and end with S,
+
+ii) Vowels are all together,
+
+iii) There are always 4 letters between P and S?
+
+Q15 a) State the necessary and sufficient conditions for Euler path.
+
+Q15 b) For what values of ‘n’ the graphs Kₙ, Cₙ, Wₙ, Qₙ have Hamilton circuit.
+
+Q16 a) How many vertices does a full 5–ary tree with 100 Internal vertices have? How many leaves does a full 3-ary tree with 100 vertices have?
+
+Q16 b) Either draw a full m-ary tree with 76 leaves and height 3, where m is a positive integer, or show that no such tree exists.
+
+Q17 Find the maximal, minimal, greatest and least elements of the POSET by drawing Hasse diagram,
+
+({3,5,9,15,24,45}, /).
+
+Q18 i) What is the value of each of these prefix expressions?
+
+[Prefix expression not visible in uploaded scan]
+
+Q18 ii) What is the value of each of these postfix expressions?
+
+[Postfix expression not visible in uploaded scan]
+
+Q19 Define Boolean algebra. Show that every element in a Boolean algebra have unique inverse.
+
+Q20 a) Are the graphs G and H displayed in the given figure bipartite? If yes then draw and define the bipartition.
+
+[Graph figure not visible in uploaded scan]
+
+Q20 b) For what values of ‘n’ the graphs Kₙ, Cₙ, Wₙ, Qₙ are bipartite.
+
+-- End of Question Paper --
+
+
+Question Paper: DEMTH403_1
+PART-B
+
+Q1 Show that p → q and ¬p ∨ q are logically equivalent.
+
+Show that ¬(p ∧ q) and ¬p ∨ ¬q are logically equivalent.
+
+Q2 Find the value of the prefix expression + − ↑ 3 2 ↑ 2 3 ∕ 6 − 4 2 and postfix expression 3 2 * 2 ↑ 5 3 − 8 4 ∕ * − . (Every integer is positive and single digit).
+
+Q3 How many ways are there for four men and five women to stand in a line so that
+
+(a) all men stand together?
+
+(b) all women stand together?
+
+A group contains ‘n’ men and ‘n’ women. How many ways are there to arrange these people in a row if the men and women alternate?
+
+Q4 Define Vacuous Proof, Trivial Proof and Proof by contradiction by giving example for each.
+
+Q5 Write the cut vertices and cut edges (if any) for Kn, Cn, Wn, Qn.
+
+Write at least three cut set having three edges only for the given graph.
+
+[Figure present on Page 1 of DEMTH403_1.pdf]
+
+Q6 Check whether G1 and G2 are isomorphic or not. If isomorphic, then establish one-one correspondence.
+
+[Graph G1 and Graph G2 figures present on Page 2 of DEMTH403_1.pdf]
+
+Q7 Consider the following relations on the set of integers:
+
+(a) R1 = {(a,b) | a ≥ b}
+
+(b) R2 = {(a,b) | a = b − 2}
+
+(c) R1 = {(a,b) | |a − b| < 2}
+
+Classify these as Reflexive, Transitive and Symmetric by giving proper reasons.
+
+Q8 Answer these questions about the rooted tree illustrated.
+
+(a) Which vertex is the root?
+
+(b) Which vertices are internal?
+
+(c) Which vertices are leaves?
+
+(d) Which vertices are children of j?
+
+(e) Which vertex is the parent of h?
+
+(f) Which vertices are sibling of o?
+
+(g) Which vertices are ancestors of m?
+
+(h) Which vertices are descendants of b?
+
+[Rooted tree figure required; not visible in extracted pages]
+
+Q8 Use a table to express the values of the Boolean function: F(x, y, z) = y̅(xz + x̅z̅)
+
+Note: The paper contains duplicate numbering "Q8". Preserved exactly as provided.
+
+Q9 Seven women and nine men are on the faculty in the mathematics department at a school.
+
+(a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?
+
+(b) How many ways are there to select a committee of five members of the department if at least one woman and at least one man must be on the committee?
+
+Q10 How many permutations of the letters ABCDEFG contain
+
+(a) the string BCD?
+
+(b) the string CFGA?
+
+(c) the strings BA and GF?
+
+Q11 Construct the truth table for : (p→q) ∧ (¬p→r).
+
+Q12 For which values of ‘n’ or ‘m, n’, Kn, Cn, Qn, Km,n have Euler circuit and Hamilton circuit.
+
+Q13 Define “Strongly Connected”, “Weakley Connected” graph and “Connected component of a graph” by giving an example for each. Also mention what is the “Connected Component” of the given graph.
+
+[Graph figure not visible in uploaded file]
+
+Q14 Answer these questions for the poset: ({2,4,6,9,12,18,27,36,48,60,72}, |).
+
+(a) Find the maximal elements.
+
+(b) Is there a greatest element?
+
+(c) Is there a least element?
+
+(d) Find all upper bounds of {2,9}.
+
+(e) Find the least upper bound of {2,9}, if it exists.
+
+(f) Find all lower bounds of {60,72}.
+
+(g) Find the greatest lower bound of {60,72}, if it exists.
+
+Q15 Use a table to express the values of the Boolean Functions: F(x,y,z) = y̅(xz + x̅z̅)
+
+Q16 Determine the order in which a preorder and a postorder traversal visits the vertices of the given ordered rooted tree.
+
+[Ordered rooted tree figure not visible in uploaded file]
+
+Q17 Prove that these four statements about the integer ‘n’ are equivalent:
+
+(a) n² is odd
+
+(b) 1 − n is even
+
+(c) n³ is odd
+
+(d) n² + 1 is even
+
+Q18 Derive the formulae for the number of edges for Kn, Cn, Wn, Qn using handshaking theorem.
+
+Assume that W has n+1 number of vertices.
+
+Q19 Define the following by giving an example for each:
+
+(a) Function
+
+(b) One-one Function
+
+(c) Onto Function
+
+(d) Bijective Function
+
+Q20 Construct the truth table for : (p→q) ∧ (¬p→r).
+
+Q21 Give an example of a function from N to N that is
+
+(a) one-to-one but not onto.
+
+(b) onto but not one-to-one.
+
+(c) both onto and one-to-one (but different from the identity function)
+
+(d) neither one-to-one nor onto.
+
+Q22 Determine whether the graphs displayed in Figure are isomorphic are not.
+
+[Figure present on Page 6 of DEMTH403_1.pdf]
+
+Q23 For which values of ‘n’ or ‘m, n’, Kn, Cn, Qn, Kn, have Euler circuit and Hamilton circuit.
+
+Note: The second graph notation appears as Kn in the uploaded file and is preserved as written.
+
+Q24 Among 150 people, at least how many persons are there who are born in the same month.
+
+Q25 Write the cut vertices and cut edges in the graph shown in figure.
+
+[Figure present on Page 6 of DEMTH403_1.pdf]
+
+Q26 Let P(x), Q(x), and R(x), be the statement “x is a professor,” “x is ignorant,” and “x is vain”, respectively. Express each of these statements using quantifiers, logical connectives, and P(x), Q(x), and R(x), where the domain consists of all people.
+
+(a) No professors are ignorant.
+
+(b) All ignorant people are vain.
+
+(c) No professors are vain.
+
+Q27 Use a table to express the values of the Boolean function: F(x,y,z) = y̅(xz + x̅z̅)
+
+Q28 Consider the following relations on the set of integers:
+
+(a) R1 = {(a,b) | a ≥ b}
+
+(b) R2 = {(a,b) | a = b − 2}
+
+(c) R1 = {(a,b) | |a − b| < [Unreadable symbol]}
+
+Classify these as Reflexive, Transitive and Symmetric by giving proper reasons.
+
+Q29 Find the value of the prefix expression + − − ↑ 3 2 ↑ 2 3 ∕ 6 − 4 2 and postfix expressions 3 2 * 2 ↑ 5 3 − 8 4 ∕ * − − . (Every integer is positive and single digit).
+
+-- End of Question Set --

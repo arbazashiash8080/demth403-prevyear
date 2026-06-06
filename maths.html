@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEMTH403 – Mathematical Foundation for Computer Science | Question Bank</title>
+  <meta name="description" content="Organized question bank for DEMTH403 Mathematical Foundation for Computer Science. All questions sorted by unit from multiple past papers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="back-link">
+        <span class="back-arrow">←</span> Back to Portal
+      </a>
+      <div class="header-badge">DEMTH403</div>
+      <h1 class="site-title">Mathematical Foundation<br><span>for Computer Science</span></h1>
+      <p class="site-subtitle">Question Bank — Organized by Unit</p>
+      <div class="paper-legend">
+        <span class="legend-label">Papers:</span>
+        <span class="tag tag-p1">DEMTH403</span>
+        <span class="tag tag-p2">ADV STATS</span>
+        <span class="tag tag-p3">DEMTH403 (2)</span>
+        <span class="tag tag-p4">Sept 2025</span>
+        <span class="tag tag-p5">DEMTH403 (NEW)</span>
+        <span class="tag tag-p6">DEMTH403_1</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR + MAIN LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- Sidebar TOC -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-icon">📚</span>
+        <span>Units</span>
+      </div>
+      <nav class="unit-nav" id="unitNav">
+        <a href="#unit1" class="nav-item active" data-unit="1">
+          <span class="nav-num">01</span>
+          <span class="nav-text">Logic &amp; Proofs</span>
+        </a>
+        <a href="#unit2" class="nav-item" data-unit="2">
+          <span class="nav-num">02</span>
+          <span class="nav-text">Variables &amp; Quantifiers</span>
+        </a>
+        <a href="#unit3" class="nav-item" data-unit="3">
+          <span class="nav-num">03</span>
+          <span class="nav-text">Partially Ordered Sets</span>
+        </a>
+        <a href="#unit4" class="nav-item" data-unit="4">
+          <span class="nav-num">04</span>
+          <span class="nav-text">Boolean Algebra</span>
+        </a>
+        <a href="#unit5" class="nav-item" data-unit="5">
+          <span class="nav-num">05</span>
+          <span class="nav-text">Basic Counting</span>
+        </a>
+        <a href="#unit6" class="nav-item" data-unit="6">
+          <span class="nav-num">06</span>
+          <span class="nav-text">Graph Terminology I</span>
+        </a>
+        <a href="#unit7" class="nav-item" data-unit="7">
+          <span class="nav-num">07</span>
+          <span class="nav-text">Graph Terminology II</span>
+        </a>
+        <a href="#unit8" class="nav-item" data-unit="8">
+          <span class="nav-num">08</span>
+          <span class="nav-text">Connectivity</span>
+        </a>
+        <a href="#unit9" class="nav-item" data-unit="9">
+          <span class="nav-num">09</span>
+          <span class="nav-text">Euler &amp; Hamilton Paths</span>
+        </a>
+        <a href="#unit10" class="nav-item" data-unit="10">
+          <span class="nav-num">10</span>
+          <span class="nav-text">Shortest-Path Problems</span>
+        </a>
+        <a href="#unit11" class="nav-item" data-unit="11">
+          <span class="nav-num">11</span>
+          <span class="nav-text">Graph Coloring</span>
+        </a>
+        <a href="#unit12" class="nav-item" data-unit="12">
+          <span class="nav-num">12</span>
+          <span class="nav-text">Trees</span>
+        </a>
+        <a href="#unit13" class="nav-item" data-unit="13">
+          <span class="nav-num">13</span>
+          <span class="nav-text">Spanning Trees</span>
+        </a>
+        <a href="#unit14" class="nav-item" data-unit="14">
+          <span class="nav-num">14</span>
+          <span class="nav-text">Tree Traversal</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-num" id="totalQCount">0</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Papers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Units</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+      <!-- Search Bar -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search questions…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" title="Clear">✕</button>
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">All Papers</button>
+          <button class="chip" data-filter="p1">DEMTH403</button>
+          <button class="chip" data-filter="p2">ADV STATS</button>
+          <button class="chip" data-filter="p3">DEMTH403 (2)</button>
+          <button class="chip" data-filter="p4">Sept 2025</button>
+          <button class="chip" data-filter="p5">DEMTH403 (NEW)</button>
+          <button class="chip" data-filter="p6">DEMTH403_1</button>
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results hidden">
+        <span>🔎</span><br>No questions match your search.
+      </div>
+
+      <!-- ===================== UNIT 1 ===================== -->
+      <section class="unit-section" id="unit1">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 1</div>
+          <h2 class="unit-title">The Foundations: Logic and Proofs</h2>
+          <span class="unit-count" id="count-unit1"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p3 p4 p5 p6">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Find the negation of the proposition "Michael's PC runs linux".</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Show that (p → q) ∧ (q → r) → (p → r) is a tautology.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Define Tautology, Contradiction and Contingency.</p>
+              <p>Show that (p→q) ∧ (q→r) → (p→r) is a tautology.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar question appears in DEMTH403 (2) Q2</div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Write in English the converse, contrapositive and negation of each statement.</p>
+              <ul>
+                <li>(a) If I had $1,000,000, I'd buy you a fur coat.</li>
+                <li>(b) If it is not raining and not windy, then I will go running or cycling.</li>
+                <li>(c) A day that's sunny and not too hot is a good day for walking on the waterfront.</li>
+                <li>(d) If 11 pigeons live in 10 birdhouses, then there are two pigeons that live in the same birdhouse.</li>
+                <li>(e) If every domino covers a black square and a white square, then the number of black squares equals the number of white squares.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Write in English the converse, contrapositive and negation of each statement.</p>
+              <ul>
+                <li>(a) If I had $1,00,00,000, I'd buy you a fur coat.</li>
+                <li>(b) If it is not raining and not windy, then I will go running or cycling.</li>
+                <li>(c) A day that's sunny and not too windy is a good day for walking on the waterfront.</li>
+                <li>(d) If 11 pigeons live in 10 birdhouses, then there are two pigeons that live in the same birdhouse.</li>
+                <li>(e) If every domino covers a black square and a white square, then the number of black squares equals the number of white squares.</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Similar question appears in DEMTH403 Q4</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Write the truth table of p ∨ q.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Write the converse and contrapositive of the conditional statement q → p ?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Find the dual of each of these compound propositions.</p>
+              <ul>
+                <li>(a) p ∨ ¬q</li>
+                <li>(b) p ∧ (q ∨ (r ∧ T))</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Which of the following statements is/are equivalent to the conditional statement q → p?</p>
+              <ul>
+                <li>(a) p is necessary for q</li>
+                <li>(b) q is necessary for p</li>
+                <li>(c) q is sufficient for p</li>
+                <li>(d) p is sufficient for q.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Write the contrapositive and inverse of the statement.</p>
+              <p>"You cannot ride the roller coaster if you are under 4 feet tall unless you are older than 16 years old."</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 a) Construct the truth table for:</p>
+              <p class="mono">[(p ∨ ¬q) ↔ (p ⊕ q)]</p>
+              <p class="note">[Expression interpreted from image; verify from original figure if required]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Show that p → q and ¬p ∨ q are logically equivalent.</p>
+              <p>Show that ¬(p ∧ q) and ¬p ∨ ¬q are logically equivalent.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Construct the truth table for : (p→q) ∧ (¬p→r).</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 Construct the truth table for : (p→q) ∧ (¬p→r).</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated — same as Q11 in DEMTH403_1</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q15</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Define Vacuous Proof, Trivial Proof and Proof by contradiction by giving example for each.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q16</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 b) Define trivial proof and vacuous by giving example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to DEMTH403 (2) Q5 and DEMTH403_1 Q4</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q17</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Define Vacuous Proof, Trivial Proof and Proof by contradiction by giving example for each.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to DEMTH403 (2) Q5</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p6">
+            <div class="q-meta">
+              <span class="q-num">Q18</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Prove that these four statements about the integer 'n' are equivalent:</p>
+              <ul>
+                <li>(i) n² is odd,</li>
+                <li>(ii) 1 − n is even,</li>
+                <li>(iii) n³ is odd,</li>
+                <li>(iv) n² + 1 is even.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q19</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17 Prove that these four statements about the integer 'n' are equivalent:</p>
+              <ul>
+                <li>(a) n² is odd</li>
+                <li>(b) 1 − n is even</li>
+                <li>(c) n³ is odd</li>
+                <li>(d) n² + 1 is even</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q9 and DEMTH403_1 Q17 (internal duplicate)</div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q20</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) State fundamental principal of counting.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 2 ===================== -->
+      <section class="unit-section" id="unit2">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 2</div>
+          <h2 class="unit-title">Variables and Quantifiers</h2>
+          <span class="unit-count" id="count-unit2"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Let Q(x) be the statement x > 4. What is the truth value of the quantification ∀xQ(x), where the domain consists of all real numbers greater than 4.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Let Q(x, y, z) denote the statement "x - z = y - 3". What are the truth values of the propositions Q(1, 4, 0) and Q(0, 3, 0)?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Let Q(x) be the statement x > 4. What is the truth value of the quantification ∀(xQ(x)), where the domain consists of all real numbers greater than 4.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to ADV STATS Q1(b)</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q26 Let P(x), Q(x), and R(x), be the statement "x is a professor," "x is ignorant," and "x is vain", respectively. Express each of these statements using quantifiers, logical connectives, and P(x), Q(x), and R(x), where the domain consists of all people.</p>
+              <ul>
+                <li>(a) No professors are ignorant.</li>
+                <li>(b) All ignorant people are vain.</li>
+                <li>(c) No professors are vain.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q19 Define the following by giving an example for each:</p>
+              <ul>
+                <li>(a) Function</li>
+                <li>(b) One-one Function</li>
+                <li>(c) Onto Function</li>
+                <li>(d) Bijective Function</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Give an example of a function from N to N that is</p>
+              <ul>
+                <li>a) one-to-one but not onto.</li>
+                <li>b) onto but not one-to-one.</li>
+                <li>c) both onto and one-to-one (but different from the identity function).</li>
+                <li>d) neither one-to-one nor onto.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q21 Give an example of a function from N to N that is</p>
+              <ul>
+                <li>(a) one-to-one but not onto.</li>
+                <li>(b) onto but not one-to-one.</li>
+                <li>(c) both onto and one-to-one (but different from the identity function)</li>
+                <li>(d) neither one-to-one nor onto.</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q2</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) How many one-to-one functions are there from a set with 'm' elements to one with 'n' elements?</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 3 ===================== -->
+      <section class="unit-section" id="unit3">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 3</div>
+          <h2 class="unit-title">Partially Ordered Sets</h2>
+          <span class="unit-count" id="count-unit3"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Answer these questions for the partial order represented by this Hasse diagram.</p>
+              <p class="note">[Figure present on Page 2 of DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE]</p>
+              <ul>
+                <li>a) Find the maximal elements.</li>
+                <li>b) Find the minimal elements.</li>
+                <li>c) Is there a greatest element?</li>
+                <li>d) Is there a least element?</li>
+                <li>e) Find all upper bounds of {a,b,c}.</li>
+                <li>f) Find the least upper bound of {a,b,c}, if it exists.</li>
+                <li>g) Find all lower bounds of {f,g,h}.</li>
+                <li>h) Find the greatest lower bound of {f,g,h}, if it exists.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Define POSET. Give three different examples of POSET.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question appears in ADV STATS Q5 and DEMTH403 (2) Q9</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Define Partially ordered set. Show that the set of subsets of a finite set S is a partially ordered set.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Define lattice. Check whether the following POSET's</p>
+              <p class="mono">({1,2,3,4,5}, /) and ({1,2,4,8,16}, /) are lattices.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17 Find the maximal, minimal, greatest and least elements of the POSET by drawing Hasse diagram,</p>
+              <p class="mono">({3,5,9,15,24,45}, /).</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14 Answer these questions for the poset: ({2,4,6,9,12,18,27,36,48,60,72}, |).</p>
+              <ul>
+                <li>(a) Find the maximal elements.</li>
+                <li>(b) Is there a greatest element?</li>
+                <li>(c) Is there a least element?</li>
+                <li>(d) Find all upper bounds of {2,9}.</li>
+                <li>(e) Find the least upper bound of {2,9}, if it exists.</li>
+                <li>(f) Find all lower bounds of {60,72}.</li>
+                <li>(g) Find the greatest lower bound of {60,72}, if it exists.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Consider the following relations on {1, 2, 3, 4}</p>
+              <p class="mono">R₁ = {(1,1), (1,2), (2,1), (2,2)}</p>
+              <p class="mono">R₂ = {(1,1), (1,2), (1,3), (1,4), (2,2), (2,3), (2,4), (3,3), (3,4), (4,4)}</p>
+              <p>Which of the given relations is Anti-symmetric?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Consider the following relations on {1, 2, 3, 4}:</p>
+              <p class="mono">R₁ = {(1, 1), (1, 2), (2, 1), (2, 2), (3, 4), (4, 1), (4, 4)}.</p>
+              <p class="mono">R₂ = {(1, 1), (1, 2), (2, 1)}.</p>
+              <p>Classify the given relations as Reflexive and Transitive.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) Consider the following relations on {1, 2, 3, 4}:</p>
+              <p class="mono">R₁ = {(1, 1), (1, 2), (2, 1), (2, 2), (3, 4), (4, 1), (4, 4)}.</p>
+              <p class="mono">R₂ = {(1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4)}.</p>
+              <p>Which of the given relations is Anti-symmetric.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Consider the following relations on the set of integers:</p>
+              <ul>
+                <li>(a) R1 = {(a,b) | a ≥ b}</li>
+                <li>(b) R2 = {(a,b) | a = b − 2}</li>
+                <li>(c) R1 = {(a,b) | |a − b| &lt; 2}</li>
+              </ul>
+              <p>Classify these as Reflexive, Transitive and Symmetric by giving proper reasons.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q28 Consider the following relations on the set of integers:</p>
+              <ul>
+                <li>(a) R1 = {(a,b) | a ≥ b}</li>
+                <li>(b) R2 = {(a,b) | a = b − 2}</li>
+                <li>(c) R1 = {(a,b) | |a − b| &lt; [Unreadable symbol]}</li>
+              </ul>
+              <p>Classify these as Reflexive, Transitive and Symmetric by giving proper reasons.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as DEMTH403_1 Q7 (internal duplicate; third relation has unreadable symbol)</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 4 ===================== -->
+      <section class="unit-section" id="unit4">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 4</div>
+          <h2 class="unit-title">Boolean Algebra</h2>
+          <span class="unit-count" id="count-unit4"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Show that a.0 = 0, where a, 0, are elements of Boolean algebra.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Use a table to express the values of each of these Boolean functions.</p>
+              <ul>
+                <li>a) F(x,y,z) = [Boolean expression present in paper, verify from figure due to blur]</li>
+                <li>b) F(x,y,z) = [Boolean expression present in paper, verify from figure due to blur]</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Find the dual of the Boolean expression x+y.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) Find the dual of the Boolean expression: x+y.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q1(d)</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) State duality principal.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Find the duals of the Boolean expressions:</p>
+              <ul>
+                <li>(i) xyz + x̄ȳz̄</li>
+                <li>(ii) x̄y</li>
+              </ul>
+              <p class="note">Note: The exact overline placement in the scanned expression is slightly unclear. Verify from the original paper before solving.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Find the duals of the Boolean expressions:</p>
+              <ul>
+                <li>(i) xyz + x̅y̅z̅</li>
+                <li>(ii) x̅y̅</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to ADV STATS Q3</div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Show that (1.1) + (0̅.1̅ + 0) = 1.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Use a table to express the values of each of these Boolean functions.</p>
+              <ul>
+                <li>a) F(x, y, z) = y̅(xz + x̅z̅)</li>
+                <li>b) F(x, y, z) = xy̅z + (xyz)̅</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Use a table to express the values of the Boolean function: F(x, y, z) = y̅(xz + x̅z̅)</p>
+              <p class="note">Note: The paper contains duplicate numbering "Q8". Preserved exactly as provided.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 Use a table to express the values of the Boolean Functions: F(x,y,z) = y̅(xz + x̅z̅)</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated — same as DEMTH403_1 Q8 (second Q8)</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q27 Use a table to express the values of the Boolean function: F(x,y,z) = y̅(xz + x̅z̅)</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated three times in DEMTH403_1 (Q8, Q15, Q27)</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Prove or disprove these equalities.</p>
+              <ul>
+                <li>a) x ⊕ (y ⊕ z) = (x ⊕ y) ⊕ z</li>
+                <li>b) x + (y ⊕ z) = (x + y) ⊕ (x + z)</li>
+                <li>c) x ⊕ (y + z) = (x ⊕ y) + (x ⊕ z)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q19 Define Boolean algebra. Show that every element in a Boolean algebra have unique inverse.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 5 ===================== -->
+      <section class="unit-section" id="unit5">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 5</div>
+          <h2 class="unit-title">Introduction, Basic Counting Principles</h2>
+          <span class="unit-count" id="count-unit5"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Find the no. of permutation of the word "MATHEMATICS".</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Define Pigeonhole Principle by giving an example.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) Define Pigeonhole Principle by giving an example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q1(e)</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) State pigeon hole principal.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to ADV STATS Q1(e) and DEMTH403 (2) Q1(f)</div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) How many bit strings of length 10 contain</p>
+              <ul>
+                <li>(a) exactly four 1s?</li>
+                <li>(b) at least four 1s?</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 How many permutations of the letters ABCDEFG contain</p>
+              <ul>
+                <li>a) the strings BA and GF?</li>
+                <li>b) the strings ABC and CDE?</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 How many permutations of the letters ABCDEFG contain</p>
+              <ul>
+                <li>a) the string BCD?</li>
+                <li>b) the string CFGA?</li>
+                <li>c) the strings BA and GF?</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 How many permutations of the letters ABCDEFG contain</p>
+              <ul>
+                <li>(a) the string BCD?</li>
+                <li>(b) the string CFGA?</li>
+                <li>(c) the strings BA and GF?</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same as DEMTH403 (2) Q3</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p3 p4">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 / Q11 Seven women and nine men are on the faculty in the mathematics department at a school.</p>
+              <ul>
+                <li>a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?</li>
+                <li>b) How many ways are there to select a committee of five members of the department if at least one woman and at least one man must be on the committee?</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in ADV STATS Q7, DEMTH403 (2) Q11, Sept 2025 Q3, DEMTH403_1 Q9</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Seven women and nine men are on the faculty in the mathematics department at a school.</p>
+              <ul>
+                <li>(a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?</li>
+                <li>(b) How many ways are there to select a committee of five members of the department if at least one woman and at least one man must be on the committee?</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q7, DEMTH403 (2) Q11, Sept 2025 Q3</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 A committee of 7 has to be formed from 9 boys and 4 girls. In how many ways can this be done when the committee consists of:</p>
+              <ul>
+                <li>(i) Exactly 3 girls?</li>
+                <li>(ii) At least 3 girls?</li>
+                <li>(iii) At most 3 girls?</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 One hundred tickets, numbered 1, 2, 3, ..., 100, are sold to 100 different people for a drawing. Four different prizes are awarded, including a grand prize (a trip to Tahiti). How many ways are there to award the prizes if</p>
+              <ul>
+                <li>a) the people holding tickets 19, 47, 73, and 97 all win prizes?</li>
+                <li>b) none of the people holding tickets 19, 47, 73, and 97 wins a prize?</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 How many ways are there for four men and five women to stand in a line so that</p>
+              <ul>
+                <li>(a) all men stand together?</li>
+                <li>(b) all women stand together?</li>
+              </ul>
+              <p>A group contains 'n' men and 'n' women. How many ways are there to arrange these people in a row if the men and women alternate?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14 In how many ways can the letters of the world PREMUTATIONS be arranged if the</p>
+              <ul>
+                <li>i) Words start with p and end with S,</li>
+                <li>ii) Vowels are all together,</li>
+                <li>iii) There are always 4 letters between P and S?</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q15</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q24 Among 150 people, at least how many persons are there who are born in the same month.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q16</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 State and prove Koenig's theorem.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 6 ===================== -->
+      <section class="unit-section" id="unit6">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 6</div>
+          <h2 class="unit-title">Graphs Terminology (I)</h2>
+          <span class="unit-count" id="count-unit6"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Define a k-regular graph. Give one example.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Define a k-regular graph. Give one example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as DEMTH403 Q1(e)</div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Find the adjacency and incidence matrix of 6-regular graph.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) How many edges are there in K₁₀,₁₂ and Q₅?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) How many edges are there in K₁₀ and C₁₇?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) How many edges are there in K₁₀ and C₁₇?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as DEMTH403 (2) Q1(g)</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18 Derive the formulae for the number of edges for Kn, Cn, Wn, Qn using handshaking theorem.</p>
+              <p>Assume that W has n+1 number of vertices.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) State Handshaking theorem for planar graphs.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Define "Path" by giving an example.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Determine whether the graphs displayed in Figure are isomorphic or not.</p>
+              <p class="note">[Figure present on Page 2 of DEMTH403 ADVANCE STATISTICAL METHODS IN ECONOMICS]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Determine whether the graphs displayed in Figure are isomorphic are not.</p>
+              <p class="note">[Figure present on Page 1 of DEMTH403 (2).pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to ADV STATS Q10</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Check whether G₁ and G₂ are isomorphic or not. If isomorphic, then establish one-one correspondence.</p>
+              <p class="note">[Figure present on Page 1 of MathFounDEMTH403 (Sept 2025).pdf]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Check whether G1 and G2 are isomorphic or not. If isomorphic, then establish one-one correspondence.</p>
+              <p class="note">[Graph G1 and Graph G2 figures present on Page 2 of DEMTH403_1.pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to Sept 2025 Q5</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q22 Determine whether the graphs displayed in Figure are isomorphic are not.</p>
+              <p class="note">[Figure present on Page 6 of DEMTH403_1.pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to ADV STATS Q10 and DEMTH403 (2) Q6</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q15</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 a) Are the graphs G and H displayed in the given figure bipartite? If yes then draw and define the bipartition.</p>
+              <p class="note">[Graph figure not visible in uploaded scan]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q16</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 b) For what values of 'n' the graphs Kₙ, Cₙ, Wₙ, Qₙ are bipartite.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q17</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) What is the minimum cycle length in complete bipartite graph K(3,3)?</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 7 ===================== -->
+      <section class="unit-section" id="unit7">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 7</div>
+          <h2 class="unit-title">Graphs Terminology (II)</h2>
+          <span class="unit-count" id="count-unit7"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) What are Kuratowski's graphs.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) Define "planar" graph by giving at least two examples of "planar" graph and one example of "non-planar" graph.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 If "G" is a connected planar graph with 'n' vertices, 'm' edges and 'f' regions, then prove that n−m+f=2</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Show that K₅ and K₃,₃ are non planar graphs.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 For what values of 'n' ('m,n') the following graphs are planar?</p>
+              <ul>
+                <li>a) Kₙ</li>
+                <li>b) Cₙ</li>
+                <li>c) Wₙ</li>
+                <li>d) Qₙ</li>
+                <li>e) Kₘ,ₙ</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 8 ===================== -->
+      <section class="unit-section" id="unit8">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 8</div>
+          <h2 class="unit-title">Connectivity</h2>
+          <span class="unit-count" id="count-unit8"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Write the cut vertices and cut edges (if any) for Kₙ, Cₙ, Wₙ, Qₙ.</p>
+              <p>Write at least three cut set having three edges only for the given graph.</p>
+              <p class="note">[Figure present on Page 2 of DEMTH403 ADVANCE STATISTICAL METHODS IN ECONOMICS]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Write the cut vertices and cut edges (if any) for Kₙ, Cₙ, Wₙ, Qₙ.</p>
+              <p>Write at least three cut set having three edges only for the given graph.</p>
+              <p class="note">[Figure present on Page 2 of DEMTH403 (2).pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q4</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Write the cut vertices and cut edges (if any) for Kn, Cn, Wn, Qn.</p>
+              <p>Write at least three cut set having three edges only for the given graph.</p>
+              <p class="note">[Figure present on Page 1 of DEMTH403_1.pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q4 and DEMTH403 (2) Q8</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q25 Write the cut vertices and cut edges in the graph shown in figure.</p>
+              <p class="note">[Figure present on Page 6 of DEMTH403_1.pdf]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13 Define "Strongly Connected", "Weakley Connected" graph and "Connected component of a graph" by giving an example for each. Also mention what is the "Connected Component" of the given graph.</p>
+              <p class="note">[Graph figure not visible in uploaded file]</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 9 ===================== -->
+      <section class="unit-section" id="unit9">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 9</div>
+          <h2 class="unit-title">Euler and Hamilton Paths</h2>
+          <span class="unit-count" id="count-unit9"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) Define "Euler Circuit" and "Hamilton Circuit" by giving an example.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 For which values of 'n' or 'm, n', Kₙ, Cₙ, Qₙ, Kₘₙ have Euler circuit and Hamilton Circuit.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12 For which values of 'n' or 'm, n', Kn, Cn, Qn, Km,n have Euler circuit and Hamilton circuit.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q8</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q23 For which values of 'n' or 'm, n', Kn, Cn, Qn, Kn, have Euler circuit and Hamilton circuit.</p>
+              <p class="note">Note: The second graph notation appears as Kn in the uploaded file and is preserved as written.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q8 and DEMTH403_1 Q12 (internal duplicate)</div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Prove that a graph "G" is Hamiltonian if and only if C(G) is Hamiltonian, where C(G) is closure of graph G.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Prove that a graph "G" is Hamiltonian if and only if C(G) is Hamiltonian, where C(G) is closure of graph G.</p>
+              <p class="note">Note: The question paper contains duplicate numbering "Q6". This has been preserved exactly as printed.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as DEMTH403 Q3</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Write the Euler circuit and Euler path in the following graphs (if exist). If doesn't exist, then write the reason for the same.</p>
+              <p class="note">[Two graph figures present on Page 1 of DEMTH403 (NEW).pdf]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 a) State the necessary and sufficient conditions for Euler path.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 b) For what values of 'n' the graphs Kₙ, Cₙ, Wₙ, Qₙ have Hamilton circuit.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 10 ===================== -->
+      <section class="unit-section" id="unit10">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 10</div>
+          <h2 class="unit-title">Shortest-Path Problems</h2>
+          <span class="unit-count" id="count-unit10"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Find the least distance from vertex 'a' to vertex 'z' using Dijkstra's algorithm.</p>
+              <p class="note">[Figure present on Page 2 of DEMTH403 (2).pdf]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12 Find the least distance from vertex 'a' to vertex 'z' using Dijkstra's algorithm.</p>
+              <p class="note">[Graph figure present on Page 2 of DEMTH403 (NEW).pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as DEMTH403 (2) Q7</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 11 ===================== -->
+      <section class="unit-section" id="unit11">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 11</div>
+          <h2 class="unit-title">Graph Coloring</h2>
+          <span class="unit-count" id="count-unit11"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) Find the chromatic no. of Cn, ∀ n ≥ 3 ?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Find the chromatic number of a complete bipartite graph K(7,8) is:</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) What is the chromatic number of wheel graph Wₙ and n-dimensional hypercube graph Qₙ?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) What is the chromatic number of wheel graph Wₙ and n-dimensional hypercube graph Qₙ?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same as ADV STATS Q1(j)</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Define chromatic number.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Define chromatic number of a simple graph. Write the chromatic number of the following graphs.</p>
+              <p class="note">[Two graph figures present on Page 2 of DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE]</p>
+              <p>Also write the formulae for the chromatic number of the following graphs</p>
+              <ul>
+                <li>(i) Kn</li>
+                <li>(ii) Wn</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Draw and write the chromatic number of the following graphs.</p>
+              <ul>
+                <li>(i) K₆</li>
+                <li>(ii) W₆</li>
+                <li>(iii) K₃,₄</li>
+                <li>(v) Q₃</li>
+              </ul>
+              <p>State the four color theorem for the planar graphs.</p>
+              <p class="note">Note: The paper appears to skip "(iv)" and directly shows "(v) Q₃". Preserved exactly as printed.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 How can the final exams at university be scheduled so that no student has two exams at the same time.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13 Show that a simple graph that has a circuit with an odd number of vertices in it cannot be colored with 2 colors.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 12 ===================== -->
+      <section class="unit-section" id="unit12">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 12</div>
+          <h2 class="unit-title">Trees</h2>
+          <span class="unit-count" id="count-unit12"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) A full 5-ary tree has 5 leaves. What is the number of vertices 'n' and internal vertices 'i' ?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16 a) How many vertices does a full 5–ary tree with 100 Internal vertices have? How many leaves does a full 3-ary tree with 100 vertices have?</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16 b) Either draw a full m-ary tree with 76 leaves and height 3, where m is a positive integer, or show that no such tree exists.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Answer these questions about the rooted tree illustrated.</p>
+              <ul>
+                <li>(a) Which vertex is the root?</li>
+                <li>(b) Which vertices are internal?</li>
+                <li>(c) Which vertices are leaves?</li>
+                <li>(d) Which vertices are children of j?</li>
+                <li>(e) Which vertex is the parent of h?</li>
+                <li>(f) Which vertices are sibling of o?</li>
+                <li>(g) Which vertices are ancestors of m?</li>
+                <li>(h) Which vertices are descendants of b?</li>
+              </ul>
+              <p class="note">[Rooted tree figure required; not visible in extracted pages]</p>
+              <p class="note">Note: The paper contains duplicate numbering "Q8". Preserved exactly as provided.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 13 ===================== -->
+      <section class="unit-section" id="unit13">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 13</div>
+          <h2 class="unit-title">Spanning Trees</h2>
+          <span class="unit-count" id="count-unit13"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Use Kruskal's and Prim's algorithm to find minimum spanning tree for following weighted graph.</p>
+              <p class="note">[Figure present on Page 1 of DEMTH403 MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">ADV STATS</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Use Prim's and Kruskal's algorithm to find a minimum spanning tree for the given weighted graph.</p>
+              <p class="note">[Figure present on Page 3 of DEMTH403 ADVANCE STATISTICAL METHODS IN ECONOMICS]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same concept as DEMTH403 Q8</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">Sept 2025</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Use Prim's and Kruskal' algorithm to find a minimum spanning tree for the given weighted graph.</p>
+              <p class="note">[Figure present on Page 2 of MathFounDEMTH403 (Sept 2025).pdf]</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same concept as DEMTH403 Q8 and ADV STATS Q11</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Use Krushkal's algorithm, find the minimum spanning tree of</p>
+              <p class="note">[Weighted graph figure present on Page 2 of DEMTH403 (NEW).pdf]</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== UNIT 14 ===================== -->
+      <section class="unit-section" id="unit14">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 14</div>
+          <h2 class="unit-title">Tree Traversal</h2>
+          <span class="unit-count" id="count-unit14"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) What do you mean by tree traversal.</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">DEMTH403</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Draw the ordered rooted tree corresponding to each of these arithmetic expressions written in prefix notation. Then write each expression using infix notation and find the value of the expression.</p>
+              <ul>
+                <li>a) / * + 5 3 2 1 4</li>
+                <li>b) / 9 3 + 2 4 - 7 6</li>
+              </ul>
+              <p class="note">[Prefix expressions are slightly blurred in the scan. Verify symbols from the original figure before solving.]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DEMTH403 (2)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Find the value of the prefix expression</p>
+              <p class="mono">− ↑ 3 2 ↑ 2 3 / 6 − 4 2</p>
+              <p>and postfix expression</p>
+              <p class="mono">3 2 * 2 ↑ 5 3 − 8 4 / * − .</p>
+              <p>(Every integer is positive and single digit).</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Find the value of the prefix expression <span class="mono">+ − ↑ 3 2 ↑ 2 3 ∕ 6 − 4 2</span> and postfix expression <span class="mono">3 2 * 2 ↑ 5 3 − 8 4 ∕ * −</span> . (Every integer is positive and single digit).</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to DEMTH403 (2) Q10 (note: prefix expression differs slightly)</div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q29 Find the value of the prefix expression <span class="mono">+ − − ↑ 3 2 ↑ 2 3 ∕ 6 − 4 2</span> and postfix expressions <span class="mono">3 2 * 2 ↑ 5 3 − 8 4 ∕ * − −</span> . (Every integer is positive and single digit).</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar to DEMTH403_1 Q2 (internal duplicate; prefix has extra subtraction)</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Write the in-order, pre-order and post-order of the following tree.</p>
+              <p class="note">[Tree figure present on Page 1 of DEMTH403 (NEW).pdf]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18 i) What is the value of each of these prefix expressions?</p>
+              <p class="note">[Prefix expression not visible in uploaded scan]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DEMTH403 (NEW)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18 ii) What is the value of each of these postfix expressions?</p>
+              <p class="note">[Postfix expression not visible in uploaded scan]</p>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DEMTH403_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16 Determine the order in which a preorder and a postorder traversal visits the vertices of the given ordered rooted tree.</p>
+              <p class="note">[Ordered rooted tree figure not visible in uploaded file]</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div><!-- /page-layout -->
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>DEMTH403 – Mathematical Foundation for Computer Science &nbsp;|&nbsp; Question Bank</p>
+      <p class="footer-note">Questions sourced from 6 past papers. Exact wordings preserved as in original scans.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
