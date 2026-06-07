@@ -21,8 +21,10 @@
       --muted:      #7a7a9a;
       --accent1:    #7c6aff;   /* violet – Maths */
       --accent2:    #22d3ee;   /* cyan   – Data Structures */
+      --accent3:    #f59e0b;   /* amber  – Java */
       --glow1:      rgba(124,106,255,0.18);
       --glow2:      rgba(34,211,238,0.18);
+      --glow3:      rgba(245,158,11,0.18);
     }
 
     html { scroll-behavior: smooth; }
@@ -171,6 +173,7 @@
 
     .subject-card.maths::before   { background: var(--glow1); }
     .subject-card.ds::before      { background: var(--glow2); }
+    .subject-card.java::before    { background: var(--glow3); }
 
     .subject-card:hover {
       transform: translateY(-8px) scale(1.01);
@@ -179,6 +182,7 @@
 
     .subject-card.maths:hover { box-shadow: 0 24px 60px rgba(124,106,255,0.2); }
     .subject-card.ds:hover    { box-shadow: 0 24px 60px rgba(34,211,238,0.18); }
+    .subject-card.java:hover  { box-shadow: 0 24px 60px rgba(245,158,11,0.18); }
 
     .subject-card:hover::before { opacity: 1; }
 
@@ -209,6 +213,12 @@
       color: var(--accent2);
       border-color: rgba(34,211,238,0.3);
       background: rgba(34,211,238,0.08);
+    }
+
+    .java .course-badge {
+      color: var(--accent3);
+      border-color: rgba(245,158,11,0.3);
+      background: rgba(245,158,11,0.08);
     }
 
     .card-icon {
@@ -261,6 +271,7 @@
 
     .maths .stat-val { color: var(--accent1); }
     .ds    .stat-val { color: var(--accent2); }
+    .java  .stat-val { color: var(--accent3); }
 
     .stat-key {
       font-size: 0.72rem;
@@ -284,6 +295,7 @@
 
     .maths .cta-label { color: var(--accent1); }
     .ds    .cta-label { color: var(--accent2); }
+    .java  .cta-label { color: var(--accent3); }
 
     .cta-arrow {
       width: 36px;
@@ -304,6 +316,7 @@
 
     .maths:hover .cta-arrow { background: rgba(124,106,255,0.12); }
     .ds:hover    .cta-arrow { background: rgba(34,211,238,0.10); }
+    .java:hover  .cta-arrow { background: rgba(245,158,11,0.10); }
 
     /* Thin colored top border that slides in on hover */
     .card-accent-bar {
@@ -318,6 +331,7 @@
 
     .maths .card-accent-bar { background: linear-gradient(90deg, var(--accent1), #b48eff); }
     .ds    .card-accent-bar { background: linear-gradient(90deg, var(--accent2), #67e8f9); }
+    .java  .card-accent-bar { background: linear-gradient(90deg, var(--accent3), #fcd34d); }
 
     .subject-card:hover .card-accent-bar { transform: scaleX(1); }
 
@@ -397,6 +411,37 @@
         <div class="card-body">
           <div class="card-title">Advanced Data Structures</div>
           <div class="card-desc">Arrays, stacks, queues, BSTs, AVL, heaps, graphs, hashing and more — 14 units from 9 past papers.</div>
+        </div>
+
+        <div class="card-stats">
+          <div class="stat">
+            <span class="stat-val">14</span>
+            <span class="stat-key">Units</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">9</span>
+            <span class="stat-key">Papers</span>
+          </div>
+        </div>
+
+        <div class="card-cta">
+          <span class="cta-label">Open Question Bank →</span>
+          <span class="cta-arrow">›</span>
+        </div>
+      </a>
+
+      <!-- Java -->
+      <a href="./Java/index.html" class="subject-card java" id="card-java">
+        <div class="card-accent-bar"></div>
+
+        <div class="card-top">
+          <span class="course-badge">DECAP615</span>
+          <div class="card-icon">☕</div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-title">Programming in Java</div>
+          <div class="card-desc">OOP, collections, multithreading, Swing GUI, JDBC, and network programming — 7 units from 9 papers incl. GD Infotech.</div>
         </div>
 
         <div class="card-stats">
