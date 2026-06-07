@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECAP615 – Programming in Java | Question Bank</title>
+  <meta name="description" content="Organized question bank for DECAP615 Programming in Java. All questions sorted by 14 units from multiple past papers including GD Infotech." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .site-header::after { content: 'DECAP615'; }
+    :root {
+      --tag-p7-bg: rgba(251,146,60,0.12);  --tag-p7-c: #fb923c;
+      --tag-p8-bg: rgba(248,113,113,0.12); --tag-p8-c: #f87171;
+      --tag-p9-bg: rgba(34,211,238,0.12);  --tag-p9-c: #22d3ee;
+    }
+    .tag-p7 { background:var(--tag-p7-bg); color:var(--tag-p7-c); }
+    .tag-p8 { background:var(--tag-p8-bg); color:var(--tag-p8-c); }
+    .tag-p9 { background:var(--tag-p9-bg); color:var(--tag-p9-c); }
+    .gdi-badge {
+      display:inline-flex; align-items:center; gap:.3rem;
+      font-size:.67rem; font-weight:600; color:#22d3ee;
+      background:rgba(34,211,238,.08); border:1px solid rgba(34,211,238,.25);
+      border-radius:100px; padding:.13rem .5rem; margin-top:.45rem; letter-spacing:.04em;
+    }
+    .gdi-badge::before { content:'🏫'; font-size:.65rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="back-link"><span class="back-arrow">←</span> Back to Portal</a>
+      <div class="header-badge">DECAP615</div>
+      <h1 class="site-title">Programming in Java<br><span>Question Bank</span></h1>
+      <p class="site-subtitle">Question Bank — Organized by 14 Units · Includes GD Infotech Questions</p>
+      <div class="paper-legend">
+        <span class="legend-label">Papers:</span>
+        <span class="tag tag-p1">Java-1</span>
+        <span class="tag tag-p2">DECAP615 (1)</span>
+        <span class="tag tag-p3">Sept 2025</span>
+        <span class="tag tag-p4">DECAP615_1</span>
+        <span class="tag tag-p5">DECAP615_2</span>
+        <span class="tag tag-p6">DECAP615_3</span>
+        <span class="tag tag-p7">DECAP615_5</span>
+        <span class="tag tag-p8">DECAP615_6</span>
+        <span class="tag tag-p9">GD Infotech</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header"><span class="sidebar-icon">📚</span><span>Units</span></div>
+      <nav class="unit-nav" id="unitNav">
+        <a href="#unit1"  class="nav-item active" data-unit="1"><span class="nav-num">01</span><span class="nav-text">Unit 1: Introduction</span></a>
+        <a href="#unit2"  class="nav-item" data-unit="2"><span class="nav-num">02</span><span class="nav-text">Unit 2: Arrays and Strings</span></a>
+        <a href="#unit3"  class="nav-item" data-unit="3"><span class="nav-num">03</span><span class="nav-text">Unit 3: Collection Framework</span></a>
+        <a href="#unit4"  class="nav-item" data-unit="4"><span class="nav-num">04</span><span class="nav-text">Unit 4: More on Collections</span></a>
+        <a href="#unit5"  class="nav-item" data-unit="5"><span class="nav-num">05</span><span class="nav-text">Unit 5: Multithreading</span></a>
+        <a href="#unit6"  class="nav-item" data-unit="6"><span class="nav-num">06</span><span class="nav-text">Unit 6: More on Multithreading</span></a>
+        <a href="#unit7"  class="nav-item" data-unit="7"><span class="nav-num">07</span><span class="nav-text">Unit 7: Synchronization</span></a>
+        <a href="#unit8"  class="nav-item" data-unit="8"><span class="nav-num">08</span><span class="nav-text">Unit 8: Swings</span></a>
+        <a href="#unit9"  class="nav-item" data-unit="9"><span class="nav-num">09</span><span class="nav-text">Unit 9: More on Swings</span></a>
+        <a href="#unit10" class="nav-item" data-unit="10"><span class="nav-num">10</span><span class="nav-text">Unit 10: Layouts</span></a>
+        <a href="#unit11" class="nav-item" data-unit="11"><span class="nav-num">11</span><span class="nav-text">Unit 11: Managing data using JDBC</span></a>
+        <a href="#unit12" class="nav-item" data-unit="12"><span class="nav-num">12</span><span class="nav-text">Unit 12: More on JDBC</span></a>
+        <a href="#unit13" class="nav-item" data-unit="13"><span class="nav-num">13</span><span class="nav-text">Unit 13: Network Programming</span></a>
+        <a href="#unit14" class="nav-item" data-unit="14"><span class="nav-num">14</span><span class="nav-text">Unit 14: More on Network Programming</span></a>
+      </nav>
+      <div class="sidebar-stats">
+        <div class="stat-item"><span class="stat-num" id="totalQCount">0</span><span class="stat-label">Questions</span></div>
+        <div class="stat-item"><span class="stat-num">9</span><span class="stat-label">Papers</span></div>
+        <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">Units</span></div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+      <!-- Search -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search questions…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" title="Clear">✕</button>
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">All Papers</button>
+          <button class="chip" data-filter="p1">Java-1</button>
+          <button class="chip" data-filter="p2">DECAP615 (1)</button>
+          <button class="chip" data-filter="p3">Sept 2025</button>
+          <button class="chip" data-filter="p4">DECAP615_1</button>
+          <button class="chip" data-filter="p5">DECAP615_2</button>
+          <button class="chip" data-filter="p6">DECAP615_3</button>
+          <button class="chip" data-filter="p7">DECAP615_5</button>
+          <button class="chip" data-filter="p8">DECAP615_6</button>
+          <button class="chip" data-filter="p9">GD Infotech</button>
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results hidden"><span>🔎</span><br>No questions match your search.</div>
+
+      <!-- ===================== UNIT 1 ===================== -->
+      <section class="unit-section" id="unit1">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 1</div>
+          <h2 class="unit-title">Unit 1: Introduction: Introduction to basic java concepts, JDK, JRE, JVM, wrapper classes, inner and nested classes.</h2>
+          <span class="unit-count" id="count-unit1"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q2 Describe the history of Java. Can Java run on any machine? What is needed to run Java on a computer?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q18 (Part B) What is the structure of a Java Program? Discuss with the help of an example.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q3 Suppose m and r are integers. Write a Java expression for m² to obtain a floating point result.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q13 Write an if statement that assigns 1 to x if y is greater than 0.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(a) [Set 2] What do you mean by operator? Describe conditional operator used in JAVA.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q17 (Part B) What are the different Decision Making Statements in Java? Discuss each with the help of an example.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q19 (Part B) Write a program to calculate the perimeter [2*(l+b)] and area [l*b] of a rectangle using classes and objects. Values of length and breadth to be taken from the user at runtime.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p4">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body">
+              <p>Q2 / Q12 The following program is wrong. Reorder the lines so that the program displays morning followed by afternoon.</p>
+              <p class="mono">public class Welcome { System.out.println("afternoon"); System.out.println("morning"); public static void main(String[] args) { } }</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP615 (1) Q2 and DECAP615_1 Q12</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q11 / Q11 (Part B) What is a comment? Is the comment ignored by the compiler? How do you denote a comment line and a comment paragraph?</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q11 and GD Infotech Q11 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q11 (Part A) A wrapper class is a class that envelops the value of every primitive data type.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p8 p9">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(f) [Set 1] / Q20 (Part B) Explain nesting of classes. / What are nested classes? Demonstrate with the help of an example.</p></div>
+            <div class="q-repeat-note">⚠ Same topic in DECAP615_6 Q1(f) and GD Infotech Q20 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q12</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q14 (Part A) Creating a package is simple. Explain the method that supports this statement.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q13</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q17 (Part A) What are file stream classes?</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 2 ===================== -->
+      <section class="unit-section" id="unit2">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 2</div>
+          <h2 class="unit-title">Unit 2: Arrays and Strings: working with arrays and strings, String, String Buffer and String Builder classes, access specifiers, inheritance.</h2>
+          <span class="unit-count" id="count-unit2"></span>
+        </div>
+        <div class="questions-grid">
+
+          <!-- Inheritance / extends / implements -->
+          <div class="q-card" data-paper="p1 p3 p6 p7 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(a) Differentiate between extends and implements keyword.</p></div>
+            <div class="q-repeat-note">⚠ Repeated in Java-1 Q1(a), Sept 2025 Q1(a), DECAP615_3 Q.1(a), DECAP615_5 (a), GD Infotech Q1 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(a) _______________ is the technique of creating new classes by making use of the behavior of the existing classes.</p></div>
+          </div>
+
+          <!-- Interface concepts -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q13 (Part A) The class that implements the interface can use the variables as declared in the interface and cannot modify or change the value of the variable.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q14 (Part B) Once the interfaces are defined, it can be implemented by one or more classes. How can this be achieved? Give a program example.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <!-- Arrays -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(a) [Set 1] Describe the use of array in JAVA with suitable code.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q1 How do you declare and create an array?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q12 (Part A) In an array, the memory is allocated for the same data type sequentially and is given a common name.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p4 p6 p7">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p4">DECAP615_1</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q2 / Q11 / Q.2 / Q2 How do you access elements of an array?</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q2, DECAP615_1 Q11, DECAP615_3 Q.2, DECAP615_5 Q2</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p4 p6 p7">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p4">DECAP615_1</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q6 / Q24 / Q.6 / Q6 How we can declare an array? Explain the different types of array by giving an example of each type. / Explain Array and types of Array in Java.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q6, DECAP615_1 Q24, DECAP615_3 Q.6, DECAP615_5 Q6</div>
+          </div>
+
+          <!-- Strings -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q5 How do you create a formatted string? Differentiate between String, String Buffer and String Builder Class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4 p8">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q21 / Q3 Differentiate between StringBuffer and StringBuilder class.</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615_1 Q21 and DECAP615_6 Q3</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q12</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q13 Differentiate between String, String Buffer and String Builder class with the help of program.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta"><span class="q-num">Q13</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span></div></div>
+            <div class="q-body"><p>Q6 Describe the String class in Java, emphasizing its immutability and common methods for string manipulation. Discuss the implications of immutability on memory management and thread safety. Provide examples to illustrate the usage of string methods.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q14</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q15 (Part A) Give the significance of the String toString() method.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 3 ===================== -->
+      <section class="unit-section" id="unit3">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 3</div>
+          <h2 class="unit-title">Unit 3: Collection Framework: Array List class, List Iterator interface, Linked list class, Tree Set class, Priority Queue class.</h2>
+          <span class="unit-count" id="count-unit3"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(b) / Q2 (Part A) What are the advantages of using ArrayList class used in JAVA?</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(b) and GD Infotech Q2 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(b) Describe the internal structure of a LinkedList and its advantages.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(b), DECAP615_3 Q.1(b), DECAP615_5 (b)</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(b) [Set 1] Describe at least two functions of linked list class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body">
+              <p>Q14 Write a note on the following:</p>
+              <ul><li>(a) LinkedList Class</li><li>(b) ListIterator Interface</li></ul>
+            </div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(b) What is the significance of using TreeSet class?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(b) [Set 2] Discuss scenarios where TreeSet is preferred over other Set implementations.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p8 p9">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p8">DECAP615_6</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q8 / Q2 / Q8 (Part B) Explain the TreeSet class in Java's Collection Framework. Discuss the characteristics of TreeSet, including automatic sorting, uniqueness of elements, and efficient search, insertion, and deletion operations.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q8, DECAP615_6 Q2, GD Infotech Q8 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span></div></div>
+            <div class="q-body"><p>Q7 Discuss the PriorityQueue class in Java's collection framework. Write a program to implement priority queue.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 4 ===================== -->
+      <section class="unit-section" id="unit4">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 4</div>
+          <h2 class="unit-title">Unit 4: More on Collection Framework: Comparable and Comparator, Properties class, Lambda expressions.</h2>
+          <span class="unit-count" id="count-unit4"></span>
+        </div>
+        <div class="questions-grid">
+
+          <!-- Comparable / Comparator -->
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(c) / Q3 (Part A) Compare and contrast the usage of Comparable and Comparator interfaces.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(c) and GD Infotech Q3 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(c) Discuss the APIs utilized for sorting objects using class data members.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(c) [Set 1] Describe any two differences between Comparable and Comparator interfaces.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(c) [Set 2] Compare and contrast the usage of Comparable and Comparator interfaces.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p5 p6 p7">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p5">DECAP615_2</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q8 / Q5 / Q.8 / Q8 Explain the concept of Comparator in Java and compare it with Comparable. How does the Comparator interface facilitate custom sorting of objects based on criteria other than their natural ordering? Provide a detailed example demonstrating the implementation and usage of a Comparator for sorting objects.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q8, DECAP615_2 Q5, DECAP615_3 Q.8, DECAP615_5 Q8</div>
+          </div>
+
+          <!-- Default properties -->
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(c) Provide a practical scenario where default properties would be beneficial.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(c), DECAP615_3 Q.1(c), DECAP615_5 (c)</div>
+          </div>
+
+          <!-- Properties class -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q22 How we can create a properties class? Also explain the various methods of property class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q16 Describe the purpose of the Properties class in Java. Provide examples illustrating the creation, loading, and manipulation of properties using the Properties class.</p></div>
+          </div>
+
+          <!-- Lambda expressions -->
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q6 / Q6 (Part B) Write a program to implement lambda expression accepting two parameters in JAVA.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q6 and GD Infotech Q6 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p4">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q3 / Q4 Explain the significance of using Lambda Expressions along with its types. How Lambda Expressions are different from functions?</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615 (1) Q3 and DECAP615_1 Q4</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q14 "A Lambda expression is a small piece of code that takes in input and outputs a value." Justify the statement with appropriate example.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 5 ===================== -->
+      <section class="unit-section" id="unit5">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 5</div>
+          <h2 class="unit-title">Unit 5: Multithreading: implementing multithreading, life cycle of a thread, thread communication.</h2>
+          <span class="unit-count" id="count-unit5"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(d) What is the difference between thread and multi-thread?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(d) [Set 1] What are the ways to define threads in Java?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(d) [Set 2] What do you mean by multi threading?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(d) Draw a diagram to represent the life cycle of a thread.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(d), DECAP615_3 Q.1(d), DECAP615_5 (d)</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q7 With the help of a diagram explain the various states of a thread.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q16 (Part A) Which state does the thread enter when a thread class is created at any instance? Which method is used to return the name of the thread group?</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q4 / Q.4 / Q4 Explain the concept of creation of a thread in JAVA in detail. (with suitable code)</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q4, DECAP615_3 Q.4, DECAP615_5 Q4</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q10 / Q10 (Part B) Explain the differences between extending the Thread class and implementing the Runnable interface. Illustrate the difference with the help of program.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q10 and GD Infotech Q10 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span></div></div>
+            <div class="q-body"><p>Q10 Describe the thread life cycle in detail.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q18 Explain the life cycle of a thread in Java in detail. Provide a single program code to illustrate the implementation of different stages of thread life cycle.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q6 Explain the various methods used for thread communication by giving the example of each method.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 6 ===================== -->
+      <section class="unit-section" id="unit6">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 6</div>
+          <h2 class="unit-title">Unit 6: More on Multithreading: suspending, resuming, deadlock and stopping threads.</h2>
+          <span class="unit-count" id="count-unit6"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(d) / Q4 (Part A) Give the syntax of suspending and resuming a thread.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(d) and GD Infotech Q4 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(f) / Q6 (Part A) Describe suspending and resuming of a thread.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(f) and GD Infotech Q6 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q18 Discuss in detail the different methods of stopping and suspending a thread.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q10 Explain the different methods used for avoiding deadlocks.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 7 ===================== -->
+      <section class="unit-section" id="unit7">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 7</div>
+          <h2 class="unit-title">Unit 7: Synchronization: thread synchronization, handling exceptions during multithreading.</h2>
+          <span class="unit-count" id="count-unit7"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(e) What do you understand from the term exception? Discuss the various types of exception.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(e) [Set 2] Define exception with general syntax used in JAVA.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(e) [Set 1] How do you handle exceptions in multithreaded Java applications?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q9 Write a program to differentiate the implementation of checked and un-checked exception.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q19 Write a program to explain arithmetic exception in JAVA.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q13 (Part B) "Finally blocks are executed once the try block exits." Justify.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 8 ===================== -->
+      <section class="unit-section" id="unit8">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 8</div>
+          <h2 class="unit-title">Unit 8: Swings: JButton class, JRadioButton class, JTextArea class, JComboBox class, JTable class.</h2>
+          <span class="unit-count" id="count-unit8"></span>
+        </div>
+        <div class="questions-grid">
+
+          <!-- JButton (command button) -->
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(e) / Q5 (Part A) Describe the general syntax to create a command button using Swings.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(e) and GD Infotech Q5 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <!-- JRadioButton / JTextArea / JComboBox -->
+          <div class="q-card" data-paper="p1 p8 p9">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p8">DECAP615_6</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q5 / Q11 / Q5 (Part B) Explain JRadioButton class, JTextArea class, JComboBox class used in swings.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q5, DECAP615_6 Q11, GD Infotech Q5 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <!-- JRadioButton detailed -->
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q11 / Q.11 / Q11 Explain the role of the JRadioButton class in Java Swing. How does it differ from other components like checkboxes? Illustrate the difference with the help of program.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q11, DECAP615_3 Q.11, DECAP615_5 Q11</div>
+          </div>
+
+          <div class="q-card" data-paper="p5 p8">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1 / Q1 Explain the role of the JRadioButton class in Java Swing. How does it differ from other components like checkboxes? Illustrate the differences with the help of program.</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615_2 Q1 and DECAP615_6 Q1 (Part B)</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body">
+              <p>Q16 Write a note on the following:</p>
+              <ul><li>(a) JTextArea Class</li><li>(b) JRadioButton Class</li></ul>
+            </div>
+          </div>
+
+          <!-- JComboBox -->
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(e) Describe the JComboBox class in Java Swing. What are common use cases for it?</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(e), DECAP615_3 Q.1(e), DECAP615_5 (e)</div>
+          </div>
+
+          <!-- JTable -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q9 "The JTable class is used to display data in tabular form" — comment on the statement. Write a program to implement the JTable class.</p></div>
+          </div>
+
+          <!-- AWT / Applets / Frames / Events -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q16 (Part B) What are the different AWT Controls? Discuss any two in detail.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q12 (Part B) "The interface specifies four methods that are invoked when a component is resized, moved, shown or hidden." Justify.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q20 (Part A) "The mousePressed() and mouseReleased() methods are invoked when the mouse is pressed and released, respectively."</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q19 (Part A) Frames can be closed by just clicking on the close button.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q12</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q18 (Part A) An applet tag is used to add Java applets. Elaborate.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q13</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q21 (Part B) How can an image be displayed using an applet? Discuss with an example.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 9 ===================== -->
+      <section class="unit-section" id="unit9">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 9</div>
+          <h2 class="unit-title">Unit 9: More on Swings: JColorChooser class, JProgressBar class, JSlider class.</h2>
+          <span class="unit-count" id="count-unit9"></span>
+        </div>
+        <div class="questions-grid">
+
+          <!-- JColorChooser -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(f) Differentiate between HSV and HSL of color chooser pane.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(f) Explain the function setColor(Color color) used in swings.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(f), DECAP615_3 Q.1(f), DECAP615_5 (f)</div>
+          </div>
+
+          <!-- JProgressBar -->
+          <div class="q-card" data-paper="p1 p8 p9">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p8">DECAP615_6</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q2 / Q20 / Q2 (Part B) Compare and contrast the usage of JProgressBar and JSlider components in Java Swing applications. In what situations would you choose one over the other? Discuss the strengths and limitations of each component in different application contexts.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q2, DECAP615_6 Q20, GD Infotech Q2 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q10 How we can declare JProgressBar class? Explain the various constructors of JProgressBar.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q20 "JProgressBar is a visual representation of the progress of a task" — comment on the statement by explaining the various constructors of JProgressBar class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span></div></div>
+            <div class="q-body"><p>Q2 Discuss the various customization options available for styling and configuring a JProgressBar instance. Provide code examples demonstrating customization techniques.</p></div>
+          </div>
+
+          <!-- JSlider -->
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q5 / Q.5 / Q5 What is the significance of using JSlider? Discuss the various constructors of JSlider.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q5, DECAP615_3 Q.5, DECAP615_5 Q5</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q11 Elaborate on the various constructors and methods of JSlider class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(f) [Set 2] How does the JSlider class allow the users to select a value from a continuous range using a draggable thumb?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q7 Describe the event handling mechanism associated with the JSlider class. Give a practical example demonstrating event handling with JSlider.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 10 ===================== -->
+      <section class="unit-section" id="unit10">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 10</div>
+          <h2 class="unit-title">Unit 10: Layouts: layout manager, Border Layout, Grid Layout, Flow Layout, Box Layout, Card Layout.</h2>
+          <span class="unit-count" id="count-unit10"></span>
+        </div>
+        <div class="questions-grid">
+
+          <!-- General Layout -->
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q9 / Q9 (Part B) Discuss the various scenarios that can help us choose the best layout manager.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q9 and GD Infotech Q9 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(g) "Layout Managers are used to putting the components in the correct order" — comment on the statement.</p></div>
+          </div>
+
+          <!-- GridLayout -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(g) [Set 2] Discuss the shortcomings of Grid Layout.</p></div>
+          </div>
+
+          <!-- FlowLayout -->
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(g) / Q7 (Part A) When is it required to use flow layout?</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(g) and GD Infotech Q7 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q5 Explain the various constructors of FlowLayout by giving the example of each constructor.</p></div>
+          </div>
+
+          <!-- BoxLayout -->
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(g) Give any real-life scenario where BoxLayout can be applied.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(g), DECAP615_3 Q.1(g), DECAP615_5 (g)</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p4">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q10 / Q23 "BoxLayout aids in the horizontal or vertical arrangement of components within the container" — justify the statement with the help of a program.</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615 (1) Q10 and DECAP615_1 Q23</div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p5 p6 p7">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p5">DECAP615_2</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q10 / Q8 / Q.10 / Q10 Discuss the purpose and functionality of BoxLayout in Java Swing. How does it facilitate the arrangement of components along a single axis? Offer a code example to demonstrate its usage.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q10, DECAP615_2 Q8, DECAP615_3 Q.10, DECAP615_5 Q10</div>
+          </div>
+
+          <!-- CardLayout -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(g) [Set 1] Compare CardLayout and BoxLayout.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q15 Explain the various methods of CardLayout.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q9 Describe the role of CardLayout in Java Swing. How does it enable the switching between multiple components within a single container? Provide a practical scenario where CardLayout can be beneficial.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q12</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q15 Write a script to explain card layout.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 11 ===================== -->
+      <section class="unit-section" id="unit11">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 11</div>
+          <h2 class="unit-title">Unit 11: Managing data using JDBC: introduction to JDBC, Connectivity with database, CRUD operations, Connection interface.</h2>
+          <span class="unit-count" id="count-unit11"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2 p8">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(h) Why we use JDBC? / Q1(h) [Set 2] What is the use of JDBC?</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615 (1) Q1(h) and DECAP615_6 Q1(h) [Set 2]</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(h) [Set 1] Discuss the importance of JDBC with the help of real life scenario.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(h) What is the role of ODBC in JDBC? Explain.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(h), DECAP615_3 Q.1(h), DECAP615_5 (h)</div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span></div></div>
+            <div class="q-body"><p>Q4 Explain the concept of JDBC (Java Database Connectivity) and its role in developing Java applications that interact with databases. Discuss the benefits of using JDBC compared to other database access methods.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q3 / Q3 (Part B) Explain CRUD operations with suitable example.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q3 and GD Infotech Q3 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p2 p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q4 / Q9 / Q.9 / Q9 Write a program to show the implementation of CRUD operations in JDBC.</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615 (1) Q4, Sept 2025 Q9, DECAP615_3 Q.9, DECAP615_5 Q9</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q5 Explain the four basic CRUD (Create, Read, Update, Delete) operations used for data manipulation in databases. Write a program to implement these operations.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q17 Describe the steps involved in establishing a connection between a Java application and a database using JDBC.</p></div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 12 ===================== -->
+      <section class="unit-section" id="unit12">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 12</div>
+          <h2 class="unit-title">Unit 12: More on JDBC: Statement interface, Result Set interface, Prepared Statement, Result Set Meta Data, and Database Metadata.</h2>
+          <span class="unit-count" id="count-unit12"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(i) How the create statement is different from prepared statement?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q1(i) What is the use of Statement interface?</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q1(i), DECAP615_3 Q.1(i), DECAP615_5 (i)</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(i) [Set 2] Discuss the functionality of the Statement interface in Java Database Connectivity (JDBC).</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q7 "The DatabaseMetaData interface provides methods for obtaining information about the database" — comment on the statement. Discuss in detail the various methods of DatabaseMetaData Interface.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p8 p9">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p8">DECAP615_6</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q7 / Q6 / Q7 (Part B) Explain any five methods of MetaData Interface.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q7, DECAP615_6 Q6, GD Infotech Q7 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 13 ===================== -->
+      <section class="unit-section" id="unit13">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 13</div>
+          <h2 class="unit-title">Unit 13: Network Programming: Java network terminology, socket classes, server socket classes.</h2>
+          <span class="unit-count" id="count-unit13"></span>
+        </div>
+        <div class="questions-grid">
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(h) / Q8 (Part A) Describe the advantage of using a network protocol driver.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(h) and GD Infotech Q8 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p9">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(i) / Q9 (Part A) What is the use of Socket Class in JAVA?</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q1(i) and GD Infotech Q9 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p1 p8 p9">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p8">DECAP615_6</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q4 / Q21 / Q4 (Part B) What is the significance of socket programming. How we establish a connection between client and server using socket programming.</p></div>
+            <div class="q-repeat-note">⚠ Same in Java-1 Q4, DECAP615_6 Q21, GD Infotech Q4 (Part B)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q17 Differentiate between Socket and ServerSocket class. Write a program to show the implementation of both classes.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p5 p8">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q3 / Q12 How do classes such as Socket and ServerSocket enable the establishment of network connections between client and server applications? Provide examples demonstrating the creation and usage of socket objects for network communication.</p></div>
+            <div class="q-repeat-note">⚠ Same in DECAP615_2 Q3 and DECAP615_6 Q12</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q4 Explain Java Socket programming with an example.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q3 / Q.3 / Q3 Discuss techniques such as encryption, authentication, and firewall configuration to enhance network security in Java applications.</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q3, DECAP615_3 Q.3, DECAP615_5 Q3</div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(i) [Set 1] Explore the security considerations and best practices for Java network programming.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q9</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(j) [Set 1] Discuss the security consideration in Java network programming.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q10</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q1(j) [Set 2] What is the significance of Hostname?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta"><span class="q-num">Q11</span><div class="q-tags"><span class="tag tag-p8">DECAP615_6</span></div></div>
+            <div class="q-body"><p>Q8 Discuss the use of proxies in Java network programming. How can proxies be configured, and what are their advantages?</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta"><span class="q-num">Q12</span><div class="q-tags"><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q15 (Part B) "No matter what type of information is being transferred and where the information is coming from or going to, the algorithm for reading and writing the data remains the same." Write the steps followed in these algorithms.</p></div>
+            <div class="gdi-badge">GD Infotech Question</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 14 ===================== -->
+      <section class="unit-section" id="unit14">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 14</div>
+          <h2 class="unit-title">Unit 14: More on Network Programming: URL class, URL connection class, Datagram Socket class, Java socket programming.</h2>
+          <span class="unit-count" id="count-unit14"></span>
+        </div>
+        <div class="questions-grid">
+
+          <!-- URLConnection.openConnection() - most repeated question! -->
+          <div class="q-card" data-paper="p1 p3 p6 p7 p9">
+            <div class="q-meta"><span class="q-num">Q1</span><div class="q-tags"><span class="tag tag-p1">Java-1</span><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span><span class="tag tag-p9">GD Infotech</span></div></div>
+            <div class="q-body"><p>Q1(j) / Q1(j) / Q.1(j) / (j) / Q10 (Part A) What is the use of URLConnection.openConnection() method?</p></div>
+            <div class="q-repeat-note">⚠ Repeated in Java-1 Q1(j), Sept 2025 Q1(j), DECAP615_3 Q.1(j), DECAP615_5 (j), GD Infotech Q10 (Part A)</div>
+            <div class="gdi-badge">Also in GD Infotech</div>
+          </div>
+
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q2</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q1(j) Enlist the various parts of URL along with their purpose.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q3</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q6 "The URLConnection class represents a communication link between the URL and the application" — Justify the statement with example.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q4</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q8 Elucidate the various methods and components of URL class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta"><span class="q-num">Q5</span><div class="q-tags"><span class="tag tag-p4">DECAP615_1</span></div></div>
+            <div class="q-body"><p>Q19 With example explain the various methods of URL class.</p></div>
+          </div>
+
+          <!-- DatagramPacket -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta"><span class="q-num">Q6</span><div class="q-tags"><span class="tag tag-p2">DECAP615 (1)</span></div></div>
+            <div class="q-body"><p>Q8 With example explain the various constructors and methods of DatagramPacket class.</p></div>
+          </div>
+
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta"><span class="q-num">Q7</span><div class="q-tags"><span class="tag tag-p5">DECAP615_2</span></div></div>
+            <div class="q-body"><p>Q9 Explain any five DatagramPacket class methods in detail.</p></div>
+          </div>
+
+          <!-- Serialization -->
+          <div class="q-card" data-paper="p3 p6 p7">
+            <div class="q-meta"><span class="q-num">Q8</span><div class="q-tags"><span class="tag tag-p3">Sept 2025</span><span class="tag tag-p6">DECAP615_3</span><span class="tag tag-p7">DECAP615_5</span></div></div>
+            <div class="q-body"><p>Q7 / Q.7 / Q7 Describe the concept of serialization and its relevance in Java socket programming. How does it contribute to data transmission over the network?</p></div>
+            <div class="q-repeat-note">⚠ Same in Sept 2025 Q7, DECAP615_3 Q.7, DECAP615_5 Q7</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+    </main><!-- /main-content -->
+  </div><!-- /page-layout -->
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>DECAP615 — Programming in Java · Question Bank · 14 Units</p>
+      <p class="footer-note">Questions sourced from 8 past papers &amp; GD Infotech. Organized by unit for exam preparation.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+
+  <script src="../script.js"></script>
+</body>
+</html>

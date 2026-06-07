@@ -1,0 +1,439 @@
+Question Paper: Java1
+
+PART A
+
+Q1(a) Differentiate between extends and implements keyword.
+
+(b) What are the advantages of using array list class uded in JAVA?
+
+(c) Compare and contrast the usage of Comparable and Comparator interfaces.
+
+(d) Give the syntax of suspending and resuming a thread.
+
+(e) Describe the general syntax to create a command button using swings.
+
+(f) Describe suspending and resuming of a thread?
+
+(g) When it is required to use flow layout?
+
+(h) Describe the advantage of using network protocol driver
+
+(i) What is the use of Socket Class in JAVA?
+
+(j) What is the use of URLConnectionopenConnection() method?
+
+PART B
+
+Q2 Compare and contrast the usage of JProgressBar and JSlider components in Java Swing applications. In what situations would you choose one over the other? Discuss the strengths and limitations of each component in different application contexts.
+
+Q3 Explain CRUD operations with suitable example
+
+Q4 What is the significance of socket programming. How we establish a connection between client and server using socket programming.
+
+Q5 Explain JRadioButton class, JTextArea class, JComboBox class used in swings
+
+Q6 Write a program to implement lambda expression accepting two parameters in JAVA.
+
+Q7 Explain any five methods of MetaData Interface.
+
+Q8 Explain the TreeSet class in Java's Collection Framework. Discuss the characteristics of TreeSet, including automatic sorting, uniqueness of elements, and efficient search, insertion, and deletion operations.
+
+Q9 Discuss the various scenarios that can help us choose the best layout manager.
+
+Q10 Explain the differences between extending the Thread class and implementing the Runnable interface. Illustrate the difference with the help of program.
+
+Q11 What is a comment? Is the comment ignored by the compiler? How do you denote a comment line and a comment paragraph?
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP615 (1)
+
+PART A
+
+Q1(a) _______________ is the technique of creating new classes by making use of the behavior of the existing classes.
+
+(b) What is the significance of using TreeSet class?
+
+(c) Discuss the APIs utilize for sorting objects using class data members.
+
+(d) What is the difference between thread and multi-thread.
+
+(e) What do you understand from the term exception? Discuss the various types of exception.
+
+(f) Differentiate between HSV and HSL of color chooser pane.
+
+(g) " Layout Managers are used to putting the components in the correct order " comment on the statement.
+
+(h) Why we use JDBC?
+
+(i) How the create statement is different from prepared statement?
+
+(j) Enlist the various parts of URL along with their purpose.
+
+PART B
+
+Q2 The following program is wrong. Reorder the lines so that the program displays morning followed by afternoon.
+
+public static void main(String[] args) {
+
+}
+
+public class Welcome {
+
+System.out.println("afternoon");
+
+System.out.println("morning");
+
+}
+
+Q3 Explain the significance of using Lambda Expressions along with its types. How Lambda Expressions are different from functions?
+
+Q4 Write a program to show the implementation of CRUD operations in JDBC.
+
+Q5 How do you create a formatted string? Differentiate between String, String Buffer and String Builder Class.
+
+Q6 Explain the various methods used for thread communication by giving the example of each method.
+
+Q7 " The DatabaseMetaData interface provides methods for obtaining information about the database " comment on the statement. Discuss in detail the various methods of Methods of DatabaseMetaData Interface.
+
+Q8 With example explain the various constructors and methods of DatagramPacket class.
+
+Q9 Write a program to differentiate the implementation of checked and un-checked exception.
+
+Q10 " BoxLayout aids in the horizontal or vertical arrangement of components within the container" justify the statement with the help of a program.
+
+Q11 Elaborate on the various constructors and methods of JSlider class.
+
+-- End of Question Paper --
+
+
+Question Paper: JavaProgDECAP615 (Sept 2025)
+
+PART A
+
+Q1(a) Differentiate between extends and implements keyword.
+
+(b) Describe the internal structure of a LinkedList and its advantages.
+
+(c) Provide a practical scenario where default properties would be beneficial.
+
+(d) Draw a diagram to represent the life cycle of a thread.
+
+(e) Describe the JComboBox class in Java Swing. what are common use cases for it?
+
+(f) Explain the function setColor(Color color) used in swings.
+
+(g) Give any real-life scenario where Box Layout can be applied.
+
+(h) What is the role of ODBC in JDBC? Explain
+
+(i) What is the use of statement interface?
+
+(j) What is the use of URLConnectionopenConnection() method?
+
+PART B
+
+Q2 How do you access elements of an array?
+
+Q3 Discuss techniques such as encryption, authentication, and firewall configuration to enhance network security in Java applications.
+
+Q4 Explain the concept of creation of a thread in JAVA in detail. (with suitable code)
+
+Q5 What is the significance of using JSlider? Discuss the various constructors of JSlider.
+
+Q6 How we can declare an array. explain the different types of array by giving the example of each type.
+
+Q7 Describe the concept of serialization and its relevance in Java socket programming. How does it contribute to data transmission over the network?
+
+Q8 Explain the concept of Comparator in Java and compare it with Comparable. How does the Comparator interface facilitate custom sorting of objects based on criteria other than their natural ordering? Provide a detailed example demonstrating the implementation and usage of a Comparator for sorting objects.
+
+Q9 Write a program to show the implementation of CRUD operations in JDBC.
+
+Q10 Discuss the purpose and functionality of BoxLayout in Java Swing. How does it facilitate the arrangement of components along a single axis? Offer a code example to demonstrate its usage.
+
+Q11 Explain the role of the JRadioButton class in Java Swing. How does it differ from other components like checkboxes? Illustrate the difference with the help of program.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP615_1
+
+PART-B
+
+Q1 How do you declare and create an array?
+
+Q2 Describe the history of Java. Can Java run on any machine? What is needed to run Java on a computer?
+
+Q3 Suppose m and r are integers. Write a Java expression for m2 to obtain a floating point result.
+
+Q4 Explain the significance of using Lambda Expressions along with its types. How Lambda Expressions are different from functions?
+
+Q5 Explain the various constructors of Flow Layout by giving the example of each constructors.
+
+Q6 “The URL Connection class represents a communication link between the URL and the application” Justify the statement with example.
+
+Q7 With the help of a diagram explain the various states of a thread.
+
+Q8 Elucidate the various methods and components of URL class.
+
+Q9 “The J Table class is used to display data in tabular form” comment on the statement. Write a program to implement the J Table class.
+
+Q10 How we can declare J Progress Bar class? Explain the various constructors of J Progress Bar.
+
+Q11 How do you access elements of an array?
+
+Q12 The following program is wrong. Reorder the lines so that the program displays morning followed by afternoon.
+
+Public static void main( string/arcs)
+
+Public class welcome(
+
+System. out. print in(“afternoon”)
+
+System. out. print in(“morning”)
+
+Q13 Write an if statement that assigns 1 to x if y is greater than 0.
+
+Q14 “A Lambda expression is a small piece of code that takes in input and outputs a value.” Justify the statement with appropriate example.
+
+Q15 Explain the various methods of CardLayout.
+
+Q16 Write a note on the following:
+
+(a) J Text Area Class.
+
+(b) J Radio Button Class.
+
+Q17 Differentiate between socket and Server Socket class. Write a program to show the implementation of both classes.
+
+Q18 Discuss in detail the different methods of stopping and suspending a thread.
+
+Q19 With example explain the various methods of URL class.
+
+Q20 “ J Progress Bar is a visual representation of the progress of a task” comment on the statement by explaining the various constructors of J Progress Bar class.
+
+Q21 Differentiate between String Buffer String Builder class.
+
+Q22 How we can create a properties class also explain the various methods of property class?
+
+Q23 “Box Layout aids in the horizontal or vertical arrangements of components within the container” Justify the statement with the help of a program.
+
+Q24 Explain Array and types of Array in Java.
+
+-- End of Question Paper --
+
+Question Paper: DECAP615_2
+
+PART-B
+
+Q1 Explain the role of the J Radio Button class in java swing. How does it differ from other components like checkboxes? Illustrate the differences with the help of program.
+
+Q2 Discuss the various customization options available for styling and configuring a j progress Bar instance. Provide code examples demonstrating customization techniques.
+
+Q3 How do classes such as Socket and Server Socket enable the establishment of network connections between client and server applications? Provide examples demonstrating the creation and usage of socket objects for network communication.
+
+Q4 Explain the concept of JDBC ( java database connectivity) and its role in developing java applications that interact with databases. Discuss the benefits of using JDBC compared to other database access methods.
+
+Q5 Explain the concept of comparator in java and compare it with comparable. How does the comparator interface facilitate custom sorting of objects based on criteria other than their natural ordering? Provide a detailed example demonstrating the implementation and usage of a comparator for sorting objects.
+
+Q6 Describe the string class in java, emphasizing its immutability and common methods for string manipulation. Discuss the implications of immutability on memory management and thread safety. Provide examples to illustrate the usage of string methods.
+
+Q7 Discuss the priority Queue class in java’s collection framework. Write a program to implement priority queue.
+
+Q8 Discuss the purpose and functionality of Box Layout in java swing. How does it facilitate the arrangements of components along a single axis? Offer a code example to demonstrate its usage.
+
+Q9 Explain any five data gram packet class in detail.
+
+Q10 Describe the thread life cycle in detail.
+
+-- End of Question Paper --
+
+Question Paper: DECAP615_3
+
+PART-A
+
+Q.1 (a) Differentiate between extends and implements keyword.
+
+(b) Describe the internal structure of a Linked list and its advantages.
+
+(c) Provide a practical scenario where default properties would be beneficial.
+
+(d) Draw a diagram to represent the life cycle of a thread.
+
+(e) Describe the JComboBox class in Java Swing. What are common use cases for it?
+
+(f) Explain the function set color (Color color) used in swings.
+
+(g) Give any real-life scenario where Box layout can be applied.
+
+(h) What is the role of ODBC? Explain
+
+(i) What is the use of statement interface?
+
+(j) What is the use of URL connection open connection () method?
+
+PART-B
+
+Q.2 How do you access elements of an array?
+
+Q.3 Discuss techniques such as encryption, authentication, and firewall configuration to enhance network security in Java applications.
+
+Q.4 Explain the concept of creation of a thread in JAVA in detail. (with suitable code)
+
+Q.5 What is the significance of using JSlider? Discuss the various constructors of JSlider.
+
+Q.6 How we are declare an array explain the different types of array by giving the example of each type.
+
+Q.7 Describe the concept of serialization and its relevance in Java socket programming. How does it contribute to data transmission over the network?
+
+Q.8 Explain the concept of Comparator in Java and compare it with Comparable. How does the Comparator interface facilitate custom sorting of objective based on criteria other than their natural ordering? Provide a detailed example demonstrating the implementation and usage of a Comparator for sorting objects.
+
+Q.9 Write a program to show the implementation of CRUD operations in JDBC.
+
+Q.10 Discuss the purpose and functionality of Box Layout in Java swing. How does it facilitate the arrangement of components along a single axis? Offer a code example to demonstrate its usage.
+
+Q.11 Explain the role of the JRadioButton class in Java Swing. How does it differ from other components like checkboxes? Illustrate the difference with the help of program.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP615_5
+
+Part A
+
+(a) Differentiate between extends and implements keyword.
+
+(b) Describe the internal structure of a LinkedList and its advantages.
+
+(c) Provide a practical scenario where default properties would be beneficial.
+
+(d) Draw a diagram to represent the life-cycle of a thread.
+
+(e) Describe the JComboBox class in Java Swing. What are common use-cases for it?
+
+(f) Explain the function setColor(Color color) used in swings.
+
+(g) Give any real-life scenario where BoxLayout can be applied.
+
+(h) What is the role of ODBC in JDBC? Explain.
+
+(i) What is the use of Statement interface?
+
+(j) What is the use of URLConnection.openConnection() method?
+
+Part B
+
+Q2: How do you access elements of an array?
+
+Q3: Discuss techniques such as encryption, authentication, and firewall configuration to enhance network security in Java applications.
+
+Q4: Explain the concept of creation of a thread in JAVA in detail (with suitable code).
+
+Q5: What is the significance of using JSlider? Discuss the various constructors of JSlider.
+
+Q6: How can we declare an array? Explain the different types of array by giving an example of each type.
+
+Q7: Describe the concept of serialization and its relevance in Java socket programming. How does it contribute to data transmission over the network?
+
+Q8: Explain the concept of Comparator in Java and compare it with Comparable. How does the Comparator interface facilitate custom sorting of objects based on criteria other than their natural ordering? Provide a detailed example demonstrating its implementation and usage for sorting objects.
+
+Q9: Write a program to show the implementation of CRUD operations in JDBC.
+
+Q10: Discuss the purpose and functionality of BoxLayout in Java Swing. How does it facilitate the arrangement of components along a single axis? Offer a code example to demonstrate its usage.
+
+Q11: Explain the role of the JRadioButton class in Java Swing. How does it differ from other components like checkboxes? Illustrate the difference with the help of a program.
+
+-- End of Question Paper --
+
+Question Paper: DECAP615_6
+
+PART A
+
+Q1(a) Describe the use of array in JAVA with suitable code.
+
+(b) Describe at least two functions of linked list class.
+
+(c) Describe any two differences between comparable and comparator interfaces.
+
+(d) What are the ways to define threads in java?
+
+(e) How do you handle exceptions in multithreaded Java applications?
+
+(f) Explain nesting of classes.
+
+(g) Compare CardLayout and BoxLayout.
+
+(h) Discuss the importance of JDBC with the help of real life scenario.
+
+(i) Explore the security considerations and best practices for Java network programming.
+
+(j) Discuss the security consideration in java network programming.
+
+Q1(a) What do you mean by operator? Describe conditional operator used in JAVA.
+
+(b) Discuss scenarios where TreeSet is preferred over other Set implementations
+
+(c) Compare and contrast the usage of Comparable and Comparator interfaces.
+
+(d) What do you mean by multi threading?
+
+(e) Define exception with general syntax used in JAVA.
+
+(f) How does the JSlider class allows the users to select a value from a continuous range using a draggable thumb?
+
+(g) Discuss the shortcomings of Grid Layout.
+
+(h) What is the use of JDBC?
+
+(i) Discuss the functionality of the Statement interface in Java Database Connectivity (JDBC).
+
+(j) What is the significance of Hostname?
+
+PART B
+
+Q2 Explain the TreeSet class in Java's Collection Framework. Discuss the characteristics of TreeSet, including automatic sorting, uniqueness of elements, and efficient search, insertion, and deletion operations.
+
+Q3 Differentiate between StringBuffer StringBuilder class.
+
+Q4 Explain Java Socket programming with an example.
+
+Q5 Explain the four basic CRUD (Create, Read, Update, Delete) operations used for data manipulation in databases. Write a program to implement these operations.
+
+Q6 Explain any five methods of MetaData Interface.
+
+Q7 Describe the event handling mechanism associated with the JSlider class. Give a practical example demonstrating event handling with JSlider.
+
+Q8 Discuss the use of proxies in Java network programming. How can proxies be configured, and what are their advantages?
+
+Q9 Describe the role of CardLayout in Java Swing. How does it enable the switching between multiple components within a single container? Provide a practical scenario where CardLayout can be beneficial.
+
+Q10 Explain the different methods used for avoiding deadlocks.
+
+Q11 Explain JRadioButton class, JTextArea class, JComboBox class used in swings
+
+Q12 How do classes such as Socket and ServerSocket enable the establishment of network connections between client and server applications? Provide examples demonstrating the creation and usage of socket objects for network communication.
+
+Q13 Differentiate between String, String Buffer and String Builder class with the help of program.
+
+Q14 Write a note on the following:
+
+a) LinkedList Class
+
+b) ListIterator Interface.
+
+Q15 Write a script to explain card layout.
+
+Q16 Describe the purpose of the Properties class in Java. Provide examples illustrating the creation, loading, and manipulation of properties using the Properties class.
+
+Q17 Describe the steps involved in establishing a connection between a Java application and a database using JDBC.
+
+Q18 Explain the life cycle of a thread in Java in detail. Provide a single program code to illustrate the implementation of different stages of thread life cycle.
+
+Q19 Write a program to explain arithmetic exception in JAVA
+
+Q20 Compare and contrast the usage of JProgressBar and JSlider components in Java Swing applications. In what situations would you choose one over the other? Discuss the strengths and limitations of each component in different application contexts.
+
+Q21 What is the significance of socket programming. How we establish a connection between client and server using socket programming
+
+-- End of Question Paper --

@@ -1,0 +1,91 @@
+COURSE CODE: DECAP615
+COURSE NAME: PROGRAMMING IN JAVA
+GD INFOTECH
+
+========================================
+PART A
+========================================
+
+Q1. Differentiate between extends and implements keyword.
+
+Q2. What are the advantages of using ArrayList class used in JAVA?
+
+Q3. Compare and contrast the usage of Comparable and Comparator interfaces.
+
+Q4. Give the syntax of suspending and resuming a thread.
+
+Q5. Describe the general syntax to create a command button using swings.
+
+Q6. Describe suspending and resuming of a thread.
+
+Q7. When is it required to use flow layout?
+
+Q8. Describe the advantage of using a network protocol driver.
+
+Q9. What is the use of Socket Class in JAVA?
+
+Q10. What is the use of URLConnection openConnection() method?
+
+Q11. A wrapper class is a class that envelops the value of every primitive data type.
+
+Q12. In an array, the memory is allocated for the same data type sequentially and is given a common name.
+
+Q13. The class that implements the interface can use the variables as declared in the interface and cannot modify or change the value of the variable.
+
+Q14. Creating a package is simple. Explain the method that supports this statement.
+
+Q15. Give the significance of the String to String() method.
+
+Q16. Which state does the thread enter when a thread class is created at any instance? Which method is used to return the name of the thread group?
+
+Q17. What are file stream classes?
+
+Q18. An applet tag is used to add Java applets. Elaborate.
+
+Q19. Frames can be closed by just clicking on the close button.
+
+Q20. "The mousePressed() and mouseReleased() methods are invoked when the mouse is pressed and released, respectively."
+
+========================================
+PART B
+========================================
+
+Q2. Compare and contrast the usage of JProgressBar and JSlider components in Java Swing applications. In what situations would you choose one over the other? Discuss the strengths and limitations of each component in different application contexts.
+
+Q3. Explain CRUD operations with suitable example.
+
+Q4. What is the significance of socket programming. How we establish a connection between client and server using socket programming.
+
+Q5. Explain JRadioButton class, JTextArea class, JComboBox class used in swings.
+
+Q6. Write a program to implement lambda expression accepting two parameters in JAVA.
+
+Q7. Explain any five methods of MetaData Interface.
+
+Q8. Explain the TreeSet class in Java's Collection Framework. Discuss the characteristics of TreeSet, including automatic sorting, uniqueness of elements, and efficient search, insertion, and deletion operations.
+
+Q9. Discuss the various scenarios that can help us choose the best layout manager.
+
+Q10. Explain the differences between extending the Thread class and implementing the Runnable interface. Illustrate the difference with the help of program.
+
+Q11. What is a comment? Is the comment ignored by the compiler? How do you denote a comment line and a comment paragraph?
+
+Q12. "The interface specifies four methods that are invoked when a component is resized, moved, shown or hidden." Justify.
+
+Q13. "Finally blocks are executed once the try block exits." Justify.
+
+Q14. Once the interfaces are defined, it can be implemented by one or more classes. How can this be achieved? Give a program example.
+
+Q15. "No matter what type of information is being transferred and where the information is coming from or going to, the algorithm for reading and writing the data remains the same." Write the steps followed in these algorithms.
+
+Q16. What are the different AWT Controls? Discuss any two in detail.
+
+Q17. What are the different Decision Making Statements in Java? Discuss each with the help of an example.
+
+Q18. What is the structure of a Java Program? Discuss with the help of an example.
+
+Q19. Write a program to calculate the perimeter [2*(l+b)] and area [l*b] of a rectangle using classes and objects. Values of length and breadth to be taken from the user at runtime.
+
+Q20. What are nested classes? Demonstrate with the help of an example.
+
+Q21. How can an image be displayed using an applet? Discuss with an example.
