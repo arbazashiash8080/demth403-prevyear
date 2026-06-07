@@ -1,0 +1,412 @@
+Question Paper: BigData1
+
+PART A
+
+Q1(a) Explain role of DATAMART.
+(b) What do you understand by data model? How data model is built.
+(c) What is the major purpose of using a NOSQL database
+(d) What do you understand by MapReduce. Explain in detail.
+(e) Explain all goals of HDFS.
+(f) Define following terms:
+i. Resource Manager
+ii. HBase
+iii. Key/Value Store
+
+(g) How a secondary namenode differs from namenode in HDFS.
+(h) How Hadoop runs a MapReduce job using YARN?
+(i) Explain data serialization in Hadoop
+(j) Explain Hive file formats
+
+PART B
+
+Q2 Write and explain collection related commands, mongoDB commands for rows, mongoDB commands for inserting more than one row.
+
+Q3 Explain Big Data Management and Processing using Datameer with example.
+
+Q4 Explain the concept of big data and its significance in today's digital world.
+
+Q5 Diagrammatically explain following terms.
+a) Map Phase
+b) Shuffle and sort phase
+c) Reducer phase
+
+Q6 Explain the hadoop distributed file system architecture with a neat sketch
+
+Q7 Explain developing and testing MapReduce jobs with MRUnit.
+
+Q8 Explain about the implementation of map reduce concept with a small example.
+
+Q9 a. Write down steps to set environmental variables in hadoop.
+b. How to verify hadoop installation
+
+Q10 Write down steps of installing a Hadoop.
+
+Q11 Data modeling examples will clarify how data models and the process of data modeling highlights essential data and the way to arrange it. Explain below points
+a. ER Model
+b. Hierarchical Model
+c. Network Model
+
+-- End of Question Paper --
+
+
+Question Paper: BigData2
+
+PART A
+
+Q1(a) What do you understand by big data? Explain difference between structure and unstructured data.
+
+(b) Write down difference between datawarehouse and datamart.
+
+(c) What do you understand by relational database management system?
+
+(d) How Hadoop improves traditional databases.
+
+(e) Write down advantages of MapReduce.
+
+(f) Which commands are use to insert and retrieve a data into HDFS.
+
+(g) Explain unit testing techniques.
+
+(h) What are the functions of HIVEQL.
+
+(i) Write down challenges of supervised learning
+
+(j) Splunk is available in three different product categories. Explain those.
+
+PART B
+
+Q2 Describe the 4V model of Big Data.
+
+Q3 What are Hive and Pig? How are they different?
+
+Q4 How does Hadoop differ from a traditional file system?
+
+Q5 Explain failures in MapReduce.
+
+Q6 How to configure a Hadoop on master server.
+
+Q7 What do you understand by data streaming? Explain a few use cases across multiple industries.
+
+Q8 Write down steps for uploading data in Splunk.
+
+Q9 What is HIVE? Explain working of HIVE.
+
+Q10 Explain types of regressions
+
+Q11 Explain difference between RDBMS and NOSQL.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP456 (1)
+
+PART A
+
+Q1(a) Write down characteristics of BIG DATA.
+
+(b) A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. Why do we need a data lake?
+
+(c) Why NOSQL database emerge?
+
+(d) How Hadoop improves traditional databases.
+
+(e) Write down advantages of MapReduce.
+
+(f) Define following terms:
+a. Resource Manager
+b. HBase
+c. Key/Value Store
+
+(g) Explain three core classes of MRunits.
+
+(h) Write down the features of HIVE.
+
+(i) Write down challenges of supervised learning
+
+(j) Define following terms
+a. Data indexing
+b. Data Searching
+c. Dashboards.
+
+PART B
+
+Q2 What are the three major types of Big Data applications? Describe two applications of each type.
+
+Q3 Explain top Hadoop related open-source tools.
+
+Q4 Diagrammatically explain Hadoop components.
+
+Q5 What is data preparation and feature engineering in Datameer.
+
+Q6 What do you understand by data streaming? Explain a few use cases across multiple industries.
+
+Q7 Explain types of regressions.
+
+Q8 Explain architecture of PIG.
+
+Q9 How to configure a Hadoop on master server.
+
+Q10 Explain failures in MapReduce.
+
+Q11 Explain difference between RDBMS and NOSQL.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP456P_2
+
+Q1. The V's of Big Data.
+
+Q2. Data ware house vs data format?
+
+Q3. What do you understand by NOSQL?
+
+Q4. Explain components of Hadoop?
+
+Q5. The MapReduce task is mainly divided into 2 phases i.e. Map phase and Reduce phase. Explain all?
+
+Q6. What do you understand by linear regression?
+
+Q7. How supervised learning is different from unsupervised learning?.
+
+Q8. Where to use HDFS?
+
+Q9. List few benefits of using SPLUNK?.
+
+Q10.How Pig is different from Hive.?
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP456P_3
+
+PART-B
+
+Q1 Describe the big data processing architecture.
+
+Q2 How file system is different from DFS? Explain features of DFS.
+
+Q3 Write and explain a few supplementary components that are extensively used in the Hadoop ecosystem.
+
+Q4 Explain developing and testing Map Reduce jobs with MR Unit.
+
+Q5 What is HIVE? Explain working of HIVE.
+
+Q6 What do you understand by NOSQL. Explain types of NOSQL databases.
+
+Q7 Explain HDFS operations to tread and write the data.
+
+Q8 Explain applications of predictive analytics.
+
+Q9 Explain different types of data mart.
+
+Q10 Write down steps for uploading data in splunk.
+
+Q11 Describe the 4V model of big data.
+
+Q12 What are Hive and Pig? How are they different?
+
+Q13 How does Hadoop differ from a traditional file system?
+
+Q14 Explain failures in MapReduce.
+
+Q15 How to configure a Hadoop on master server.
+
+Q16 What do you understand by data streaming? Explain a few use cases across multiple industries
+
+Q17 Explain types of regressions.
+
+Q18 Explain difference between RDBMS and NOSQL.
+
+-- End of Question Paper --
+
+Question Paper: DECAP456P_4
+
+PART-B
+
+Q1 What do you understand by data streaming? Explain a few use cases across multiple industries.
+
+Q2 what is a NoSQL database? What are the different types of it?
+
+Q3 Explain differences between HDFS and local system.
+
+Q4 Define Command line interface using HDFS files and give a brief note on Hadoop-specific file system types and HDFS commands.
+
+Q5 What is machine learning. Write down classification of machine learning.
+
+Q6 Explain architecture of PIG.
+
+Q7 How file system is different from DFS? Explain features of DFS.
+
+Q8 With Neat sketch explain in detail Hadoop architecture and its component?
+
+Q9 Explain working of HDFS.
+
+Q10 Write down steps for uploading data in Splunk.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP456P_5
+
+PART-B
+
+Q.2 Master and salve nodes from the HDFS cluster. Explain both with the help of examples.
+
+Q.3 a. Write down command to get count of the document in mongodb.
+
+b. Explain difference between find and find One () in mongodb.
+
+C. Explain use of upsert option in update command in mongodb.
+
+Q.4 What is HIVE? Explain working of HIVE.
+
+Q.5 How file system is different from DFS? Explain features of DFS.
+
+Q.6 Explain developing and testing MapReduce jobs with MR Unit.
+
+Q.7 What is data preparation and feature engineering in Datameer.
+
+Q.8 How to develop an analytic team and what is the skill required for data analyst.
+
+Q.9 What do you understand by data streaming? Explain a few use cases across multiple industries.
+
+Q.10 Define command line interface using HDFS files and give a brief note on Hadoop-specific file system types and HDFS commands.
+
+Q.11 Explain with neat sketch about the configuration of CLI client and WI client while interacting with HIVE.
+
+Q.12 What are the three major types of Big Data applications? Describe two applications of each type.
+
+Q.13 What do you understand by data streaming? Explain a few use cases across multiple industries.
+
+Q.14 What do you understand by data ingestion. Where is the data stored.
+
+Q.15 How does HDFS ensure security and integrity of data?
+
+Q.16 What do you understand by HBASE? Explain all features of HBASE.
+
+Q.17 Explain difference between HDFS and local system.
+
+Q.18 Explain failures in Map Reduce.
+
+Q.19 a. Write down steps to set environmental variables in hadoop.
+
+b. How to verify Hadoop installation.
+
+Q.20 What are the steps required to create a dashboard that visualizes linear regression data correctly.
+
+Q.21 What is machine learning. Write down classification of machine learning.
+
+-- End of Question Paper --
+
+Question Paper: DECAP456P_6
+
+Part A
+
+Q1. What do you understand by big data? Explain structured vs. unstructured data.
+
+Q2. What do you understand by data model? How is a data model built?
+
+Q3. Write commands:
+o Switch to a new database
+o View and delete a database
+
+Q4. Commands to:
+o Change permission on a new directory in Hadoop
+o Delete a document with duplicates
+
+Q5. Difference between distributed and parallel systems
+
+Q6. HDFS operations: Read/write file, shut down command
+
+Q7. What do you understand by MRUNIT?
+
+Q8. Features of HIVE
+
+Q9. List Hadoop distributions
+
+Q10. Create a table using HIVEQL
+
+Part B
+
+Q1. Difference between File System and DFS; Features of DFS
+
+Q2. Steps to install Splunk Enterprise on Linux
+
+Q3. Hadoop configuration files and their relation to Big Data
+
+Q4. Describe Big Data processing architecture
+
+Q5. Top challenges facing Big Data
+
+Q6. Difference between MongoDB and MySQL
+
+Q7. Explain Hadoop file commands (touchz, copyFromLocal, moveFromLocal, rmr, difference between copy and move`)
+
+Q8. Explain Hadoop Distributed File System (HDFS) architecture with a sketch
+
+Q10. Explain operational modes of Hadoop cluster configuration
+
+Q11. Data modelling examples and explanation of:
+o ER Model
+o Hierarchical Model
+o Network Model
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP456P_7
+
+PART A
+
+Q1(a) Write down applications of BIG DATA.
+
+(b) A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. Why do we need a data lake?
+
+(c) What do you understand by relational database management system
+
+(d) Write down commands for the following questions
+
+i. List all files and folders present in Hadoop.
+
+ii. Write down a command to change permission on a new dir in Hadoop.
+
+iii. Write down a command to delete one document when we have several duplicates.
+
+(e) Distinguish between correlation and regression
+
+(f) i. Explain HDFS operation to read the file and to write in the file.
+
+ii. Write down the command to shut down the HDFS files.
+
+(g) Explain unit testing techniques
+
+(h) Write down applications of APACHE PIG.
+
+(i) What do you understand by regression and also explain when to use regression.
+
+(j) Explain Hive file formats
+
+PART B
+
+Q2 Master and slave nodes form the HDFS cluster. Explain both with the help of examples.
+
+Q3 Hadoop is a machine with a good configuration of memory and CPU. Explain master/slave architecture of Hadoop.
+
+Q4 Describe the four V model of Big data.
+
+Q5 What do you understand by fair scheduler. Write advantages and disadvantages of fair scheduler.
+
+Q6 Explain the hadoop distributed file system architecture with a neat sketch
+
+Q7 Explain difference between RDBMS and NOSQL.
+
+Q8 Write down steps for uploading data in Splunk.
+
+Q9 Write down steps of installing a Hadoop
+
+Q10 Explain applications of predictive analytics
+
+Q11 Explain different types of data mart.
+
+-- End of Question Paper --

@@ -1,0 +1,58 @@
+Question Paper: GDINFOTECH
+
+PART A
+
+Q1. What is the role of a Datamart?
+
+Q2. What do you understand by a data model, and how is it built?
+
+Q3. What is the major purpose of using a NoSQL database?
+
+Q4. What do you understand by MapReduce?
+
+Q5. What are the goals of HDFS (Hadoop Distributed File System)?
+
+Q6. Define the following terms:
+a. Resource Manager
+b. HBase
+c. Key/Value Store
+
+Q7. How does a secondary namenode differ from a namenode in HDFS?
+
+Q8. How does Hadoop run a MapReduce job using YARN?
+
+Q9. Explain data serialization in Hadoop.
+
+Q10. Explain Hive file formats.
+
+PART B
+
+Q2. Write and explain collection related commands, mongoDB commands for rows, mongoDB commands for inserting more than one row.
+
+Q3. Explain Big Data Management and Processing using Datameer with example.
+
+Q4. Explain the concept of big data and its significance in today's digital world.
+
+Q5. Diagrammatically explain following terms.
+a) Map Phase
+b) Shuffle and sort phase
+c) Reducer phase
+
+Q6. Explain the hadoop distributed file system architecture with a neat sketch.
+
+Q7. Explain developing and testing MapReduce jobs with MRUnit.
+
+Q8. Explain about the implementation of map reduce concept with a small example.
+
+Q9.
+a. Write down steps to set environmental variables in hadoop.
+b. How to verify hadoop installation.
+
+Q10. Write down steps of installing a Hadoop.
+
+Q11. Data modeling examples will clarify how data models and the process of data modeling highlights essential data and the way to arrange it. Explain below points:
+a. ER Model
+b. Hierarchical Model
+c. Network Model
+
+-- End of Question Paper --

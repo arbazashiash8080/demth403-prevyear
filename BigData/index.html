@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECAP456 – Big Data | Question Bank</title>
+  <meta name="description"
+    content="Organized question bank for DECAP456 Big Data. All questions sorted by unit from multiple past papers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Override watermark for Big Data */
+    .site-header::after {
+      content: 'DECAP456';
+    }
+
+    /* Extra paper tag colors for p7–p10 */
+    :root {
+      --tag-p7-bg: rgba(251, 146, 60, 0.12);
+      --tag-p7-c: #fb923c;
+      --tag-p8-bg: rgba(248, 113, 113, 0.12);
+      --tag-p8-c: #f87171;
+      --tag-p9-bg: rgba(34, 211, 238, 0.12);
+      --tag-p9-c: #22d3ee;
+      --tag-p10-bg: rgba(167, 243, 208, 0.15);
+      --tag-p10-c: #6ee7b7;
+    }
+
+    .tag-p7 {
+      background: var(--tag-p7-bg);
+      color: var(--tag-p7-c);
+    }
+
+    .tag-p8 {
+      background: var(--tag-p8-bg);
+      color: var(--tag-p8-c);
+    }
+
+    .tag-p9 {
+      background: var(--tag-p9-bg);
+      color: var(--tag-p9-c);
+    }
+
+    .tag-p10 {
+      background: var(--tag-p10-bg);
+      color: var(--tag-p10-c);
+      border: 1px solid rgba(110, 231, 183, 0.35);
+    }
+
+    /* GDINFOTECH badge — slightly distinct border glow */
+    .tag-gdinfotech-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(110, 231, 183, 0.12);
+      color: #6ee7b7;
+      border: 1px solid rgba(110, 231, 183, 0.4);
+      margin-left: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="back-link">
+        <span class="back-arrow">←</span> Back to Portal
+      </a>
+      <div class="header-badge">DECAP456</div>
+      <h1 class="site-title">Big Data<br><span>Question Bank</span></h1>
+      <p class="site-subtitle">Question Bank — Organized by Unit</p>
+      <div class="paper-legend">
+        <span class="legend-label">Papers:</span>
+        <span class="tag tag-p1">BigData1</span>
+        <span class="tag tag-p2">BigData2</span>
+        <span class="tag tag-p3">DECAP456 (1)</span>
+        <span class="tag tag-p4">DECAP456P_2</span>
+        <span class="tag tag-p5">DECAP456P_3</span>
+        <span class="tag tag-p6">DECAP456P_4</span>
+        <span class="tag tag-p7">DECAP456P_5</span>
+        <span class="tag tag-p8">DECAP456P_6</span>
+        <span class="tag tag-p9">DECAP456P_7</span>
+        <span class="tag tag-p10">GDINFOTECH ✦</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR + MAIN LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- Sidebar TOC -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-icon">📚</span>
+        <span>Units</span>
+      </div>
+      <nav class="unit-nav" id="unitNav">
+        <a href="#unit1" class="nav-item active" data-unit="1">
+          <span class="nav-num">01</span>
+          <span class="nav-text">Unit 1: Introduction to Big Data</span>
+        </a>
+        <a href="#unit2" class="nav-item" data-unit="2">
+          <span class="nav-num">02</span>
+          <span class="nav-text">Unit 2: Foundations for Big Data</span>
+        </a>
+        <a href="#unit3" class="nav-item" data-unit="3">
+          <span class="nav-num">03</span>
+          <span class="nav-text">Unit 3: Data Models</span>
+        </a>
+        <a href="#unit4" class="nav-item" data-unit="4">
+          <span class="nav-num">04</span>
+          <span class="nav-text">Unit 4: NoSQL Data Management</span>
+        </a>
+        <a href="#unit5" class="nav-item" data-unit="5">
+          <span class="nav-num">05</span>
+          <span class="nav-text">Unit 5: Introduction to Hadoop</span>
+        </a>
+        <a href="#unit6" class="nav-item" data-unit="6">
+          <span class="nav-num">06</span>
+          <span class="nav-text">Unit 6: Hadoop Administration</span>
+        </a>
+        <a href="#unit7" class="nav-item" data-unit="7">
+          <span class="nav-num">07</span>
+          <span class="nav-text">Unit 7: Hadoop Architecture</span>
+        </a>
+        <a href="#unit8" class="nav-item" data-unit="8">
+          <span class="nav-num">08</span>
+          <span class="nav-text">Unit 8: Hadoop Master Slave Architecture</span>
+        </a>
+        <a href="#unit9" class="nav-item" data-unit="9">
+          <span class="nav-num">09</span>
+          <span class="nav-text">Unit 9: Hadoop Node Commands</span>
+        </a>
+        <a href="#unit10" class="nav-item" data-unit="10">
+          <span class="nav-num">10</span>
+          <span class="nav-text">Unit 10: Map Reduce Applications</span>
+        </a>
+        <a href="#unit11" class="nav-item" data-unit="11">
+          <span class="nav-num">11</span>
+          <span class="nav-text">Unit 11: Hadoop Ecosystem</span>
+        </a>
+        <a href="#unit12" class="nav-item" data-unit="12">
+          <span class="nav-num">12</span>
+          <span class="nav-text">Unit 12: Predictive Analytics</span>
+        </a>
+        <a href="#unit13" class="nav-item" data-unit="13">
+          <span class="nav-num">13</span>
+          <span class="nav-text">Unit 13: Data Analytics with R</span>
+        </a>
+        <a href="#unit14" class="nav-item" data-unit="14">
+          <span class="nav-num">14</span>
+          <span class="nav-text">Unit 14: Big Data Management using SPLUNK</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-num" id="totalQCount">0</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">10</span>
+          <span class="stat-label">Papers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Units</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+      <!-- Search Bar -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search questions…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" title="Clear">✕</button>
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">All Papers</button>
+          <button class="chip" data-filter="p1">BigData1</button>
+          <button class="chip" data-filter="p2">BigData2</button>
+          <button class="chip" data-filter="p3">DECAP456 (1)</button>
+          <button class="chip" data-filter="p4">DECAP456P_2</button>
+          <button class="chip" data-filter="p5">DECAP456P_3</button>
+          <button class="chip" data-filter="p6">DECAP456P_4</button>
+          <button class="chip" data-filter="p7">DECAP456P_5</button>
+          <button class="chip" data-filter="p8">DECAP456P_6</button>
+          <button class="chip" data-filter="p9">DECAP456P_7</button>
+          <button class="chip" data-filter="p10">GDINFOTECH ✦</button>
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results hidden">
+        <span>🔎</span><br>No questions match your search.
+      </div>
+
+      <!-- ===================== UNIT 1 ===================== -->
+      <section class="unit-section" id="unit1">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 1</div>
+          <h2 class="unit-title">Unit 1: Introduction to Big Data: Big Data and its importance, The V's of Big Data,
+            Challenges and Applications of Big Data, Tools used in Big Data Scenario.</h2>
+          <span class="unit-count" id="count-unit1"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: What is Big Data / structured vs unstructured -->
+          <div class="q-card" data-paper="p1 p2 p8 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Explain the concept of big data and its significance in today's digital world. / Q1(a) What do
+                you understand by big data? Explain difference between structured and unstructured data. / Q1 What do
+                you understand by big data? Explain structured vs. unstructured data.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Similar question in BigData1 Q4, BigData2 Q1(a), DECAP456P_6 Q1 and GDINFOTECH
+              Q4</div>
+          </div>
+
+          <!-- Q2: Characteristics / V's of Big Data -->
+          <div class="q-card" data-paper="p2 p3 p4 p5 p9 p10">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p4">DECAP456P_2</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Describe the 4V model of Big Data. / Q1(a) Write down characteristics of BIG DATA. / Q1 The V's of
+                Big Data. / Q11 Describe the 4V model of big data. / Q4 Describe the four V model of Big data.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated in BigData2 Q2, DECAP456(1) Q1(a), DECAP456P_2 Q1, DECAP456P_3 Q11,
+              DECAP456P_7 Q4 and GDINFOTECH Q4 (concept)</div>
+          </div>
+
+          <!-- Q3: Applications / Types of Big Data applications -->
+          <div class="q-card" data-paper="p3 p7">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 / Q.12 What are the three major types of Big Data applications? Describe two applications of each
+                type.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456(1) Q2 and DECAP456P_5 Q.12</div>
+          </div>
+
+          <!-- Q4: Challenges of Big Data -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Top challenges facing Big Data.</p>
+            </div>
+          </div>
+
+          <!-- Q5: Big Data Processing Architecture -->
+          <div class="q-card" data-paper="p5 p8">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 / Q4 Describe the big data processing architecture.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_3 Q1 and DECAP456P_6 Q4</div>
+          </div>
+
+          <!-- Q6: Role of Datamart -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Explain role of DATAMART. / Q1 What is the role of a Datamart?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(a) and GDINFOTECH Q1</div>
+          </div>
+
+          <!-- Q7: Datawarehouse vs Datamart -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Write down difference between datawarehouse and datamart.</p>
+            </div>
+          </div>
+
+          <!-- Q8: Different types of data mart -->
+          <div class="q-card" data-paper="p5 p9">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q11 Explain different types of data mart.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_3 Q9 and DECAP456P_7 Q11</div>
+          </div>
+
+          <!-- Q9: Big Data ingestion -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.14 What do you understand by data ingestion. Where is the data stored?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 2 ===================== -->
+      <section class="unit-section" id="unit2">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 2</div>
+          <h2 class="unit-title">Unit 2: Foundations for Big Data: Distributed file system, scalable computing over
+            internet, programming models for big data.</h2>
+          <span class="unit-count" id="count-unit2"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Distributed File System vs local file system -->
+          <div class="q-card" data-paper="p2 p4 p5 p6 p7 p8">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p4">DECAP456P_2</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q7 / Q7 / Q.5 / Q1 How file system is different from DFS? Explain features of DFS. Also how does
+                Hadoop differ from a traditional file system?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated in BigData2 Q4, DECAP456P_3 Q7, DECAP456P_4 Q7, DECAP456P_5 Q.5,
+              DECAP456P_6 Q1 (Part B), DECAP456P_2 Q8</div>
+          </div>
+
+          <!-- Q2: Distributed vs Parallel Systems -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Difference between distributed and parallel systems.</p>
+            </div>
+          </div>
+
+          <!-- Q3: Hadoop configuration files -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Hadoop configuration files and their relation to Big Data.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 3 ===================== -->
+      <section class="unit-section" id="unit3">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 3</div>
+          <h2 class="unit-title">Unit 3: Data Models: Data model vs. data format, data stream, understanding data lakes,
+            exploring streaming sensor data.</h2>
+          <span class="unit-count" id="count-unit3"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Data model -->
+          <div class="q-card" data-paper="p1 p8 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) / Q2 / Q2 What do you understand by data model? How data model is built.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(b), DECAP456P_6 Q2 and GDINFOTECH Q2</div>
+          </div>
+
+          <!-- Q2: Data lake -->
+          <div class="q-card" data-paper="p3 p9">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) / Q1(b) A data lake is a centralized repository that allows you to store all your structured and
+                unstructured data at any scale. Why do we need a data lake?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456(1) Q1(b) and DECAP456P_7 Q1(b)</div>
+          </div>
+
+          <!-- Q3: Data streaming -->
+          <div class="q-card" data-paper="p2 p3 p5 p6 p7">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 / Q6 / Q16 / Q1 / Q.9 &amp; Q.13 What do you understand by data streaming? Explain a few use cases
+                across multiple industries.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Highly repeated: BigData2 Q7, DECAP456(1) Q6, DECAP456P_3 Q16, DECAP456P_4 Q1,
+              DECAP456P_5 Q.9 and Q.13</div>
+          </div>
+
+          <!-- Q4: Data modeling examples: ER, Hierarchical, Network -->
+          <div class="q-card" data-paper="p1 p8 p10">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 / Q11 / Q11 Data modeling examples will clarify how data models and the process of data modeling
+                highlights essential data and the way to arrange it. Explain below points:</p>
+              <ul>
+                <li>(a) ER Model</li>
+                <li>(b) Hierarchical Model</li>
+                <li>(c) Network Model</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q11, DECAP456P_6 Q11 and GDINFOTECH Q11</div>
+          </div>
+
+          <!-- Q5: Data warehouse vs data format (DECAP456P_2) -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Data warehouse vs data format?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 4 ===================== -->
+      <section class="unit-section" id="unit4">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 4</div>
+          <h2 class="unit-title">Unit 4: NoSQL Data Management: Introduction to NoSQL, aggregate data models, aggregates
+            key-value and document data models relationships, graph databases, schema less databases, materialized
+            views, distribution models, sharding, version, Map reduce partitioning and combining, composing map-reduce
+            calculations.</h2>
+          <span class="unit-count" id="count-unit4"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Major purpose / why NoSQL -->
+          <div class="q-card" data-paper="p1 p3 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) What is the major purpose of using a NOSQL database? / Q1(c) Why NOSQL database emerge? / Q3 What
+                is the major purpose of using a NoSQL database?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(c), DECAP456(1) Q1(c) and GDINFOTECH Q3</div>
+          </div>
+
+          <!-- Q2: RDBMS vs NOSQL -->
+          <div class="q-card" data-paper="p2 p3 p5 p6 p9">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 / Q11 / Q18 / Q9 Explain difference between RDBMS and NOSQL.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Highly repeated: BigData2 Q11, DECAP456(1) Q11, DECAP456P_3 Q18, DECAP456P_7 Q9
+            </div>
+          </div>
+
+          <!-- Q3: Types of NoSQL / what is NoSQL -->
+          <div class="q-card" data-paper="p4 p5 p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP456P_2</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 What do you understand by NOSQL? / Q6 What do you understand by NOSQL. Explain types of NOSQL
+                databases. / Q2 What is a NoSQL database? What are the different types of it?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same concept in DECAP456P_2 Q3, DECAP456P_3 Q6, DECAP456P_4 Q2</div>
+          </div>
+
+          <!-- Q4: RDBMS definition -->
+          <div class="q-card" data-paper="p2 p3 p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) / Q1(c) What do you understand by relational database management system?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData2 Q1(c), DECAP456(1) Q1(c) and DECAP456P_7 Q1(c)</div>
+          </div>
+
+          <!-- Q5: MongoDB commands -->
+          <div class="q-card" data-paper="p1 p8 p10">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 / Q6 / Q2 (Part B) Write and explain collection related commands, mongoDB commands for rows, mongoDB
+                commands for inserting more than one row.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q2, DECAP456P_6 Q6 (MongoDB vs MySQL), and GDINFOTECH
+              Q2 (Part B)</div>
+          </div>
+
+          <!-- Q6: MongoDB switch/view/delete database commands -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Write commands:</p>
+              <ul>
+                <li>Switch to a new database</li>
+                <li>View and delete a database</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Q7: MongoDB count, find, upsert -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.3</p>
+              <ul>
+                <li>(a) Write down command to get count of the document in mongodb.</li>
+                <li>(b) Explain difference between find and findOne() in mongodb.</li>
+                <li>(c) Explain use of upsert option in update command in mongodb.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Q8: MongoDB command - delete duplicate document -->
+          <div class="q-card" data-paper="p8 p9">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q1(d)(iii) Commands to:</p>
+              <ul>
+                <li>Change permission on a new directory in Hadoop</li>
+                <li>Delete a document with duplicates</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_6 Q4 and DECAP456P_7 Q1(d)(iii)</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 5 ===================== -->
+      <section class="unit-section" id="unit5">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 5</div>
+          <h2 class="unit-title">Unit 5: Introduction to Hadoop: Understand what Hadoop is, learning about other
+            open-source software related to Hadoop, understand how Big Data solutions can work on the Cloud, Hadoop -
+            Big Data Overview, Hadoop - Big Data Solutions.</h2>
+          <span class="unit-count" id="count-unit5"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: How Hadoop improves traditional databases -->
+          <div class="q-card" data-paper="p2 p3">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) / Q1(d) How Hadoop improves traditional databases.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData2 Q1(d) and DECAP456(1) Q1(d)</div>
+          </div>
+
+          <!-- Q2: Top Hadoop related open-source tools -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Explain top Hadoop related open-source tools.</p>
+            </div>
+          </div>
+
+          <!-- Q3: Hadoop Distributions -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 List Hadoop distributions.</p>
+            </div>
+          </div>
+
+          <!-- Q4: Hadoop operational modes -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Explain operational modes of Hadoop cluster configuration.</p>
+            </div>
+          </div>
+
+          <!-- Q5: Hadoop components (diagrammatic) -->
+          <div class="q-card" data-paper="p3 p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Diagrammatically explain Hadoop components. / Q4 Explain components of Hadoop?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same concept in DECAP456(1) Q4 and DECAP456P_2 Q4</div>
+          </div>
+
+          <!-- Q6: Supplementary Hadoop ecosystem components -->
+          <div class="q-card" data-paper="p5">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP456P_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Write and explain a few supplementary components that are extensively used in the Hadoop ecosystem.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 6 ===================== -->
+      <section class="unit-section" id="unit6">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 6</div>
+          <h2 class="unit-title">Unit 6: Hadoop Administration: Hadoop - Environment Setup, Hadoop - HDFS Overview,
+            Starting HDFS, Hadoop - Command Reference.</h2>
+          <span class="unit-count" id="count-unit6"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Install Hadoop steps -->
+          <div class="q-card" data-paper="p1 p9 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 / Q9 / Q10 Write down steps of installing a Hadoop.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q10, DECAP456P_7 Q9 and GDINFOTECH Q10</div>
+          </div>
+
+          <!-- Q2: Environmental variables in Hadoop / verify installation -->
+          <div class="q-card" data-paper="p1 p7 p10">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q.19 / Q9</p>
+              <ul>
+                <li>(a) Write down steps to set environmental variables in hadoop.</li>
+                <li>(b) How to verify hadoop installation.</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q9, DECAP456P_5 Q.19 and GDINFOTECH Q9</div>
+          </div>
+
+          <!-- Q3: HDFS commands - insert and retrieve -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) Which commands are used to insert and retrieve data into HDFS?</p>
+            </div>
+          </div>
+
+          <!-- Q4: Hadoop HDFS file commands -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Explain Hadoop file commands (touchz, copyFromLocal, moveFromLocal, rmr, difference between copy and
+                move).</p>
+            </div>
+          </div>
+
+          <!-- Q5: Commands - list files, change permission, delete -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Write down commands for the following:</p>
+              <ul>
+                <li>(i) List all files and folders present in Hadoop.</li>
+                <li>(ii) Write down a command to change permission on a new dir in Hadoop.</li>
+                <li>(iii) Write down a command to delete one document when we have several duplicates.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Q6: CLI using HDFS files and Hadoop-specific file system types -->
+          <div class="q-card" data-paper="p6 p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q.10 Define Command line interface using HDFS files and give a brief note on Hadoop-specific file
+                system types and HDFS commands.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_4 Q4 and DECAP456P_5 Q.10</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 7 ===================== -->
+      <section class="unit-section" id="unit7">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 7</div>
+          <h2 class="unit-title">Unit 7: Hadoop Architecture: Understand the main Hadoop components, learn how HDFS
+            works, List data access patterns for which HDFS is designed, describe how data is stored in an HDFS cluster.
+          </h2>
+          <span class="unit-count" id="count-unit7"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: HDFS architecture with neat sketch -->
+          <div class="q-card" data-paper="p1 p5 p6 p8 p9 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 / Q7 / Q8 / Q8 / Q6 / Q6 Explain the Hadoop Distributed File System architecture with a neat sketch.
+              </p>
+            </div>
+            <div class="q-repeat-note">⚠ Highly repeated: BigData1 Q6, DECAP456P_3 Q7 (HDFS operations), DECAP456P_4 Q8,
+              DECAP456P_6 Q8, DECAP456P_7 Q6, GDINFOTECH Q6</div>
+          </div>
+
+          <!-- Q2: HDFS goals -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) / Q5 Explain all goals of HDFS (Hadoop Distributed File System).</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData1 Q1(e) and GDINFOTECH Q5</div>
+          </div>
+
+          <!-- Q3: Where to use HDFS -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Where to use HDFS?</p>
+            </div>
+          </div>
+
+          <!-- Q4: HDFS Security and Integrity -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.15 How does HDFS ensure security and integrity of data?</p>
+            </div>
+          </div>
+
+          <!-- Q5: HDFS operations - read/write, shut down -->
+          <div class="q-card" data-paper="p5 p8 p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 / Q6 / Q1(f) HDFS operations: Explain read and write file operations; write down the command to shut
+                down the HDFS files.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_3 Q7, DECAP456P_6 Q6, DECAP456P_7 Q1(f)</div>
+          </div>
+
+          <!-- Q6: HDFS local system differences -->
+          <div class="q-card" data-paper="p6 p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 / Q.17 Explain differences between HDFS and local system.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_4 Q3 and DECAP456P_5 Q.17</div>
+          </div>
+
+          <!-- Q7: Working of HDFS -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP456P_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Explain working of HDFS.</p>
+            </div>
+          </div>
+
+          <!-- Q8: Secondary Namenode vs Namenode -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) / Q7 How a secondary namenode differs from namenode in HDFS?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(g) and GDINFOTECH Q7</div>
+          </div>
+
+          <!-- Q9: Resource Manager, HBase, Key/Value Store definitions -->
+          <div class="q-card" data-paper="p1 p3 p10">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) / Q1(f) / Q6 Define following terms:</p>
+              <ul>
+                <li>(i) Resource Manager</li>
+                <li>(ii) HBase</li>
+                <li>(iii) Key/Value Store</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(f), DECAP456(1) Q1(f) and GDINFOTECH Q6</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 8 ===================== -->
+      <section class="unit-section" id="unit8">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 8</div>
+          <h2 class="unit-title">Unit 8: Hadoop Master Slave Architecture: Hadoop - Map Reduce, Hadoop - Streaming,
+            Hadoop – Multi Node Cluster, Creating User Account, Configuring Key Based Login, Installing Hadoop and
+            Configuring Hadoop on Master Server.</h2>
+          <span class="unit-count" id="count-unit8"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Master and slave nodes from HDFS cluster -->
+          <div class="q-card" data-paper="p7 p9">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.2 / Q2 Master and slave nodes form the HDFS cluster. Explain both with the help of examples.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_5 Q.2 and DECAP456P_7 Q2</div>
+          </div>
+
+          <!-- Q2: Hadoop master/slave architecture -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Hadoop is a machine with a good configuration of memory and CPU. Explain master/slave architecture
+                of Hadoop.</p>
+            </div>
+          </div>
+
+          <!-- Q3: Hadoop architecture with components -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP456P_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 With neat sketch explain in detail Hadoop architecture and its component.</p>
+            </div>
+          </div>
+
+          <!-- Q4: Configure Hadoop on master server -->
+          <div class="q-card" data-paper="p2 p3 p5 p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 / Q9 / Q15 How to configure a Hadoop on master server.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated in BigData2 Q6, DECAP456(1) Q9, DECAP456P_3 Q15, DECAP456P_7 (implicit
+              Q3)</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 9 ===================== -->
+      <section class="unit-section" id="unit9">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 9</div>
+          <h2 class="unit-title">Unit 9: Hadoop Node Commands: Configuring Master Node, Configuring Slave Node, Format
+            Name Node on Hadoop Master, Starting Hadoop Services, Adding a New Data Node in the Hadoop Cluster, Adding
+            User and SSH Access.</h2>
+          <span class="unit-count" id="count-unit9"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Fair Scheduler -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 What do you understand by fair scheduler. Write advantages and disadvantages of fair scheduler.</p>
+            </div>
+          </div>
+
+          <!-- Q2: Hadoop serialization -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) / Q9 Explain data serialization in Hadoop.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(i) and GDINFOTECH Q9</div>
+          </div>
+
+          <!-- Q3: Hadoop run MapReduce job using YARN -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) / Q8 How Hadoop runs a MapReduce job using YARN?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(h) and GDINFOTECH Q8</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 10 ===================== -->
+      <section class="unit-section" id="unit10">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 10</div>
+          <h2 class="unit-title">Unit 10: Map Reduce Applications: Map Reduce workflows – unit tests with MR Unit – test
+            data and local tests, anatomy of Map Reduce job run, classic Map-reduce, YARN failures in classic Map-reduce
+            and YARN job scheduling, shuffle and sort, task execution, Map Reduce types, input formats, output formats.
+          </h2>
+          <span class="unit-count" id="count-unit10"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: MapReduce concept / explanation -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) / Q4 What do you understand by MapReduce? Explain in detail.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(d) and GDINFOTECH Q4</div>
+          </div>
+
+          <!-- Q2: Advantages of MapReduce -->
+          <div class="q-card" data-paper="p2 p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) / Q1(e) Write down advantages of MapReduce.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData2 Q1(e) and DECAP456(1) Q1(e)</div>
+          </div>
+
+          <!-- Q3: Map Phase, Shuffle & Sort, Reducer Phase -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 / Q5 Diagrammatically explain the following terms:</p>
+              <ul>
+                <li>(a) Map Phase</li>
+                <li>(b) Shuffle and sort phase</li>
+                <li>(c) Reducer phase</li>
+              </ul>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q5 and GDINFOTECH Q5</div>
+          </div>
+
+          <!-- Q4: Map-Reduce job phases (DECAP456P_2) -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 The MapReduce task is mainly divided into 2 phases i.e. Map phase and Reduce phase. Explain all.</p>
+            </div>
+          </div>
+
+          <!-- Q5: MapReduce with example -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q8 Explain about the implementation of map reduce concept with a small example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q8 and GDINFOTECH Q8</div>
+          </div>
+
+          <!-- Q6: Failures in MapReduce -->
+          <div class="q-card" data-paper="p2 p3 p5 p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 / Q10 / Q14 / Q.18 Explain failures in MapReduce.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated: BigData2 Q5, DECAP456(1) Q10, DECAP456P_3 Q14, DECAP456P_5 Q.18</div>
+          </div>
+
+          <!-- Q7: Developing and testing MapReduce with MRUnit -->
+          <div class="q-card" data-paper="p1 p3 p5 p7 p10">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 / Q4 / Q.6 / Q7 Explain developing and testing MapReduce jobs with MRUnit.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Highly repeated: BigData1 Q7, DECAP456P_3 Q4, DECAP456P_5 Q.6, GDINFOTECH Q7
+            </div>
+          </div>
+
+          <!-- Q8: Three core classes of MRUnit -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) Explain three core classes of MRunits.</p>
+            </div>
+          </div>
+
+          <!-- Q9: Unit testing techniques -->
+          <div class="q-card" data-paper="p2 p8 p9">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) / Q7 / Q1(g) Explain unit testing techniques. / What do you understand by MRUNIT?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData2 Q1(g), DECAP456P_6 Q7, DECAP456P_7 Q1(g)</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 11 ===================== -->
+      <section class="unit-section" id="unit11">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 11</div>
+          <h2 class="unit-title">Unit 11: Hadoop Ecosystem: Applications on Big Data Using Pig and Hive, Data processing
+            operations in Pig, Hive services, HiveQL, Querying Data in Hive, fundamentals of HBase and Zookeeper, IBM
+            Info Sphere Big Insights and Streams.</h2>
+          <span class="unit-count" id="count-unit11"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: What is Hive? Explain working of Hive -->
+          <div class="q-card" data-paper="p2 p4 p5 p7 p10">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p4">DECAP456P_2</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q5 / Q.4 / Q10 What is HIVE? Explain working of HIVE. / Q10 How Pig is different from Hive?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Highly repeated: BigData2 Q9, DECAP456P_3 Q5, DECAP456P_5 Q.4, GDINFOTECH Q10
+              (implicit)</div>
+          </div>
+
+          <!-- Q2: Hive and Pig - how are they different -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 / Q12 What are Hive and Pig? How are they different?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData2 Q3 and DECAP456P_3 Q12</div>
+          </div>
+
+          <!-- Q3: Hive Features -->
+          <div class="q-card" data-paper="p3 p8">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) / Q8 Write down the features of HIVE.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456(1) Q1(h) and DECAP456P_6 Q8</div>
+          </div>
+
+          <!-- Q4: Hive File Formats -->
+          <div class="q-card" data-paper="p1 p9 p10">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) / Q1(j) / Q10 Explain Hive file formats.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q1(j), DECAP456P_7 Q1(j) and GDINFOTECH Q10</div>
+          </div>
+
+          <!-- Q5: Functions of HiveQL -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) What are the functions of HIVEQL?</p>
+            </div>
+          </div>
+
+          <!-- Q6: Create table using HiveQL -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Create a table using HIVEQL.</p>
+            </div>
+          </div>
+
+          <!-- Q7: CLI and WI client with Hive -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.11 Explain with neat sketch about the configuration of CLI client and WI client while interacting
+                with HIVE.</p>
+            </div>
+          </div>
+
+          <!-- Q8: Architecture of PIG -->
+          <div class="q-card" data-paper="p3 p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q6 Explain architecture of PIG.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456(1) Q8 and DECAP456P_4 Q6</div>
+          </div>
+
+          <!-- Q9: Applications of Apache PIG -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Write down applications of APACHE PIG.</p>
+            </div>
+          </div>
+
+          <!-- Q10: HBase features -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.16 What do you understand by HBASE? Explain all features of HBASE.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 12 ===================== -->
+      <section class="unit-section" id="unit12">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 12</div>
+          <h2 class="unit-title">Unit 12: Predictive Analytics: Simple linear regression- Multiple linear regression-
+            Interpretation of regression coefficients. Visualizations, Visual data analysis techniques, interaction
+            techniques, Systems and applications.</h2>
+          <span class="unit-count" id="count-unit12"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Types of Regressions -->
+          <div class="q-card" data-paper="p2 p3 p5 p9">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 / Q7 / Q17 Explain types of regressions.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Repeated: BigData2 Q10, DECAP456(1) Q7, DECAP456P_3 Q17</div>
+          </div>
+
+          <!-- Q2: Linear regression -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 What do you understand by linear regression?</p>
+            </div>
+          </div>
+
+          <!-- Q3: Regression - when to use -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) What do you understand by regression and also explain when to use regression?</p>
+            </div>
+          </div>
+
+          <!-- Q4: Correlation vs Regression -->
+          <div class="q-card" data-paper="p9">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Distinguish between correlation and regression.</p>
+            </div>
+          </div>
+
+          <!-- Q5: Applications of predictive analytics -->
+          <div class="q-card" data-paper="p5 p9">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q10 Explain applications of predictive analytics.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_3 Q8 and DECAP456P_7 Q10</div>
+          </div>
+
+          <!-- Q6: Dashboard for linear regression visualization -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.20 What are the steps required to create a dashboard that visualizes linear regression data
+                correctly?</p>
+            </div>
+          </div>
+
+          <!-- Q7: Analytic team and skill required for data analyst -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q.8 How to develop an analytic team and what is the skill required for data analyst?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 13 ===================== -->
+      <section class="unit-section" id="unit13">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 13</div>
+          <h2 class="unit-title">Unit 13: Data Analytics with R: Machine Learning, Introduction, Supervised Learning,
+            Unsupervised Learning, Collaborative Filtering, Big Data Analytics with Big R.</h2>
+          <span class="unit-count" id="count-unit13"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Machine learning - classification -->
+          <div class="q-card" data-paper="p6 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 / Q.21 What is machine learning? Write down classification of machine learning.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456P_4 Q5 and DECAP456P_5 Q.21</div>
+          </div>
+
+          <!-- Q2: Supervised vs Unsupervised -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 How supervised learning is different from unsupervised learning?</p>
+            </div>
+          </div>
+
+          <!-- Q3: Challenges of supervised learning -->
+          <div class="q-card" data-paper="p2 p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) / Q1(i) Write down challenges of supervised learning.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in BigData2 Q1(i) and DECAP456(1) Q1(i)</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 14 ===================== -->
+      <section class="unit-section" id="unit14">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 14</div>
+          <h2 class="unit-title">Unit 14: Big data management using SPLUNK: data integration process, Big Data
+            Management and Processing using Datameer, Installing Splunk Enterprise on Windows, Installing Splunk
+            Enterprise on Linux, Exploring Splunk Queries.</h2>
+          <span class="unit-count" id="count-unit14"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1: Splunk categories / benefits -->
+          <div class="q-card" data-paper="p2 p4">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p4">DECAP456P_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) Splunk is available in three different product categories. Explain those. / Q9 List few benefits
+                of using SPLUNK.</p>
+            </div>
+          </div>
+
+          <!-- Q2: Installing Splunk on Linux -->
+          <div class="q-card" data-paper="p8">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p8">DECAP456P_6</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Steps to install Splunk Enterprise on Linux.</p>
+            </div>
+          </div>
+
+          <!-- Q3: Upload data in Splunk -->
+          <div class="q-card" data-paper="p2 p3 p5 p6 p9">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">BigData2</span>
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p5">DECAP456P_3</span>
+                <span class="tag tag-p6">DECAP456P_4</span>
+                <span class="tag tag-p9">DECAP456P_7</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q10 / Q10 / Q8 Write down steps for uploading data in Splunk.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Highly repeated: BigData2 Q8, DECAP456P_3 Q10, DECAP456P_4 Q10, DECAP456P_7 Q8
+            </div>
+          </div>
+
+          <!-- Q4: Data indexing, Searching, Dashboards -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) Define following terms:</p>
+              <ul>
+                <li>(a) Data indexing</li>
+                <li>(b) Data Searching</li>
+                <li>(c) Dashboards</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Q5: Big Data Management using Datameer -->
+          <div class="q-card" data-paper="p1 p10">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">BigData1</span>
+                <span class="tag tag-p10">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 / Q3 Explain Big Data Management and Processing using Datameer with example.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in BigData1 Q3 and GDINFOTECH Q3</div>
+          </div>
+
+          <!-- Q6: Data preparation and feature engineering in Datameer -->
+          <div class="q-card" data-paper="p3 p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP456 (1)</span>
+                <span class="tag tag-p7">DECAP456P_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 / Q.7 What is data preparation and feature engineering in Datameer?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same in DECAP456(1) Q5 and DECAP456P_5 Q.7</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+    </main><!-- /main-content -->
+  </div><!-- /page-layout -->
+
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
