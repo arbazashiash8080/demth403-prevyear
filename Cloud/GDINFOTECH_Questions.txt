@@ -1,0 +1,112 @@
+Question Paper: GDINFOTECH_DECAP470
+
+PART A
+
+Q1. What is Cloud Storage?
+
+Q2. What is the difference between the Internet and the Cloud?
+
+Q3. What are Web Services?
+
+Q4. What is IaaS (Infrastructure as a Service)?
+
+Q5. What is PaaS (Platform as a Service)?
+
+Q6. What is SaaS (Software as a Service)?
+
+Q7. What is Amazon EC2?
+
+Q8. What is a Private Cloud?
+
+Q9. What is a Hybrid Cloud?
+
+Q10. What are Cloud Blogs?
+
+Q11. Briefly describe Google App Engine.
+
+Q12. What do you mean by Collaborative Computing?
+
+Q13. Why do we use Google Docs?
+
+Q14. Define virtual communities in the cloud.
+
+Q15. Write a short note on IBM Clouds.
+
+Q16. What do you understand by accessing documents on the road?
+
+Q17. Define cloud services.
+
+Q18. Briefly explain web services.
+
+Q19. What is on-demand computing?
+
+Q20. Write a short note on cloud architecture.
+
+Q21. List two advantages of cloud storage.
+
+Q22. List two examples of cloud service providers.
+
+Q23. Define Big Data.
+
+Q24. What Google Cloud product allows collaborative editing of word documents?
+
+Q25. What is project management?
+
+Q26. What is a database?
+
+Q27. What is the primary function of web mail services?
+
+Q28. Define virtualization.
+
+Q29. List various types of Hypervisors used in modern-day computing.
+
+Q30. Describe the role of mobile internet devices in accessing cloud computing services.
+
+PART B
+
+Q2. What is Cloud Computing? Discuss in detail that why Cloud Computing is important in today’s networked Environment?
+
+Q3. List and discuss about the various advantages and disadvantages of the Cloud Computing.
+
+Q4. What is a Cloud Service Model? List and discuss the different types of the models available by quoting examples of each type.
+
+Q5. How Google App Engine is providing Cloud based compute and platform services? How it is different from IBM based Cloud Services?
+
+Q6. Discuss in detail that how Cloud Computing helps in managing, running and providing Collaboration and Communication based services seamlessly to the clients.
+
+Q7. List and discuss any Five Cloud based web services offered to clients in both social and commercial verticals.
+
+Q8. How Cloud Computing Provides Access to Databases, Files and Directories, Applications, and Cloud-Based Storage.
+
+Q9. Short Notes
+i) ZOHO
+ii) Big Contacts Application
+
+Q10. How Cloud Computing increases the revenues for a business based on Web Applications and Infrastructure?
+
+Q11. How you can explore contact management and CRM application?
+
+Q12. Write a short note on:-
+i) Infrastructure as a Service
+ii) Platform as a Service
+iii) Software as a Service
+
+Q13. Discuss about Web conferencing services.
+
+Q14. What is Cloud Storage? Discuss the risks associated when storing data in the clouds.
+
+Q15. How do we evaluate online groupware? Which tools we use to evaluate?
+
+Q16. Explore Online Scheduling Applications.
+
+Q17. Discuss about the Web-based word processing applications.
+
+Q18. Explain all the ways/tools to collaborate online.
+
+Q19. Discuss the advantages of cloud computing.
+
+Q20. Explain different types of databases with suitable examples.
+
+Q21. What is an hypervisor? Explain different types of hypervisors with suitable illustrations.
+
+-- End of Question Paper -- 

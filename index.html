@@ -27,6 +27,8 @@
       --glow2:      rgba(34,211,238,0.18);
       --glow3:      rgba(245,158,11,0.18);
       --glow4:      rgba(52,211,153,0.18);
+      --accent5:    #38bdf8;   /* sky blue - Cloud Computing */
+      --glow5:      rgba(56,189,248,0.18);
     }
 
     html { scroll-behavior: smooth; }
@@ -177,6 +179,7 @@
     .subject-card.ds::before      { background: var(--glow2); }
     .subject-card.java::before    { background: var(--glow3); }
     .subject-card.bd::before      { background: var(--glow4); }
+    .subject-card.cc::before      { background: var(--glow5); }
 
     .subject-card:hover {
       transform: translateY(-8px) scale(1.01);
@@ -187,6 +190,7 @@
     .subject-card.ds:hover    { box-shadow: 0 24px 60px rgba(34,211,238,0.18); }
     .subject-card.java:hover  { box-shadow: 0 24px 60px rgba(245,158,11,0.18); }
     .subject-card.bd:hover    { box-shadow: 0 24px 60px rgba(52,211,153,0.18); }
+    .subject-card.cc:hover    { box-shadow: 0 24px 60px rgba(56,189,248,0.18); }
 
     .subject-card:hover::before { opacity: 1; }
 
@@ -229,6 +233,12 @@
       color: var(--accent4);
       border-color: rgba(52,211,153,0.3);
       background: rgba(52,211,153,0.08);
+    }
+
+    .cc .course-badge {
+      color: var(--accent5);
+      border-color: rgba(56,189,248,0.3);
+      background: rgba(56,189,248,0.08);
     }
 
     .card-icon {
@@ -283,6 +293,7 @@
     .ds    .stat-val { color: var(--accent2); }
     .java  .stat-val { color: var(--accent3); }
     .bd    .stat-val { color: var(--accent4); }
+    .cc    .stat-val { color: var(--accent5); }
 
     .stat-key {
       font-size: 0.72rem;
@@ -308,6 +319,7 @@
     .ds    .cta-label { color: var(--accent2); }
     .java  .cta-label { color: var(--accent3); }
     .bd    .cta-label { color: var(--accent4); }
+    .cc    .cta-label { color: var(--accent5); }
 
     .cta-arrow {
       width: 36px;
@@ -330,6 +342,7 @@
     .ds:hover    .cta-arrow { background: rgba(34,211,238,0.10); }
     .java:hover  .cta-arrow { background: rgba(245,158,11,0.10); }
     .bd:hover    .cta-arrow { background: rgba(52,211,153,0.10); }
+    .cc:hover    .cta-arrow { background: rgba(56,189,248,0.10); }
 
     /* Thin colored top border that slides in on hover */
     .card-accent-bar {
@@ -346,6 +359,7 @@
     .ds    .card-accent-bar { background: linear-gradient(90deg, var(--accent2), #67e8f9); }
     .java  .card-accent-bar { background: linear-gradient(90deg, var(--accent3), #fcd34d); }
     .bd    .card-accent-bar { background: linear-gradient(90deg, var(--accent4), #86efac); }
+    .cc    .card-accent-bar { background: linear-gradient(90deg, var(--accent5), #7dd3fc); }
 
     .subject-card:hover .card-accent-bar { transform: scaleX(1); }
 
@@ -496,6 +510,37 @@
           </div>
           <div class="stat">
             <span class="stat-val">10</span>
+            <span class="stat-key">Papers</span>
+          </div>
+        </div>
+
+        <div class="card-cta">
+          <span class="cta-label">Open Question Bank →</span>
+          <span class="cta-arrow">›</span>
+        </div>
+      </a>
+
+      <!-- Cloud Computing -->
+      <a href="./Cloud/index.html" class="subject-card cc" id="card-cc">
+        <div class="card-accent-bar"></div>
+
+        <div class="card-top">
+          <span class="course-badge">DECAP470</span>
+          <div class="card-icon">☁️</div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-title">Cloud Computing</div>
+          <div class="card-desc">Cloud architecture, services, virtualization, file systems, databases & more — 14 units from 6 past papers including GDINFOTECH.</div>
+        </div>
+
+        <div class="card-stats">
+          <div class="stat">
+            <span class="stat-val">14</span>
+            <span class="stat-key">Units</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">6+GD</span>
             <span class="stat-key">Papers</span>
           </div>
         </div>

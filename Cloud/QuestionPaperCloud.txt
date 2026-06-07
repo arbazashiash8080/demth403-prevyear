@@ -1,0 +1,272 @@
+Question Paper: cloud1
+
+PART A
+
+Q1(a) List two advantages of cloud storage.
+
+(b) List two examples of cloud service providers.
+
+(c) Define Big Data.
+
+(d) What Google Cloud product allows collaborative editing of word documents?
+
+(e) What is project management?
+
+(f) What is a database?
+
+(g) What is the primary function of web mail services?
+
+(h) Define virtualization.
+
+(i) List various types of Hypervisors used in modern-day computing.
+
+(j) Describe the role of mobile internet devices in accessing cloud computing services.
+
+PART B
+
+Q2 Explain different types of databases with suitable examples
+
+Q3 What is an hypervisor? Explain different types of hypervisors with suitable illustrations.
+
+Q4 Describe the factors affecting the need of virtualization.
+
+Q5 What is MapReduce? Discuss working of MapReduce with its phases.
+
+Q6 Discuss the effectiveness of different web-based communication tools in fostering team engagement and promoting a collaborative work environment.
+
+Q7 Explain the architectural design of Hadoop Distributed File System (HDFS) and its advantages for storing large datasets.
+
+Q8 Elaborate on the functionalities and benefits of cloud-based mobile applications compared to traditional app installations.
+
+Q9 Evaluate the benefits and potential drawbacks of using a cloud-based contact management system for event attendee information.
+
+Q10 Describe the fundamental concepts of cloud computing, including its definition, characteristics, and applications.
+
+Q11 Discuss the major activities of cloud service provider in cloud computing.
+
+-- End of Question Paper --
+
+
+
+Question Paper: DECAP470 (1)
+
+PART A
+
+Q1(a) Define Cloud Computing.
+
+(b) Name any four organisation those provides SaaS cloud services.
+
+(c) What are the major challenges associated with big data?
+
+(d) What is heartbeat in GFS?
+
+(e) What is a cloud collaboration tool?
+
+(f) List the various types of databases.
+
+(g) What is instant messaging service?
+
+(h) Define storage virtualization.
+
+(i) Discuss the concept of OpenID?
+
+(j) List the types of end users of cloud computing.
+
+PART B
+
+Q2 Differentiate between GFS and HDFS.
+
+Q3 Discuss the operation modes of a Hadoop cluster.
+
+Q4 What assets of an organization can be monitored using MaaS (Monitoring-as-a-Service) model?
+
+Q5 Describe the required features in a web conferencing service?
+
+Q6 Explain the concept of system virtualization. Discuss the advantages of virtualization.
+
+Q7 Discuss the end user access to the cloud computing.
+
+Q8 Discuss the cloud service management activity with the perspective of provisioning and configuration.
+
+Q9 Explain different phases of Secure Software Development Life Cycle (SecSDLC).
+
+Q10 Discuss the advantages of using web based databases?
+
+Q11 What considerations are required when organisation move to a web based project management tool?
+
+-- End of Question Paper --
+
+
+
+Question Paper: DECAP470_1
+
+PART A
+
+Q1(a) Identify and describe two key components of cloud computing architecture.
+
+(b) Define Scalability in cloud computing.
+
+(c) Differentiate between Structured and Unstructured data.
+
+(d) Where are files stored in Google Cloud for collaboration?
+
+(e) What is the primary goal of project management?
+
+(f) What is a database in simple terms?
+
+(g) List features of the web based email service solutions.
+
+(h) Briefly discuss the processor virtualization.
+
+(i) List various types of Hypervisors used in modern-day computing.
+
+(j) Define blockchain and its features.
+
+PART B
+
+Q2 Elaborate on the use cases for Google Forms in collaborative data collection and analysis.
+
+Q3 Trace the historical development of cloud computing, along with the modern-day upgradation in cloud computing
+
+Q4 Discuss the importance of user-friendliness and accessibility when choosing a cloud-based project management tool for team collaboration.
+
+Q5 What is an hypervisor? Explain different types of hypervisors with suitable illustrations.
+
+Q6 Describe the Software-as-a-Service models with its advantages.
+
+Q7 Discuss the reasons for wide adoption of cloud computing.
+
+Q8 Describe the role of the Hadoop Distributed File System (HDFS) in big data processing.
+
+Q9 Describe the factors affecting the need of virtualization.
+
+Q10 Discuss the effectiveness of different web-based communication tools in fostering team engagement and promoting a collaborative work environment.
+
+Q11 Explain the working of online database?
+
+-- End of Question Paper --
+
+
+
+Question Paper: DECAP470_2
+
+PART-B
+
+Q1 Elaborate on the functionalities of a Type1 (bare-metal) hypervisor compared to a Type2 (hosted) hypervisor.
+
+Q2 Illustrate the procedure for read operations in GFS.
+
+Q3 Describe the Software-as-a-Service models with its advantages.
+
+Q4 Discuss the role of task management tools with deadline tracking in keeping event planning on track.
+
+Q5 Describe the role of the Hadoop Distributed File System (HDFS) in big data processing.
+
+Q6 Explain the features o\f google meet as a web conferencing services solution.
+
+Q7 Describe the Cloud Cube Model explaining its service, deployment, and resource pool dimensions.
+
+Q8 Discuss the differences between working with a local database and cloud-based database for collaborative projects.
+
+Q9 Explain the challenges that led to the development of virtualization technologies and how they address those challenges.
+
+Q10 Discuss the reasons for wide adoption of cloud computing.
+
+Q11 Describe the major components of virtualization.
+
+Q12 Explain the different types of web-based communication tools and their suitability for various collaborative tasks.
+
+Q13 Explore the applications of cloud services in the education sector, healthcare, and e-commerce. Explain how these services have transformed the respective areas.
+
+Q14 Explain the different stages of a project life cycle and how collaboration tools can support each stage.
+
+Q15 Explain in detail the key properties of virtual machines.
+
+Q16 Differentiate between GFS and HDFS.
+
+Q17 Describe the contrast between big data and traditional database methods.
+
+Q18 Illustrate the three level architecture of database.
+
+Q19 Differentiate between platform as a services and infrastructure as a service in detail.
+
+Q20 What is cloud computing? Discuss the benefits of cloud computing over traditional computing.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP470_3
+
+PART A
+
+Q1(a) Define Cloud Computing.
+
+(b) Name any four organisation those provides SaaS cloud services.
+
+(c) What are the major challenges associated with big data?
+
+(d) What is heartbeat in GFS?
+
+(e) What is a cloud collaboration tool?
+
+(f) List the various types of databases.
+
+(g) What is instant messaging service?
+
+(h) Define storage virtualization.
+
+(i) Discuss the concept of OpenID?
+
+(j)List the types of end users of cloud computing.
+
+PART B
+
+Q2 Differentiate between GFS and HDFS.
+
+Q3 Discuss the operation modes of a Hadoop cluster.
+
+Q4 What assets of an organization can be monitored using MaaS (Monitoring-as-a-Service) model?
+
+Q5 Describe the required features in a web conferencing service?
+
+Q6 Explain the concept of system virtualization. Discuss the advantages of virtualization.
+
+Q7 Discuss the end user access to the cloud computing.
+
+Q8 Discuss the cloud service management activity with the perspective of provisioning and configuration.
+
+Q9 Explain different phases of Secure Software Development Life Cycle (SecSDLC).
+
+Q10 Discuss the advantages of using web based databases?
+
+Q11 What considerations are required when organisation move to a web based project management tool?
+
+-- End of Question Paper --
+
+
+
+Question Paper: DECAP470_4
+
+PART-B
+
+Q1 Describe the major components of virtualization.
+
+Q2 Explain the different types of web-based communication tools and their suitability for various collaborative tasks.
+
+Q3 Explore the applications of cloud services in the education sector, healthcare, and e-commerce. Explain how these services have transformed the respective areas.
+
+Q4 Explain the different stages of a project life cycle and how collaboration tools can support each stage.
+
+Q5 Explain in detail the key properties of virtual machines.
+
+Q6 Differentiate between GFS and HDFS.
+
+Q7 Describe the contrast between big data and traditional database methods.
+
+Q8 Illustrate the three level architecture of database.
+
+Q9 Differentiate between platform as a services and infrastructure as a service in detail.
+
+Q10 What is cloud computing? Discuss the benefits of cloud computing over traditional computing.
+
+-- End of Question Paper --

@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECAP470 – Cloud Computing | Question Bank</title>
+  <meta name="description"
+    content="Organized question bank for DECAP470 Cloud Computing. All questions sorted by unit from multiple past papers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Override watermark for Cloud Computing */
+    .site-header::after {
+      content: 'DECAP470';
+    }
+
+    /* Extra paper tag colors for p7 (GDINFOTECH) */
+    :root {
+      --tag-p7-bg: rgba(56, 189, 248, 0.12);
+      --tag-p7-c: #38bdf8;
+    }
+
+    .tag-p7 {
+      background: var(--tag-p7-bg);
+      color: var(--tag-p7-c);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    /* GDINFOTECH badge — sky-blue gold distinct glow */
+    .tag-gdinfotech-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      margin-left: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="back-link">
+        <span class="back-arrow">←</span> Back to Portal
+      </a>
+      <div class="header-badge">DECAP470</div>
+      <h1 class="site-title">Cloud Computing<br><span>Question Bank</span></h1>
+      <p class="site-subtitle">Question Bank — Organized by Unit</p>
+      <div class="paper-legend">
+        <span class="legend-label">Papers:</span>
+        <span class="tag tag-p1">cloud1</span>
+        <span class="tag tag-p2">DECAP470 (1)</span>
+        <span class="tag tag-p3">DECAP470_1</span>
+        <span class="tag tag-p4">DECAP470_2</span>
+        <span class="tag tag-p5">DECAP470_3</span>
+        <span class="tag tag-p6">DECAP470_4</span>
+        <span class="tag tag-p7">GDINFOTECH ✦</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR + MAIN LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- Sidebar TOC -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-icon">📚</span>
+        <span>Units</span>
+      </div>
+      <nav class="unit-nav" id="unitNav">
+        <a href="#unit1" class="nav-item active" data-unit="1">
+          <span class="nav-num">01</span>
+          <span class="nav-text">Unit-1: Cloud computing introduction</span>
+        </a>
+        <a href="#unit2" class="nav-item" data-unit="2">
+          <span class="nav-num">02</span>
+          <span class="nav-text">Unit-2: Cloud computing architecture and models</span>
+        </a>
+        <a href="#unit3" class="nav-item" data-unit="3">
+          <span class="nav-num">03</span>
+          <span class="nav-text">Unit-3: Cloud services</span>
+        </a>
+        <a href="#unit4" class="nav-item" data-unit="4">
+          <span class="nav-num">04</span>
+          <span class="nav-text">Unit-4: Introduction to big data</span>
+        </a>
+        <a href="#unit5" class="nav-item" data-unit="5">
+          <span class="nav-num">05</span>
+          <span class="nav-text">Unit-5: File system in cloud</span>
+        </a>
+        <a href="#unit6" class="nav-item" data-unit="6">
+          <span class="nav-num">06</span>
+          <span class="nav-text">Unit-6: Collaborating using Google cloud</span>
+        </a>
+        <a href="#unit7" class="nav-item" data-unit="7">
+          <span class="nav-num">07</span>
+          <span class="nav-text">Unit-7: Collaborating on event management</span>
+        </a>
+        <a href="#unit8" class="nav-item" data-unit="8">
+          <span class="nav-num">08</span>
+          <span class="nav-text">Unit-8: Collaborating on Project Management</span>
+        </a>
+        <a href="#unit9" class="nav-item" data-unit="9">
+          <span class="nav-num">09</span>
+          <span class="nav-text">Unit-9: Collaborating on Databases</span>
+        </a>
+        <a href="#unit10" class="nav-item" data-unit="10">
+          <span class="nav-num">10</span>
+          <span class="nav-text">Unit-10: Collaborate using web-based communication</span>
+        </a>
+        <a href="#unit11" class="nav-item" data-unit="11">
+          <span class="nav-num">11</span>
+          <span class="nav-text">Unit-11: Virtualization concepts</span>
+        </a>
+        <a href="#unit12" class="nav-item" data-unit="12">
+          <span class="nav-num">12</span>
+          <span class="nav-text">Unit-12: Virtual machine</span>
+        </a>
+        <a href="#unit13" class="nav-item" data-unit="13">
+          <span class="nav-num">13</span>
+          <span class="nav-text">Unit-13: Security and standards in Cloud</span>
+        </a>
+        <a href="#unit14" class="nav-item" data-unit="14">
+          <span class="nav-num">14</span>
+          <span class="nav-text">Unit-14: Application of cloud computing</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-num" id="totalQCount">0</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6+GD</span>
+          <span class="stat-label">Papers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Units</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+      <!-- Search Bar -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search questions…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" title="Clear">✕</button>
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">All Papers</button>
+          <button class="chip" data-filter="p1">cloud1</button>
+          <button class="chip" data-filter="p2">DECAP470 (1)</button>
+          <button class="chip" data-filter="p3">DECAP470_1</button>
+          <button class="chip" data-filter="p4">DECAP470_2</button>
+          <button class="chip" data-filter="p5">DECAP470_3</button>
+          <button class="chip" data-filter="p6">DECAP470_4</button>
+          <button class="chip" data-filter="p7">GDINFOTECH ✦</button>
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results hidden">
+        <span>🔎</span><br>No questions match your search.
+      </div>
+
+      <!-- ===================== UNIT 1 ===================== -->
+      <section class="unit-section" id="unit1">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 1</div>
+          <h2 class="unit-title">Unit-1: Cloud computing introduction: cloud computing fundamentals, history of cloud computing, cloud components, usage scenarios and applications.</h2>
+          <span class="unit-count" id="count-unit1"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) List two advantages of cloud storage.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(a) and GDINFOTECH Q21</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Describe the fundamental concepts of cloud computing, including its definition, characteristics, and applications.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Define Cloud Computing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(a) and DECAP470_3 Q1(a)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Trace the historical development of cloud computing, along with the modern-day upgradation in cloud computing.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Discuss the reasons for wide adoption of cloud computing.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 / Q10 What is cloud computing? Discuss the benefits of cloud computing over traditional computing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q20 and DECAP470_4 Q10</div>
+          </div>
+
+          <!-- Q7 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2. What is Cloud Computing? Discuss in detail that why Cloud Computing is important in today's networked Environment?</p>
+            </div>
+          </div>
+
+          <!-- Q8 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3. List and discuss about the various advantages and disadvantages of the Cloud Computing.</p>
+            </div>
+          </div>
+
+          <!-- Q9 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2. What is the difference between the Internet and the Cloud?</p>
+            </div>
+          </div>
+
+          <!-- Q10 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q19. What is on-demand computing?</p>
+            </div>
+          </div>
+
+          <!-- Q11 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10. How Cloud Computing increases the revenues for a business based on Web Applications and Infrastructure?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 2 ===================== -->
+      <section class="unit-section" id="unit2">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 2</div>
+          <h2 class="unit-title">Unit-2: Cloud computing architecture and models: why cloud computing matters, issues in cloud, cloud architecture, cloud storage, NIST cloud computing reference model, Cloud cube model.</h2>
+          <span class="unit-count" id="count-unit2"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Identify and describe two key components of cloud computing architecture.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Define Scalability in cloud computing.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Describe the Cloud Cube Model explaining its service, deployment, and resource pool dimensions.</p>
+            </div>
+          </div>
+
+          <!-- Q4 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1. What is Cloud Storage?</p>
+            </div>
+          </div>
+
+          <!-- Q5 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8. What is a Private Cloud?</p>
+            </div>
+          </div>
+
+          <!-- Q6 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9. What is a Hybrid Cloud?</p>
+            </div>
+          </div>
+
+          <!-- Q7 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20. Write a short note on cloud architecture.</p>
+            </div>
+          </div>
+
+          <!-- Q8 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8. How Cloud Computing Provides Access to Databases, Files and Directories, Applications, and Cloud-Based Storage.</p>
+            </div>
+          </div>
+
+          <!-- Q9 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14. What is Cloud Storage? Discuss the risks associated when storing data in the clouds.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 3 ===================== -->
+      <section class="unit-section" id="unit3">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 3</div>
+          <h2 class="unit-title">Unit-3: Cloud services: types of cloud services, service providers, software as a service, platform as a service, infrastructure as a service, database as a service, monitoring as a service, communication as services.</h2>
+          <span class="unit-count" id="count-unit3"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) List two examples of cloud service providers.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(b) and GDINFOTECH Q22</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Discuss the major activities of cloud service provider in cloud computing.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Name any four organisations those provides SaaS cloud services.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(b) and DECAP470_3 Q1(b)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 What assets of an organization can be monitored using MaaS (Monitoring-as-a-Service) model?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q4 and DECAP470_3 Q4</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Discuss the cloud service management activity with the perspective of provisioning and configuration.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q8 and DECAP470_3 Q8</div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Describe the Software-as-a-Service models with its advantages.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q19 / Q9 Differentiate between platform as a service and infrastructure as a service in detail.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q19 and DECAP470_4 Q9</div>
+          </div>
+
+          <!-- Q8 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3. What are Web Services?</p>
+            </div>
+          </div>
+
+          <!-- Q9 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4. What is IaaS (Infrastructure as a Service)?</p>
+            </div>
+          </div>
+
+          <!-- Q10 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5. What is PaaS (Platform as a Service)?</p>
+            </div>
+          </div>
+
+          <!-- Q11 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6. What is SaaS (Software as a Service)?</p>
+            </div>
+          </div>
+
+          <!-- Q12 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7. What is Amazon EC2?</p>
+            </div>
+          </div>
+
+          <!-- Q13 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11. Briefly describe Google App Engine.</p>
+            </div>
+          </div>
+
+          <!-- Q14 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15. Write a short note on IBM Clouds.</p>
+            </div>
+          </div>
+
+          <!-- Q15 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q15</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17. Define cloud services.</p>
+            </div>
+          </div>
+
+          <!-- Q16 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q16</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18. Briefly explain web services.</p>
+            </div>
+          </div>
+
+          <!-- Q17 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q17</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4. What is a Cloud Service Model? List and discuss the different types of the models available by quoting examples of each type.</p>
+            </div>
+          </div>
+
+          <!-- Q18 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q18</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5. How Google App Engine is providing Cloud based compute and platform services? How it is different from IBM based Cloud Services?</p>
+            </div>
+          </div>
+
+          <!-- Q19 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q19</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7. List and discuss any Five Cloud based web services offered to clients in both social and commercial verticals.</p>
+            </div>
+          </div>
+
+          <!-- Q20 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q20</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12. Write a short note on:-
+              <ul>
+                <li>(i) Infrastructure as a Service</li>
+                <li>(ii) Platform as a Service</li>
+                <li>(iii) Software as a Service</li>
+              </ul></p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 4 ===================== -->
+      <section class="unit-section" id="unit4">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 4</div>
+          <h2 class="unit-title">Unit-4: Introduction to big data: big data, Hadoop framework, introduction to Mapreduce, phases of Mapreduce.</h2>
+          <span class="unit-count" id="count-unit4"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Define Big Data.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(c) and GDINFOTECH Q23</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 What is MapReduce? Discuss working of MapReduce with its phases.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) What are the major challenges associated with big data?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(c) and DECAP470_3 Q1(c)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Discuss the operation modes of a Hadoop cluster.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q3 and DECAP470_3 Q3</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Differentiate between Structured and Unstructured data.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17 / Q7 Describe the contrast between big data and traditional database methods.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q17 and DECAP470_4 Q7</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 5 ===================== -->
+      <section class="unit-section" id="unit5">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 5</div>
+          <h2 class="unit-title">Unit-5: File system in cloud: Google file system, architecture of Google file system, operations of Google file system, Hadoop distributed file system, architecture of HDFS, operations of HDFS, comparison of GFS and HDFS.</h2>
+          <span class="unit-count" id="count-unit5"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Explain the architectural design of Hadoop Distributed File System (HDFS) and its advantages for storing large datasets.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) What is heartbeat in GFS?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(d) and DECAP470_3 Q1(d)</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p4 p5 p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 / Q16 / Q6 Differentiate between GFS and HDFS.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q2, DECAP470_2 Q16, DECAP470_3 Q2 and DECAP470_4 Q6</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3 p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 / Q5 Describe the role of the Hadoop Distributed File System (HDFS) in big data processing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_1 Q8 and DECAP470_2 Q5</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Illustrate the procedure for read operations in GFS.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 6 ===================== -->
+      <section class="unit-section" id="unit6">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 6</div>
+          <h2 class="unit-title">Unit-6: Collaborating using Google cloud: create word documents in collaboration, collaborating on spreadsheets, collaborating using Google forms, storing and sharing files.</h2>
+          <span class="unit-count" id="count-unit6"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) What Google Cloud product allows collaborative editing of word documents?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(d) and GDINFOTECH Q24</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Where are files stored in Google Cloud for collaboration?</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Elaborate on the use cases for Google Forms in collaborative data collection and analysis.</p>
+            </div>
+          </div>
+
+          <!-- Q4 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13. Why do we use Google Docs?</p>
+            </div>
+          </div>
+
+          <!-- Q5 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17. Discuss about the Web-based word processing applications.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 7 ===================== -->
+      <section class="unit-section" id="unit7">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 7</div>
+          <h2 class="unit-title">Unit-7: Collaborating on event management: collaborating on calendars, schedules and task management, creation of to-do lists, Collaborating on Contact Management.</h2>
+          <span class="unit-count" id="count-unit7"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Evaluate the benefits and potential drawbacks of using a cloud-based contact management system for event attendee information.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Discuss the role of task management tools with deadline tracking in keeping event planning on track.</p>
+            </div>
+          </div>
+
+          <!-- Q3 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9. Short Notes
+              <ul>
+                <li>(i) ZOHO</li>
+                <li>(ii) Big Contacts Application</li>
+              </ul></p>
+            </div>
+          </div>
+
+          <!-- Q4 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11. How you can explore contact management and CRM application?</p>
+            </div>
+          </div>
+
+          <!-- Q5 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16. Explore Online Scheduling Applications.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 8 ===================== -->
+      <section class="unit-section" id="unit8">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 8</div>
+          <h2 class="unit-title">Unit-8: Collaborating on Project Management: Project Management, project management tools, management of project using a cloud-based project management tool.</h2>
+          <span class="unit-count" id="count-unit8"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) What is project management?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(e) and GDINFOTECH Q25</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 What considerations are required when organisation move to a web based project management tool?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q11 and DECAP470_3 Q11</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) What is the primary goal of project management?</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Discuss the importance of user-friendliness and accessibility when choosing a cloud-based project management tool for team collaboration.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14 / Q4 Explain the different stages of a project life cycle and how collaboration tools can support each stage.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q14 and DECAP470_4 Q4</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 9 ===================== -->
+      <section class="unit-section" id="unit9">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 9</div>
+          <h2 class="unit-title">Unit-9: Collaborating on Databases: understanding databases, working of databases, working of online databases, exploring web-based databases, evaluating online databases.</h2>
+          <span class="unit-count" id="count-unit9"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) What is a database?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(f) and GDINFOTECH Q26</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 / Q20. Explain different types of databases with suitable examples.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q2 and GDINFOTECH Q20</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) List the various types of databases.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(f) and DECAP470_3 Q1(f)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Discuss the advantages of using web based databases?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q10 and DECAP470_3 Q10</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) What is a database in simple terms?</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 Explain the working of online database?</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Discuss the differences between working with a local database and cloud-based database for collaborative projects.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18 / Q8 Illustrate the three level architecture of database.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q18 and DECAP470_4 Q8</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 10 ===================== -->
+      <section class="unit-section" id="unit10">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 10</div>
+          <h2 class="unit-title">Unit-10: Collaborate using web-based communication: web-based communication tools, web mail services, instant messaging tools, web conferencing tools, social networks and groupware, blogs and wikis.</h2>
+          <span class="unit-count" id="count-unit10"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) What is the primary function of web mail services?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(g) and GDINFOTECH Q27</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1 p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 / Q10 Discuss the effectiveness of different web-based communication tools in fostering team engagement and promoting a collaborative work environment.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q6 and DECAP470_1 Q10</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) What is a cloud collaboration tool?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(e) and DECAP470_3 Q1(e)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) What is instant messaging service?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(g) and DECAP470_3 Q1(g)</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Describe the required features in a web conferencing service?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q5 and DECAP470_3 Q5</div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) List features of the web based email service solutions.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Explain the features of google meet as a web conferencing services solution.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12 / Q2 Explain the different types of web-based communication tools and their suitability for various collaborative tasks.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q12 and DECAP470_4 Q2</div>
+          </div>
+
+          <!-- Q9 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q9</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10. What are Cloud Blogs?</p>
+            </div>
+          </div>
+
+          <!-- Q10 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q10</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12. What do you mean by Collaborative Computing?</p>
+            </div>
+          </div>
+
+          <!-- Q11 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q11</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14. Define virtual communities in the cloud.</p>
+            </div>
+          </div>
+
+          <!-- Q12 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q12</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6. Discuss in detail that how Cloud Computing helps in managing, running and providing Collaboration and Communication based services seamlessly to the clients.</p>
+            </div>
+          </div>
+
+          <!-- Q13 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q13</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13. Discuss about Web conferencing services.</p>
+            </div>
+          </div>
+
+          <!-- Q14 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q14</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15. How do we evaluate online groupware? Which tools we use to evaluate?</p>
+            </div>
+          </div>
+
+          <!-- Q15 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q15</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q18. Explain all the ways/tools to collaborate online.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 11 ===================== -->
+      <section class="unit-section" id="unit11">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 11</div>
+          <h2 class="unit-title">Unit-11: Virtualization concepts: need for virtualization, types of virtualization, features of virtualization, working of virtualization in cloud, pros and cons of virtualization.</h2>
+          <span class="unit-count" id="count-unit11"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Define virtualization.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(h) and GDINFOTECH Q28</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1 p3">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 / Q9 Describe the factors affecting the need of virtualization.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q4 and DECAP470_1 Q9</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Define storage virtualization.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(h) and DECAP470_3 Q1(h)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Explain the concept of system virtualization. Discuss the advantages of virtualization.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q6 and DECAP470_3 Q6</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Briefly discuss the processor virtualization.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Explain the challenges that led to the development of virtualization technologies and how they address those challenges.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 / Q1 Describe the major components of virtualization.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q11 and DECAP470_4 Q1</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 12 ===================== -->
+      <section class="unit-section" id="unit12">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 12</div>
+          <h2 class="unit-title">Unit-12: Virtual machine: virtual machine properties, interpretation and binary translation, hypervisors, types of hypervisors, HLL VM: Xen, KVM, VMware, virtual box, hyper-V.</h2>
+          <span class="unit-count" id="count-unit12"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p3 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p3">DECAP470_1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) List various types of Hypervisors used in modern-day computing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(i), DECAP470_1 Q1(i) and GDINFOTECH Q29</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1 p3 p7">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p3">DECAP470_1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 / Q5 / Q21. What is an hypervisor? Explain different types of hypervisors with suitable illustrations.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q3, DECAP470_1 Q5 and GDINFOTECH Q21</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Elaborate on the functionalities of a Type1 (bare-metal) hypervisor compared to a Type2 (hosted) hypervisor.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 / Q5 Explain in detail the key properties of virtual machines.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q15 and DECAP470_4 Q5</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 13 ===================== -->
+      <section class="unit-section" id="unit13">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 13</div>
+          <h2 class="unit-title">Unit-13: Security and standards in Cloud: security in clouds, security challenges, the open cloud consortium, the distributed management task force, standards for application developers, standards for messaging, standards for security.</h2>
+          <span class="unit-count" id="count-unit13"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) Discuss the concept of OpenID?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(i) and DECAP470_3 Q1(i)</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Explain different phases of Secure Software Development Life Cycle (SecSDLC).</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q9 and DECAP470_3 Q9</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p3">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP470_1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) Define blockchain and its features.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 14 ===================== -->
+      <section class="unit-section" id="unit14">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 14</div>
+          <h2 class="unit-title">Unit-14: Application of cloud computing: end user access to cloud computing, application of cloud service in various areas of life, mobile internet devices and the cloud.</h2>
+          <span class="unit-count" id="count-unit14"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) Describe the role of mobile internet devices in accessing cloud computing services.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in cloud1 Q1(j) and GDINFOTECH Q30</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">cloud1</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Elaborate on the functionalities and benefits of cloud-based mobile applications compared to traditional app installations.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) List the types of end users of cloud computing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q1(j) and DECAP470_3 Q1(j)</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP470 (1)</span>
+                <span class="tag tag-p5">DECAP470_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Discuss the end user access to the cloud computing.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470(1) Q7 and DECAP470_3 Q7</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p4 p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP470_2</span>
+                <span class="tag tag-p6">DECAP470_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13 / Q3 Explore the applications of cloud services in the education sector, healthcare, and e-commerce. Explain how these services have transformed the respective areas.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP470_2 Q13 and DECAP470_4 Q3</div>
+          </div>
+
+          <!-- Q6 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16. What do you understand by accessing documents on the road?</p>
+            </div>
+          </div>
+
+          <!-- Q7 GDINFOTECH -->
+          <div class="q-card" data-paper="p7">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10. How Cloud Computing increases the revenues for a business based on Web Applications and Infrastructure?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+    </main><!-- /main-content -->
+  </div><!-- /page-layout -->
+
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

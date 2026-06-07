@@ -1,0 +1,135 @@
+const fs = require('fs');
+
+const cloudTxt = fs.readFileSync('Cloud Computing/QuestionPaperCloud.txt', 'utf8');
+const gdTxt = fs.readFileSync('Cloud Computing/GDINFOTECH_Questions.txt', 'utf8');
+const html = fs.readFileSync('Cloud Computing/index.html', 'utf8');
+
+// We just parse out non-empty lines from the txt files that end with '?' or '.' 
+// and check if they are in the HTML.
+// To be safe, we just check the questions from our JSON mapping.
+const questions = [
+  "Describe the fundamental concepts of cloud computing, including its definition, characteristics, and applications.",
+  "Define Cloud Computing.",
+  "Trace the historical development of cloud computing, along with the modern-day upgradation in cloud computing",
+  "What is cloud computing? Discuss the benefits of cloud computing over traditional computing.",
+  "What is the difference between the Internet and the Cloud?",
+  "What is on-demand computing?",
+  "List and discuss about the various advantages and disadvantages of the Cloud Computing.",
+  "Discuss the advantages of cloud computing.",
+  "List two advantages of cloud storage.",
+  "Identify and describe two key components of cloud computing architecture.",
+  "Define Scalability in cloud computing.",
+  "Discuss the reasons for wide adoption of cloud computing.",
+  "Describe the Cloud Cube Model explaining its service, deployment, and resource pool dimensions.",
+  "What is Cloud Storage?",
+  "What is a Private Cloud?",
+  "What is a Hybrid Cloud?",
+  "Write a short note on cloud architecture.",
+  "What is Cloud Computing? Discuss in detail that why Cloud Computing is important in today’s networked Environment?",
+  "How Cloud Computing Provides Access to Databases, Files and Directories, Applications, and Cloud-Based Storage.",
+  "What is Cloud Storage? Discuss the risks associated when storing data in the clouds.",
+  "List two examples of cloud service providers.",
+  "Discuss the major activities of cloud service provider in cloud computing.",
+  "Name any four organisation those provides SaaS cloud services.",
+  "What assets of an organization can be monitored using MaaS (Monitoring-as-a-Service) model?",
+  "Discuss the cloud service management activity with the perspective of provisioning and configuration.",
+  "Describe the Software-as-a-Service models with its advantages.",
+  "Differentiate between platform as a services and infrastructure as a service in detail.",
+  "What are Web Services?",
+  "What is IaaS (Infrastructure as a Service)?",
+  "What is PaaS (Platform as a Service)?",
+  "What is SaaS (Software as a Service)?",
+  "What is Amazon EC2?",
+  "Briefly describe Google App Engine.",
+  "Write a short note on IBM Clouds.",
+  "Define cloud services.",
+  "Briefly explain web services.",
+  "What is a Cloud Service Model? List and discuss the different types of the models available by quoting examples of each type.",
+  "How Google App Engine is providing Cloud based compute and platform services? How it is different from IBM based Cloud Services?",
+  "List and discuss any Five Cloud based web services offered to clients in both social and commercial verticals.",
+  "Write a short note on:- i) Infrastructure as a Service ii) Platform as a Service iii) Software as a Service",
+  "Define Big Data.",
+  "What is MapReduce? Discuss working of MapReduce with its phases.",
+  "What are the major challenges associated with big data?",
+  "Discuss the operation modes of a Hadoop cluster.",
+  "Differentiate between Structured and Unstructured data.",
+  "Describe the contrast between big data and traditional database methods.",
+  "Explain the architectural design of Hadoop Distributed File System (HDFS) and its advantages for storing large datasets.",
+  "What is heartbeat in GFS?",
+  "Differentiate between GFS and HDFS.",
+  "Describe the role of the Hadoop Distributed File System (HDFS) in big data processing.",
+  "Illustrate the procedure for read operations in GFS.",
+  "What Google Cloud product allows collaborative editing of word documents?",
+  "Where are files stored in Google Cloud for collaboration?",
+  "Elaborate on the use cases for Google Forms in collaborative data collection and analysis.",
+  "Why do we use Google Docs?",
+  "Discuss about the Web-based word processing applications.",
+  "Evaluate the benefits and potential drawbacks of using a cloud-based contact management system for event attendee information.",
+  "Discuss the role of task management tools with deadline tracking in keeping event planning on track.",
+  "Short Notes i) ZOHO ii) Big Contacts Application",
+  "How you can explore contact management and CRM application?",
+  "Explore Online Scheduling Applications.",
+  "What is project management?",
+  "What considerations are required when organisation move to a web based project management tool?",
+  "What is the primary goal of project management?",
+  "Discuss the importance of user-friendliness and accessibility when choosing a cloud-based project management tool for team collaboration.",
+  "Explain the different stages of a project life cycle and how collaboration tools can support each stage.",
+  "What is a database?",
+  "Explain different types of databases with suitable examples.",
+  "List the various types of databases.",
+  "Discuss the advantages of using web based databases?",
+  "What is a database in simple terms?",
+  "Explain the working of online database?",
+  "Discuss the differences between working with a local database and cloud-based database for collaborative projects.",
+  "Illustrate the three level architecture of database.",
+  "What is the primary function of web mail services?",
+  "Discuss the effectiveness of different web-based communication tools in fostering team engagement and promoting a collaborative work environment.",
+  "What is a cloud collaboration tool?",
+  "What is instant messaging service?",
+  "Describe the required features in a web conferencing service?",
+  "List features of the web based email service solutions.",
+  "Explain the features of google meet as a web conferencing services solution.",
+  "Explain the different types of web-based communication tools and their suitability for various collaborative tasks.",
+  "What are Cloud Blogs?",
+  "What do you mean by Collaborative Computing?",
+  "Define virtual communities in the cloud.",
+  "Discuss in detail that how Cloud Computing helps in managing, running and providing Collaboration and Communication based services seamlessly to the clients.",
+  "Discuss about Web conferencing services.",
+  "How do we evaluate online groupware? Which tools we use to evaluate?",
+  "Explain all the ways/tools to collaborate online.",
+  "Define virtualization.",
+  "Describe the factors affecting the need of virtualization.",
+  "Define storage virtualization.",
+  "Explain the concept of system virtualization. Discuss the advantages of virtualization.",
+  "Briefly discuss the processor virtualization.",
+  "Explain the challenges that led to the development of virtualization technologies and how they address those challenges.",
+  "Describe the major components of virtualization.",
+  "List various types of Hypervisors used in modern-day computing.",
+  "What is an hypervisor? Explain different types of hypervisors with suitable illustrations.",
+  "Elaborate on the functionalities of a Type1 (bare-metal) hypervisor compared to a Type2 (hosted) hypervisor.",
+  "Explain in detail the key properties of virtual machines.",
+  "Discuss the concept of OpenID?",
+  "Explain different phases of Secure Software Development Life Cycle (SecSDLC).",
+  "Define blockchain and its features.",
+  "Describe the role of mobile internet devices in accessing cloud computing services.",
+  "Elaborate on the functionalities and benefits of cloud-based mobile applications compared to traditional app installations.",
+  "List the types of end users of cloud computing.",
+  "Discuss the end user access to the cloud computing.",
+  "Explore the applications of cloud services in the education sector, healthcare, and e-commerce. Explain how these services have transformed the respective areas.",
+  "What do you understand by accessing documents on the road?",
+  "How Cloud Computing increases the revenues for a business based on Web Applications and Infrastructure?"
+];
+
+let missing = 0;
+for (const q of questions) {
+  if (!html.includes(q)) {
+    console.log("Missing:", q);
+    missing++;
+  }
+}
+
+if (missing === 0) {
+  console.log("All questions from txt files are present alright.");
+} else {
+  console.log(missing + " questions missing!");
+}
