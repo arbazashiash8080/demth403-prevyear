@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECAP472 – Web Technologies | Question Bank</title>
+  <meta name="description"
+    content="Organized question bank for DECAP472 Web Technologies. All questions sorted by unit from multiple past papers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Override watermark for Web Technologies */
+    .site-header::after {
+      content: 'DECAP472';
+    }
+
+    /* Extra paper tag colors for p7 (GDINFOTECH) */
+    :root {
+      --tag-p7-bg: rgba(251, 113, 133, 0.12);
+      --tag-p7-c: #fb7185;
+    }
+
+    .tag-p7 {
+      background: var(--tag-p7-bg);
+      color: var(--tag-p7-c);
+      border: 1px solid rgba(251, 113, 133, 0.35);
+    }
+
+    /* GDINFOTECH badge — rose-pink distinct glow */
+    .tag-gdinfotech-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(251, 113, 133, 0.15);
+      color: #fb7185;
+      border: 1px solid rgba(251, 113, 133, 0.45);
+      margin-left: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="back-link">
+        <span class="back-arrow">←</span> Back to Portal
+      </a>
+      <div class="header-badge">DECAP472</div>
+      <h1 class="site-title">Web Technologies<br><span>Question Bank</span></h1>
+      <p class="site-subtitle">Question Bank — Organized by Unit</p>
+      <div class="paper-legend">
+        <span class="legend-label">Papers:</span>
+        <span class="tag tag-p1">web1</span>
+        <span class="tag tag-p2">DECAP472 (1)</span>
+        <span class="tag tag-p3">DECAP472_2</span>
+        <span class="tag tag-p4">DECAP472_3</span>
+        <span class="tag tag-p5">DECAP472_4</span>
+        <span class="tag tag-p6">DECAP472_5</span>
+        <span class="tag tag-p7">GDINFOTECH ✦</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR + MAIN LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- Sidebar TOC -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-icon">📚</span>
+        <span>Units</span>
+      </div>
+      <nav class="unit-nav" id="unitNav">
+        <a href="#unit1" class="nav-item active" data-unit="1">
+          <span class="nav-num">01</span>
+          <span class="nav-text">Unit-1: Overview of HTML</span>
+        </a>
+        <a href="#unit2" class="nav-item" data-unit="2">
+          <span class="nav-num">02</span>
+          <span class="nav-text">Unit-2: DHTML with CSS</span>
+        </a>
+        <a href="#unit3" class="nav-item" data-unit="3">
+          <span class="nav-num">03</span>
+          <span class="nav-text">Unit-3: Introduction to Bootstrap</span>
+        </a>
+        <a href="#unit4" class="nav-item" data-unit="4">
+          <span class="nav-num">04</span>
+          <span class="nav-text">Unit-4: Using the framework</span>
+        </a>
+        <a href="#unit5" class="nav-item" data-unit="5">
+          <span class="nav-num">05</span>
+          <span class="nav-text">Unit-5: Navbars in action</span>
+        </a>
+        <a href="#unit6" class="nav-item" data-unit="6">
+          <span class="nav-num">06</span>
+          <span class="nav-text">Unit-6: Custom components</span>
+        </a>
+        <a href="#unit7" class="nav-item" data-unit="7">
+          <span class="nav-num">07</span>
+          <span class="nav-text">Unit-7: Introduction to ReactJS</span>
+        </a>
+        <a href="#unit8" class="nav-item" data-unit="8">
+          <span class="nav-num">08</span>
+          <span class="nav-text">Unit-8: Pure React concepts</span>
+        </a>
+        <a href="#unit9" class="nav-item" data-unit="9">
+          <span class="nav-num">09</span>
+          <span class="nav-text">Unit-9: Using React with JSX</span>
+        </a>
+        <a href="#unit10" class="nav-item" data-unit="10">
+          <span class="nav-num">10</span>
+          <span class="nav-text">Unit-10: State management and component tree</span>
+        </a>
+        <a href="#unit11" class="nav-item" data-unit="11">
+          <span class="nav-num">11</span>
+          <span class="nav-text">Unit-11: Working with React router and server</span>
+        </a>
+        <a href="#unit12" class="nav-item" data-unit="12">
+          <span class="nav-num">12</span>
+          <span class="nav-text">Unit-12: Components in detail</span>
+        </a>
+        <a href="#unit13" class="nav-item" data-unit="13">
+          <span class="nav-num">13</span>
+          <span class="nav-text">Unit-13: Styling components</span>
+        </a>
+        <a href="#unit14" class="nav-item" data-unit="14">
+          <span class="nav-num">14</span>
+          <span class="nav-text">Unit-14: Functional programming with Javascript</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-num" id="totalQCount">0</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6+GD</span>
+          <span class="stat-label">Papers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Units</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+      <!-- Search Bar -->
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search questions…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" title="Clear">✕</button>
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">All Papers</button>
+          <button class="chip" data-filter="p1">web1</button>
+          <button class="chip" data-filter="p2">DECAP472 (1)</button>
+          <button class="chip" data-filter="p3">DECAP472_2</button>
+          <button class="chip" data-filter="p4">DECAP472_3</button>
+          <button class="chip" data-filter="p5">DECAP472_4</button>
+          <button class="chip" data-filter="p6">DECAP472_5</button>
+          <button class="chip" data-filter="p7">GDINFOTECH ✦</button>
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results hidden">
+        <span>🔎</span><br>No questions match your search.
+      </div>
+
+      <!-- ===================== UNIT 1 ===================== -->
+      <section class="unit-section" id="unit1">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 1</div>
+          <h2 class="unit-title">Unit-1: Overview of HTML: structure of HTML page, working with tags and attributes,
+            working with list and inline elements, implementing tables and forms.</h2>
+          <span class="unit-count" id="count-unit1"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) What are attributes in HTML and how do they function?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(a) and GDINFOTECH Q1</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(a) Discuss the format of HTML program.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Explain the HTML Table Tag and its attributes with an example.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Explain the components of an HTML form that are used to gather user input. Provide an example of a
+                form that includes text input, a checkbox and a submit button. Discuss how each element contributes to
+                data collection.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q10 and DECAP472_4 Q10</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Explain the essentials of HTML forms, including form elements, input types and form submission. How
+                do forms facilitate user interaction and data collection on a web page?</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q15 Explain the HTML Table Tag and its attributes with an example.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q29 Describe the LIST Tag with examples.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q26 Explain the Bootstrap Form classes with an example program.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 2 ===================== -->
+      <section class="unit-section" id="unit2">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 2</div>
+          <h2 class="unit-title">Unit-2: DHTML with CSS: concepts of selectors, formatting tags with CSS, responsive
+            layout designing using CSS flexbox.</h2>
+          <span class="unit-count" id="count-unit2"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Discuss how CSS can be used to change the visual appearance of HTML tags. Write a CSS snippet that
+                applies these properties to a paragraph element.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q9 and GDINFOTECH Q9</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Explain the CSS Flexbox with an example.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) / Q9 How can you utilize CSS techniques such as media queries and flexbox to design components
+                that adapt to different screen sizes and devices?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(i) and GDINFOTECH Q9</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 3 ===================== -->
+      <section class="unit-section" id="unit3">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 3</div>
+          <h2 class="unit-title">Unit-3: Introduction to Bootstrap: introduction to bootstrap, associating bootstrap
+            with mobile web interfaces.</h2>
+          <span class="unit-count" id="count-unit3"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) How does Bootstrap facilitate responsive web design?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(b) and GDINFOTECH Q2</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 How would you explain the concept of mobile-first design to your peers, and how can Bootstrap's
+                features and components support this shift in design mindset?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q2 and GDINFOTECH Q2</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(b) Discuss about the different types of containers provided by Bootstrap.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 How to Create a Responsive Layout with Bootstrap?</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 In today's mobile-centric landscape, creating user interfaces that seamlessly adapt to various
+                screen sizes and devices is crucial. How would you illustrate the role of Bootstrapping facilitating the
+                development of mobile-friendly web interfaces, and what strategies would you employ to ensure optimal
+                user experience across different mobile devices?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q5 and DECAP472_4 Q5</div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 What are the key components and features of Bootstrap that contribute to its effectiveness in
+                developing mobile-friendly web interfaces?</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Describe about the creating responsive images and styling them with Bootstrap with example.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q20 How to create a Responsive Layout with Bootstrap?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 4 ===================== -->
+      <section class="unit-section" id="unit4">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 4</div>
+          <h2 class="unit-title">Unit-4: Using the framework: starter template, bootstrap theme, bootstrap-grids,
+            bootstrap-jumbotron, bootstrap-narrow jumbotron.</h2>
+          <span class="unit-count" id="count-unit4"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) What is the purpose of a starter template in Bootstrap?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(c) and GDINFOTECH Q3</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(c) Why is Jumbotron used in Bootstrap?</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Show that how a starter template can be created in bootstrap?</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Explain the grid system in Bootstrap in detail, including its structure, classes, and flexibility in
+                designing responsive layouts.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q5 and GDINFOTECH Q5</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Discuss the concept of a Bootstrap narrow Jumbotron and how it differs from the standard Jumbotron.
+                What are its typical use cases? Provide HTML and CSS code for a narrow Jumbotron that is centered on the
+                page with reduced horizontal padding.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q7 and DECAP472_4 Q7</div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Describe the process of using a starter template in Bootstrap to kick start a web development
+                project. What are the key components typically included in a starter template?</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Demonstrate the Bootstrap Grid System with example.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q14 / Q30 Show that how a starter template can be created in Bootstrap?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 5 ===================== -->
+      <section class="unit-section" id="unit5">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 5</div>
+          <h2 class="unit-title">Unit-5: Navbars in action: bootstrap-navbar, bootstrap-static top navbar,
+            bootstrap-fixed navbar.</h2>
+          <span class="unit-count" id="count-unit5"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Describe what a "static top navbar" is in Bootstrap and when it should be used.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(d) and GDINFOTECH Q4</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(d) Write the syntax to Fix a navbar in the Top position.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 What are the advantages of incorporating a 'fixed navbar' in Bootstrap, and how does it contrast
+                with a static top navbar? Additionally, provide an HTML and CSS example illustrating the implementation
+                of a fixed navbar that remains fixed at the top of the viewport while scrolling.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q6 and DECAP472_4 Q6</div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 6 ===================== -->
+      <section class="unit-section" id="unit6">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 6</div>
+          <h2 class="unit-title">Unit-6: Custom components: bootstrap-cover, carousel, blog, dashboard, sign-in page,
+            justified nav, sticky footer, sticky footer with navbar.</h2>
+          <span class="unit-count" id="count-unit6"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Explain the role of the carousel in Bootstrap for creating interactive image or content sliders.
+                What are some best practices for designing and implementing carousels in web projects?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q4 and GDINFOTECH Q4</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Develop a sample dashboard using Bootstrap.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Explain how the Bootstrap carousel component is used to create a slideshow of images. Include an
+                example of a simple carousel implementation with controls for previous and next slides.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Create a program to develop an attractive sign-in-page with the help of Bootstrap.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q12 / Q23 Develop a sample dashboard using Bootstrap.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 7 ===================== -->
+      <section class="unit-section" id="unit7">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 7</div>
+          <h2 class="unit-title">Unit-7: Introduction to ReactJS: Reactjs architecture, Reactjs and web development.
+          </h2>
+          <span class="unit-count" id="count-unit7"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Describe the core components of ReactJS architecture.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(e) and GDINFOTECH Q5</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(e) Define the virtual DOM?</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Discuss the features of React.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q24 How do you create a React app? Explain with example.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 8 ===================== -->
+      <section class="unit-section" id="unit8">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 8</div>
+          <h2 class="unit-title">Unit-8: Pure React concepts: setting up webpage using react and react DOM, constructing
+            elements with data, concept of DOM rendering, working with factories in react.</h2>
+          <span class="unit-count" id="count-unit8"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 What are the key steps involved in constructing elements with data in React?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q11 and GDINFOTECH Q11</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 What is the concept of DOM rendering in React, and why is it important?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q2 and DECAP472_4 Q2</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q6 Describe the steps required to set up a basic React application on a webpage. Include details on how
+                to include React and React DOM libraries, and how to render a simple react component into a DOM element
+                using ReactDOM.render()</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Explain about the react component with an example.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 / Q18 / Q27 Describe about the components in React with example?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 9 ===================== -->
+      <section class="unit-section" id="unit9">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 9</div>
+          <h2 class="unit-title">Unit-9: Using React with JSX: defining react elements using JSX, concept of transpiling
+            and babel, working with recipes and webpack.</h2>
+          <span class="unit-count" id="count-unit9"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) / Q10 Defining React Elements Using JSX / How do you define React elements using JSX?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(f), web1 Q10 and GDINFOTECH Q6, Q10</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(f) Evaluate the React Webpack.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Implement the use of Webpack in a React App with example.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 What are React recipes, and how do they aid in development?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q3 and DECAP472_4 Q3</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 How does JSX facilitate the integration of HTML and JavaScript in React?</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Explain the concept of transpiling.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q11 / Q28 Implement the use of Webpack in a React App with example. / Create a delicious recipe
+                component with recipe's steps using React JSX in program.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 10 ===================== -->
+      <section class="unit-section" id="unit10">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 10</div>
+          <h2 class="unit-title">Unit-10: State management and component tree in ReactJS: validating properties with
+            react, managing data using state in react, using component tree to manage state.</h2>
+          <span class="unit-count" id="count-unit10"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) / Q7 Discuss common challenges encountered while managing state in React applications.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(g), web1 Q7 and GDINFOTECH Q7</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(g) What are props in React?</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Describe how state is used in React to manage data. What are the differences between state and
+                props, and how should each be used within components? Provide an example of a component that initializes
+                state in the constructor and updates it based on user input.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q4 and DECAP472_4 Q4</div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 Explain the concept of props in React and their significance in component composition.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q9 and DECAP472_4 Q9</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Discuss the concept of "lifting state up" in React and how it can be used to manage state across
+                multiple components within a component tree. Provide an example where state is managed in a parent
+                component and accessed by multiple child components to perform a specific task, such as filtering a list
+                of items based on user input.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Your team is working on developing a new e-commerce platform using React.js. Describe how you would
+                approach implementing a product listing page with filtering using React's state management. How would
+                you validate incoming properties to ensure data integrity? Discuss the role of the component tree in
+                managing state across different components.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q8 and GDINFOTECH Q8</div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q9 What is the need of useState() Hook in React. Give example.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 11 ===================== -->
+      <section class="unit-section" id="unit11">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 11</div>
+          <h2 class="unit-title">Unit-11: Working with React router and server: web page management by incorporating
+            react router, data driven web applications and router parameters, react based server rendering, react based
+            server communication.</h2>
+          <span class="unit-count" id="count-unit11"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) / Q6 Explain the role of React Router in modern web development. / What is the use of Routers in
+                React. How you can implement this in React Application.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(h), web1 Q6 and GDINFOTECH Q8, Q6</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(h) Define the term Routing in the react.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Explain with an example to pass and receive data through URL parameters using React Router and use
+                of this data in a data-driven web application?</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1 Discuss the advantages of adopting a data-driven approach in web development.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q1 and DECAP472_4 Q1</div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q5 Show the implementation of server communication in a React application with example.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q19 / Q22 Explain with an example to pass and receive data through URL parameters using React Router
+                and use of this data in a data-driven web application. / How would you incorporate React Router in a web
+                page management applications?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 12 ===================== -->
+      <section class="unit-section" id="unit12">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 12</div>
+          <h2 class="unit-title">Unit-12: Components in detail: stateful vs stateless components, creating class-based
+            components, more about setState() method, Passing props to class-based components, passing function as
+            props.</h2>
+          <span class="unit-count" id="count-unit12"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Differentiate between class and functional components?</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q10 Demonstrate the class-based component in React with example.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q17 Differentiate between class and functional components?</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 13 ===================== -->
+      <section class="unit-section" id="unit13">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 13</div>
+          <h2 class="unit-title">Unit-13: Styling components: Introduction to CSS modules, creating mobile responsive
+            components.</h2>
+          <span class="unit-count" id="count-unit13"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 As the workshop facilitator for a group of junior developers new to React.js, how would you evaluate
+                their comprehension of styling components using CSS modules and crafting mobile-responsive designs?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q7 and GDINFOTECH Q7</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(i) Describe the CSS module in the context of React.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Explain the CSS Modules in React with example?</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 Describe how you would ensure that the workout tracker module is mobile-responsive and optimized for
+                various screen sizes on both iOS AND Android devices. Discuss your strategy for leveraging React
+                Native's layout components and styling techniques to create a seamless user experience across different
+                mobile devices.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q13 / Q25 Explain the CSS Modules in React with examples.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+      <!-- ===================== UNIT 14 ===================== -->
+      <section class="unit-section" id="unit14">
+        <div class="unit-header">
+          <div class="unit-badge">Unit 14</div>
+          <h2 class="unit-title">Unit-14: Functional programming with Javascript: programming constructs in Javascript,
+            introduction to es6 class, components of es6 class.</h2>
+          <span class="unit-count" id="count-unit14"></span>
+        </div>
+
+        <div class="questions-grid">
+
+          <!-- Q1 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q1</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) / Q10 What is the difference between const and let keywords in ES6 and how do they impact
+                functional programming principles?</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q1(j) and GDINFOTECH Q10</div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card" data-paper="p1 p7">
+            <div class="q-meta">
+              <span class="q-num">Q2</span>
+              <div class="q-tags">
+                <span class="tag tag-p1">web1</span>
+                <span class="tag tag-p7">GDINFOTECH ✦</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q3 Write a JavaScript function using functional programming principles that takes an array of numbers
+                and returns a new array with only the even numbers. (Use built-in functions like filter or forEach)</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in web1 Q3 and GDINFOTECH Q3</div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q3</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q1(j) Differentiate between var, let and const.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card" data-paper="p2">
+            <div class="q-meta">
+              <span class="q-num">Q4</span>
+              <div class="q-tags">
+                <span class="tag tag-p2">DECAP472 (1)</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q7 Explain the Arrow function with example.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="q-card" data-paper="p3 p5">
+            <div class="q-meta">
+              <span class="q-num">Q5</span>
+              <div class="q-tags">
+                <span class="tag tag-p3">DECAP472_2</span>
+                <span class="tag tag-p5">DECAP472_4</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q8 In the development of the online collaborative coding platform, how would you incorporate functional
+                programming constructs in JavaScript to ensure code modularity, reusability and maintainability?
+                Describe how you would use concepts such as higher-order functions, closures and immutability to design
+                and implement features such as real time code editing and collaboration.</p>
+            </div>
+            <div class="q-repeat-note">⚠ Same question in DECAP472_2 Q8 and DECAP472_4 Q8</div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="q-card" data-paper="p4">
+            <div class="q-meta">
+              <span class="q-num">Q6</span>
+              <div class="q-tags">
+                <span class="tag tag-p4">DECAP472_3</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q2 Explain the concept of an ES6 class and its components (constructor, methods, properties). How does
+                it differ from traditional prototype-based inheritance in JavaScript?</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q7</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q4 Demonstrate the class concept in JavaScript with example.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="q-card" data-paper="p6">
+            <div class="q-meta">
+              <span class="q-num">Q8</span>
+              <div class="q-tags">
+                <span class="tag tag-p6">DECAP472_5</span>
+              </div>
+            </div>
+            <div class="q-body">
+              <p>Q16 / Q21 Explain the Arrow function with example.</p>
+            </div>
+          </div>
+
+        </div><!-- /questions-grid -->
+      </section>
+
+    </main><!-- /main-content -->
+  </div><!-- /page-layout -->
+
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

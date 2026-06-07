@@ -1,0 +1,244 @@
+Question Paper: web1
+
+PART A
+
+Q1(a) What are attributes in HTML and how do they function?
+
+(b) How does Bootstrap facilitate responsive web design?
+
+(c) What is the purpose of a starter template in Bootstrap?
+
+(d) Describe what a "static top navbar" is in Bootstrap and when it should be used
+
+(e) Describe the core components of ReactJS architecture
+
+(f) Defining React Elements Using JSX
+
+(g) Discuss common challenges encountered while managing state in React applications.
+
+(h) Explain the role of React Router in modern web development.
+
+(i) How can you utilize CSS techniques such as media queries and flexbox to design components that adapt to different screen sizes and devices?
+
+(j) What is the difference between const and let keywords in ES6 and how do they impact functional programming principles?
+
+PART B
+
+Q2 How would you explain the concept of mobile-first design to your peers, and how can Bootstrap's features and components support this shift in design mindset?
+
+Q3 Write a JavaScript function using functional programming principles that takes an array of numbers and returns a new array with only the even numbers. (Use built-in functions like filter or forEach)
+
+Q4 Explain the role of the carousel in Bootstrap for creating interactive image or content sliders. What are some best practices for designing and implementing carousels in web projects?
+
+Q5 Explain the grid system in Bootstrap in detail, including its structure, classes, and flexibility in designing responsive layouts.
+
+Q6 What is the use of Routers in React. How you can implement this in React Application
+
+Q7 As the workshop facilitator for a group of junior developers new to React.js, how would you evaluate their comprehension of styling components using CSS modules and crafting mobile-responsive designs?
+
+Q8 Your team is working on developing a new e-commerce platform using React.js. One of the critical features of the platform is a product listing page where users can filter products based on various criteria such as price, category, and availability. Describe how you would approach implementing this feature using React's state management. How would you validate incoming properties to ensure data integrity? Additionally, discuss the role of the component tree in managing state across different components of the product listing page
+
+Q9 Discuss how CSS can be used to change the visual appearance of HTML tags. Write a CSS snippet that applies these properties to a paragraph element.
+
+Q10 How do you define React elements using JSX?
+
+Q11 What are the key steps involved in constructing elements with data in React?
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP472 (1)
+
+PART A
+
+Q1(a) Discuss the format of HTML program.
+
+(b) Discuss about the different types of containers provided by Bootstrap.
+
+(c) Why is Jumbotron used in Bootstrap?
+
+(d) Write the syntax to Fix a navbar in the Top position.
+
+(e) Define the virtual DOM?
+
+(f) Evaluate the React Webpack.
+
+(g) What are props in React?
+
+(h) Define the term Routing in the react.
+
+(i) Describe the CSS module in the context of React.
+
+(j) Differentiate between var, let and const.
+
+PART B
+
+Q2 Implement the use of Webpack in a React App with example.
+
+Q3 Develop a sample dashboard using Bootstrap.
+
+Q4 Explain the CSS Modules in React with example?
+
+Q5 Show that how a starter template can be created in bootstrap?
+
+Q6 Explain the HTML Table Tag and its attributes with an example.
+
+Q7 Explain the Arrow function with example.
+
+Q8 Differentiate between class and functional components?
+
+Q9 Explain about the react component with an example.
+
+Q10 Explain with an example to pass and receive data through URL parameters using React Router and use of this data in a data-driven web application?
+
+Q11 How to Create a Responsive Layout with Bootstrap?
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP472_2
+
+PART-B
+
+Q1 Discuss the advantages of adopting a data-driven approach in web development.
+
+Q2 What is the concept of DOM rendering in React, and why is it important?
+
+Q3 What are React recipes, and how do they aid in development?
+
+Q4 Describe how state is used in React to manage data . What are the differences between state and props, and how should each be used within components? Provide an example of a component that initializes state in the constructor and updates it based on user input.
+
+Q5 In today’s mobile-centric landscape, creating user interfaces that seamlessly adapt to various screen sizes and devices is crucial for the success of our new application. How would you illustrate the role of Bootstrapping facilitating the development of mobile-friendly web interfaces, and what strategies would you employ to ensure that our app delivers an optimal user experience across different mobile devices?
+
+Q6 What are the advantages of incorporating a ‘fixed navbar’ in Bootstrap, and how does it contrast with a static top navbar? Additionally, could you share an HTML and CSS example illustrating the implementation of a fixed navbar that remains fixed at the top of the viewport while scrolling through a page?
+
+Q7 Discuss the concept of a Bootstrap narrow jumbo Tron and how it differs from the standard jumbo Tron. What are its typical use cases? Provide HTML and CSS code for a narrow jumbo Tron that is centered on the page with reduced horizontal padding compared to the regular jumbo Tron.
+
+Q8 In the development of the online collaborative coding platform, how would you incorporate functional programming constructs in java script to ensure code modularity, reusability and maintainability? Describe how you would use concepts such as higher-order functions, closures and immutability to design and implement co features such as real time code editing and collaboration.
+
+Q9 Explain the concept of props in React and their significance in component composition.
+
+Q10 Explain the components of an HTML form that are used to gather user input. Provide an example of a form that includes text input, a checkbox and a submit button. Discuss how each element contributes to data collection.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP472_3
+
+PART-B
+
+Q1 Explain the essentials of HTML forms, including form elements, input types and form submission. How do forms facilitate user interaction and data collection on a web page?
+
+Q2 Explain the concept of an ES6 class and its components (constructor, methods, properties). How does it differ from traditional prototype-based inheritance in java script?
+
+Q3 How does JSX facilitate the integration of HTML and java script in react?
+
+Q4 Discuss the concept of “ lifting state up” in React and how I can be used to manage state across multiple components within a component tree. Provide an example where state is managed in a parent component and accessed by multiple child components to perform a specific task, such as filtering a list of items based on user input.
+
+Q5 What are the key components and features of Bootstrap that contribute to its effectiveness’s in developing mobile-friendly web interface?
+
+Q6 Describe the steps required to set up a basic React application on a webpage. Include details on how to include React and React DOM libraries, and how to render a simple react component into a DOM element using react DOM render ()
+
+Q7 Explain how the Bootstrap carousel components is used to create a slideshow of images, include an example of a simple carousel implementation with controls for previous and next slides.
+
+Q8 Describe how you would ensure that the workout tracker module is mobile-responsive and optimized for various screen size on both Ios AND Android devices. Discuss your strategy for leveraging React native’s layout components and styling techniques to create a seamless user experience across different mobile devices.
+
+Q9 What is the need of use state () Hook in React. Give example.
+
+Q10 Describe the process of using a starter template in Bootstrap to kick start a web development project. What are the key components typically included in a starter template?
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP472_4
+
+PART-B
+
+Q1 Discuss the advantages of adopting a data-driven approach in web development.
+
+Q2 What is the concept of DOM rendering in React, and why is it important?
+
+Q3 What are React recipes, and how do they aid in development?
+
+Q4 Describe how state is used in React to manage data . What are the differences between state and props, and how should each be used within components? Provide an example of a component that initializes state in the constructor and updates it based on user input.
+
+Q5 In today’s mobile-centric landscape, creating user interfaces that seamlessly adapt to various screen sizes and devices is crucial for the success of our new application. How would you illustrate the role of Bootstrapping facilitating the development of mobile-friendly web interfaces, and what strategies would you employ to ensure that our app delivers an optimal user experience across different mobile devices?
+
+Q6 What are the advantages of incorporating a ‘fixed navbar’ in Bootstrap, and how does it contrast with a static top navbar? Additionally, could you share an HTML and CSS example illustrating the implementation of a fixed navbar that remains fixed at the top of the viewport while scrolling through a page?
+
+Q7 Discuss the concept of a Bootstrap narrow jumbo Tron and how it differs from the standard jumbo Tron. What are its typical use cases? Provide HTML and CSS code for a narrow jumbo Tron that is centered on the page with reduced horizontal padding compared to the regular jumbo Tron.
+
+Q8 In the development of the online collaborative coding platform, how would you incorporate functional programming constructs in java script to ensure code modularity, reusability and maintainability? Describe how you would use concepts such as higher-order functions, closures and immutability to design and implement co features such as real time code editing and collaboration.
+
+Q9 Explain the concept of props in React and their significance in component composition.
+
+Q10 Explain the components of an HTML form that are used to gather user input. Provide an example of a form that includes text input, a checkbox and a submit button. Discuss how each element contributes to data collection.
+
+-- End of Question Paper --
+
+
+Question Paper: DECAP472_5
+
+PART-B
+
+Q1 Describe about the creating responsive images and styling them with Bootstrap with example.
+
+Q2 Discuss the features of React.
+
+Q3 Explain the concept of trans piling.
+
+Q4 Demonstrate the class concept in Java script with example.
+
+Q5 Show the implementation of server communication in a React application with example.
+
+Q6 Explain the CSS Flexbox with an example.
+
+Q7 Create a program to develop an attractive sign-in-page with the help of Bootstrap.
+
+Q8 Demonstrate the Bootstrap Grid System with example.
+
+Q9 Describe about the components in React with example?
+
+Q10 Demonstrate the class-based component in React with example.
+
+Q11 Implement the use of Web pack in a React App with example.
+
+Q12 Develop a sample dashboard using Bootstrap.
+
+Q13 Explain the CSS Modules in React with examples.
+
+Q14 Show that how a starter template can be created in Bootstrap?
+
+Q15 Explain the HTML Table Tag and its attributes with an example.
+
+Q16 Explain the Arrow function with example.
+
+Q17 Differentiate between class and functional components?
+
+Q18 Explain about the React component with an example.
+
+Q19 Explain with an example to pass and receive data through URL parameters using React Router and use of this data in a data-driven web application?
+
+Q20 How to create a Responsive Layout with Bootstrap?
+
+Q21 Explain the Arrow function with example.
+
+Q22 How would you incorporate React Router in a web page management applications?
+
+Q23 Develop a sample dashboard using Bootstrap.
+
+Q24 How do you create a React app? Explain with example.
+
+Q25 Explain the CSS Modules in React with example?
+
+Q26 Explain the Bootstrap Form classes with an example program.
+
+Q27 Describe about the components in React with example?
+
+Q28 Create a delicious recipe component with recipe’s steps using React JSX in program.
+
+Q29 Describe the LIST Tag with examples.
+
+Q30 Show that how a starter template can be created in Bootstrap?
+
+-- End of Question Paper --

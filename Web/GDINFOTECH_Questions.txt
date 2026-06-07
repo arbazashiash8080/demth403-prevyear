@@ -1,0 +1,47 @@
+Question Paper: GDINFOTECH_DECAP472
+
+PART A
+
+Q1. What are attributes in HTML, and how do they function?
+
+Q2. How does Bootstrap facilitate responsive web design?
+
+Q3. What is the purpose of a starter template in Bootstrap?
+
+Q4. Describe what a "static top navbar" is in Bootstrap and when it should be used.
+
+Q5. Describe the core components of React JS architecture.
+
+Q6. Defining React Elements Using JSX.
+
+Q7. Discuss common challenges encountered while managing state in React applications.
+
+Q8. Explain the role of React Router in modern web development.
+
+Q9. How can you utilize CSS techniques such as media queries and flexbox to design components that adapt to different screen sizes and devices?
+
+Q10. What is the difference between const and let keywords in ES6 and how do they impact functional programming principles?
+
+PART B
+
+Q2 How would you explain the concept of mobile-first design to your peers, and how can Bootstrap's features and components support this shift in design mindset?
+
+Q3 Write a JavaScript function using functional programming principles that takes an array of numbers and returns a new array with only the even numbers. (Use built-in functions like filter or forEach)
+
+Q4 Explain the role of the carousel in Bootstrap for creating interactive image or content sliders. What are some best practices for designing and implementing carousels in web projects?
+
+Q5 Explain the grid system in Bootstrap in detail, including its structure, classes, and flexibility in designing responsive layouts.
+
+Q6 What is the use of Routers in React. How you can implement this in React Application
+
+Q7 As the workshop facilitator for a group of junior developers new to React.js, how would you evaluate their comprehension of styling components using CSS modules and crafting mobile-responsive designs?
+
+Q8 Your team is working on developing a new e-commerce platform using React.js. One of the critical features of the platform is a product listing page where users can filter products based on various criteria such as price, category, and availability. Describe how you would approach implementing this feature using React's state management. How would you validate incoming properties to ensure data integrity? Additionally, discuss the role of the component tree in managing state across different components of the product listing page
+
+Q9 Discuss how CSS can be used to change the visual appearance of HTML tags. Write a CSS snippet that applies these properties to a paragraph element.
+
+Q10 How do you define React elements using JSX?
+
+Q11 What are the key steps involved in constructing elements with data in React?
+
+-- End of Question Paper --
